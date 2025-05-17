@@ -1,0 +1,57 @@
+Creating dataloaders for path: dakshina_dataset_v1.0/hi/lexicons/
+Files in directory: ['hi.translit.sampled.dev.tsv', 'temp_nan.tsv', 'hi.translit.sampled.train.tsv', 'hi.translit.sampled.test.tsv']
+Loading data from: dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.train.tsv
+Loaded with pandas (tab): (44204, 3)
+Skipping NaN string at row 19724: नन -> none
+Extracted 44201 valid pairs from DataFrame
+Loaded 44201 valid data pairs
+Latin vocabulary size: 67
+Devanagari vocabulary size: 30
+Files in directory: ['hi.translit.sampled.dev.tsv', 'temp_nan.tsv', 'hi.translit.sampled.train.tsv', 'hi.translit.sampled.test.tsv']
+Loading data from: dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.dev.tsv
+Loaded with pandas (tab): (4358, 3)
+Extracted 4358 valid pairs from DataFrame
+Loaded 4358 valid data pairs
+Latin vocabulary size: 65
+Devanagari vocabulary size: 30
+Files in directory: ['hi.translit.sampled.dev.tsv', 'temp_nan.tsv', 'hi.translit.sampled.train.tsv', 'hi.translit.sampled.test.tsv']
+Loading data from: dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.test.tsv
+Loaded with pandas (tab): (4502, 3)
+Extracted 4502 valid pairs from DataFrame
+Loaded 4502 valid data pairs
+Latin vocabulary size: 65
+Devanagari vocabulary size: 30
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 208,734 trainable parameters
+Traceback (most recent call last):                                                                                                                                                
+Epoch: 01 | Time: 0.0m 15.12s
+	Train Loss: 2.271
+	Val. Loss: 1.828
+	Best validation loss: 1.828
+Epoch: 02 | Time: 0.0m 14.88s
+	Train Loss: 1.421
+	Val. Loss: 1.287
+	Best validation loss: 1.287
+Epoch: 03 | Time: 0.0m 14.98s
+	Train Loss: 1.085
+	Val. Loss: 1.092
+	Best validation loss: 1.092
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 80, in main
+    history = train_model(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 211, in train_model
+    train_loss = train(model, train_iterator, optimizer, criterion, clip, device)
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 37, in train
+    trg = trg.to(device)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 80, in main
+    history = train_model(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 211, in train_model
+    train_loss = train(model, train_iterator, optimizer, criterion, clip, device)
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 37, in train
+    trg = trg.to(device)
+KeyboardInterrupt

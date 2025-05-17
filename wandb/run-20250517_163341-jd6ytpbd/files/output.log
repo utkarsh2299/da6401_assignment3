@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 35, in main
+    dataloaders = get_dataloaders(config.data_path, config.batch_size)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 155, in get_dataloaders
+    train_dataset = TransliterationDataset(data_path, 'hi.translit.sampled.train')
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 44, in __init__
+    self.latin_vocab = self._build_vocab(self.filtered_latin)
+AttributeError: 'TransliterationDataset' object has no attribute 'filtered_latin'
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 35, in main
+    dataloaders = get_dataloaders(config.data_path, config.batch_size)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 155, in get_dataloaders
+    train_dataset = TransliterationDataset(data_path, 'hi.translit.sampled.train')
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 44, in __init__
+    self.latin_vocab = self._build_vocab(self.filtered_latin)
+AttributeError: 'TransliterationDataset' object has no attribute 'filtered_latin'

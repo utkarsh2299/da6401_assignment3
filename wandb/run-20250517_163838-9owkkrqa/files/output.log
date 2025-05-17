@@ -1,0 +1,47 @@
+Skipping non-string at index 19535: नं (<class 'str'>) -> nan (<class 'float'>)
+Skipping non-string at index 20147: नान (<class 'str'>) -> nan (<class 'float'>)
+The model has 200,134 trainable parameters
+Traceback (most recent call last):                                                                                                                                                
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 80, in main
+    history = train_model(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 211, in train_model
+    train_loss = train(model, train_iterator, optimizer, criterion, clip, device)
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 35, in train
+    for i, (src, trg) in enumerate(tqdm(iterator, desc="Training", leave=False)):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 100, in __getitem__
+    [self.devanagari_char2idx.get(char, self.devanagari_char2idx['<UNK>'])
+TypeError: 'float' object is not iterable
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 80, in main
+    history = train_model(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 211, in train_model
+    train_loss = train(model, train_iterator, optimizer, criterion, clip, device)
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 35, in train
+    for i, (src, trg) in enumerate(tqdm(iterator, desc="Training", leave=False)):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 100, in __getitem__
+    [self.devanagari_char2idx.get(char, self.devanagari_char2idx['<UNK>'])
+TypeError: 'float' object is not iterable

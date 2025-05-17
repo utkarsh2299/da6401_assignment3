@@ -1,0 +1,29 @@
+text0 अं
+text_type <class 'str'>
+text0 an
+text_type <class 'str'>
+text0 nan
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 35, in main
+    dataloaders = get_dataloaders(config.data_path, config.batch_size)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 138, in get_dataloaders
+    train_dataset = TransliterationDataset(data_path, 'hi.translit.sampled.train')
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 30, in __init__
+    self.devanagari_vocab = self._build_vocab(self.devanagari_texts)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 64, in _build_vocab
+    chars.update(text)
+TypeError: 'float' object is not iterable
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 35, in main
+    dataloaders = get_dataloaders(config.data_path, config.batch_size)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 138, in get_dataloaders
+    train_dataset = TransliterationDataset(data_path, 'hi.translit.sampled.train')
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 30, in __init__
+    self.devanagari_vocab = self._build_vocab(self.devanagari_texts)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 64, in _build_vocab
+    chars.update(text)
+TypeError: 'float' object is not iterable

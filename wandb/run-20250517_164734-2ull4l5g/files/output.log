@@ -1,0 +1,36 @@
+Creating dataloaders for path: dakshina_dataset_v1.0/hi/lexicons/
+Files in directory: ['hi.translit.sampled.dev.tsv', 'temp_nan.tsv', 'hi.translit.sampled.train.tsv', 'hi.translit.sampled.test.tsv']
+Loading data from: dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.train.tsv
+Loaded with pandas (tab): (44204, 3)
+Skipping NaN string at row 19724: नन -> none
+Extracted 44201 valid pairs from DataFrame
+Loaded 44201 valid data pairs
+Latin vocabulary size: 67
+Devanagari vocabulary size: 30
+Files in directory: ['hi.translit.sampled.dev.tsv', 'temp_nan.tsv', 'hi.translit.sampled.train.tsv', 'hi.translit.sampled.test.tsv']
+Loading data from: dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.dev.tsv
+Loaded with pandas (tab): (4358, 3)
+Extracted 4358 valid pairs from DataFrame
+Loaded 4358 valid data pairs
+Latin vocabulary size: 65
+Devanagari vocabulary size: 30
+Files in directory: ['hi.translit.sampled.dev.tsv', 'temp_nan.tsv', 'hi.translit.sampled.train.tsv', 'hi.translit.sampled.test.tsv']
+Loading data from: dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.test.tsv
+Loaded with pandas (tab): (4502, 3)
+Extracted 4502 valid pairs from DataFrame
+Loaded 4502 valid data pairs
+Latin vocabulary size: 65
+Devanagari vocabulary size: 30
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 47, in main
+    sos_idx = train_dataset.devanagari_char2idx['<SOS>']
+KeyError: '<SOS>'
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 178, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 47, in main
+    sos_idx = train_dataset.devanagari_char2idx['<SOS>']
+KeyError: '<SOS>'

@@ -1,0 +1,16 @@
+{"time":"2025-05-17T16:53:13.757323586+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250517_165313-tx80js8w/logs/debug-core.log"}
+{"time":"2025-05-17T16:53:14.153262902+05:30","level":"INFO","msg":"created new stream","id":"tx80js8w"}
+{"time":"2025-05-17T16:53:14.153340414+05:30","level":"INFO","msg":"stream: started","id":"tx80js8w"}
+{"time":"2025-05-17T16:53:14.153407316+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"tx80js8w"}
+{"time":"2025-05-17T16:53:14.153421666+05:30","level":"INFO","msg":"sender: started","stream_id":"tx80js8w"}
+{"time":"2025-05-17T16:53:14.153488068+05:30","level":"INFO","msg":"handler: started","stream_id":"tx80js8w"}
+{"time":"2025-05-17T16:53:14.541877323+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T16:56:47.732269778+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T16:56:47.73236276+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T16:56:48.73759398+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.12930558,"progress":"1.2KB/1.2KB"}],"total_operations":1}}
+{"time":"2025-05-17T16:56:48.947958643+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T16:56:49.587489112+05:30","level":"INFO","msg":"stream: closing","id":"tx80js8w"}
+{"time":"2025-05-17T16:56:49.587540613+05:30","level":"INFO","msg":"handler: closed","stream_id":"tx80js8w"}
+{"time":"2025-05-17T16:56:49.587563564+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"tx80js8w"}
+{"time":"2025-05-17T16:56:49.587616055+05:30","level":"INFO","msg":"sender: closed","stream_id":"tx80js8w"}
+{"time":"2025-05-17T16:56:49.587734248+05:30","level":"INFO","msg":"stream: closed","id":"tx80js8w"}
