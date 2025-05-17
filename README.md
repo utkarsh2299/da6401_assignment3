@@ -82,12 +82,7 @@ python main.py --embedding_size 128 --hidden_size 256 --cell_type lstm
 
 Run a standard hyperparameter sweep:
 ```bash
-python sweep.py --count 10 --strategy standard
-```
-
-Run an efficient hyperparameter sweep using the pruning strategy:
-```bash
-python sweep.py --strategy pruning
+python sweep.py --count 10 
 ```
 
 Test the best model from a sweep:
