@@ -1,0 +1,119 @@
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 1,863,326 trainable parameters
+                                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 37.29s
+	Train Loss: 1.588
+	Val. Loss: 1.002
+	Best validation loss: 1.002
+Epoch: 02 | Time: 0.0m 36.96s
+	Train Loss: 0.761
+	Val. Loss: 0.878
+	Best validation loss: 0.878
+Epoch: 03 | Time: 0.0m 37.37s
+	Train Loss: 0.642
+	Val. Loss: 0.814
+	Best validation loss: 0.814
+Epoch: 04 | Time: 0.0m 37.05s
+	Train Loss: 0.585
+	Val. Loss: 0.816
+	No improvement in validation loss for 1 epochs
+Epoch: 05 | Time: 0.0m 37.00s
+	Train Loss: 0.543
+	Val. Loss: 0.812
+	Best validation loss: 0.812
+Epoch: 06 | Time: 0.0m 37.37s
+	Train Loss: 0.519
+	Val. Loss: 0.793
+	Best validation loss: 0.793
+Epoch: 07 | Time: 0.0m 37.45s
+	Train Loss: 0.501
+	Val. Loss: 0.794
+	No improvement in validation loss for 1 epochs
+Epoch: 08 | Time: 0.0m 37.06s
+	Train Loss: 0.485
+	Val. Loss: 0.780
+	Best validation loss: 0.780
+Epoch: 09 | Time: 0.0m 37.31s
+	Train Loss: 0.472
+	Val. Loss: 0.796
+	No improvement in validation loss for 1 epochs
+Epoch: 10 | Time: 0.0m 37.01s
+	Train Loss: 0.459
+	Val. Loss: 0.785
+	No improvement in validation loss for 2 epochs
+Epoch: 11 | Time: 0.0m 37.22s
+	Train Loss: 0.448
+	Val. Loss: 0.785
+	No improvement in validation loss for 3 epochs
+Epoch: 12 | Time: 0.0m 37.61s
+	Train Loss: 0.441
+	Val. Loss: 0.782
+	No improvement in validation loss for 4 epochs
+Epoch: 13 | Time: 0.0m 37.16s
+	Train Loss: 0.431
+	Val. Loss: 0.817
+	No improvement in validation loss for 5 epochs
+Early stopping after 13 epochs
+Test Accuracy: 0.4163
+Sample 1:
+Source: अंक
+Prediction: ank
+Target: ank
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: अंक
+Prediction: ank
+Target: anka
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: अंकित
+Prediction: ankit
+Target: ankit
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: अंकों
+Prediction: ankon
+Target: anakon
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: अंकों
+Prediction: ankon
+Target: ankhon
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: अंकों
+Prediction: ankon
+Target: ankon
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: अंकोर
+Prediction: ancor
+Target: angkor
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: अंकोर
+Prediction: ancor
+Target: ankor
+Correct: No
+--------------------------------------------------
+Sample 9:
+Source: अंगारक
+Prediction: angarak
+Target: angaarak
+Correct: No
+--------------------------------------------------
+Sample 10:
+Source: अंगारक
+Prediction: angarak
+Target: angarak
+Correct: Yes
+--------------------------------------------------

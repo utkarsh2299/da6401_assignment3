@@ -1,0 +1,16 @@
+{"time":"2025-05-17T20:39:54.67261169+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250517_203954-jassme5h/logs/debug-core.log"}
+{"time":"2025-05-17T20:39:55.072381145+05:30","level":"INFO","msg":"created new stream","id":"jassme5h"}
+{"time":"2025-05-17T20:39:55.072447406+05:30","level":"INFO","msg":"stream: started","id":"jassme5h"}
+{"time":"2025-05-17T20:39:55.072476747+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"jassme5h"}
+{"time":"2025-05-17T20:39:55.072528687+05:30","level":"INFO","msg":"sender: started","stream_id":"jassme5h"}
+{"time":"2025-05-17T20:39:55.072667859+05:30","level":"INFO","msg":"handler: started","stream_id":"jassme5h"}
+{"time":"2025-05-17T20:39:55.370096994+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T20:56:29.406477397+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T20:56:29.406577401+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T20:56:30.409316941+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.413924399,"progress":"3.1KB/3.1KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.413905858,"progress":"209B/209B"},{"desc":"uploading config.yaml","runtime_seconds":0.145242529,"progress":"842B/842B"}],"total_operations":3}}
+{"time":"2025-05-17T20:56:30.669778049+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T20:56:30.969037078+05:30","level":"INFO","msg":"stream: closing","id":"jassme5h"}
+{"time":"2025-05-17T20:56:30.96908005+05:30","level":"INFO","msg":"handler: closed","stream_id":"jassme5h"}
+{"time":"2025-05-17T20:56:30.96910313+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"jassme5h"}
+{"time":"2025-05-17T20:56:30.969153512+05:30","level":"INFO","msg":"sender: closed","stream_id":"jassme5h"}
+{"time":"2025-05-17T20:56:30.969231035+05:30","level":"INFO","msg":"stream: closed","id":"jassme5h"}

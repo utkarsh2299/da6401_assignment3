@@ -1,0 +1,70 @@
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 1,863,326 trainable parameters
+                                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 18.88s
+	Train Loss: 1.912
+	Val. Loss: 1.181
+	Best validation loss: 1.181
+Test Accuracy: 0.1848
+Sample 1:
+Source: अंक
+Prediction: ank
+Target: ank
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: अंक
+Prediction: ank
+Target: anka
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: अंकित
+Prediction: ankit
+Target: ankit
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: अंकों
+Prediction: ankon
+Target: anakon
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: अंकों
+Prediction: ankon
+Target: ankhon
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: अंकों
+Prediction: ankon
+Target: ankon
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: अंकोर
+Prediction: ankor
+Target: angkor
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: अंकोर
+Prediction: ankor
+Target: ankor
+Correct: Yes
+--------------------------------------------------
+Sample 9:
+Source: अंगारक
+Prediction: angarak
+Target: angaarak
+Correct: No
+--------------------------------------------------
+Sample 10:
+Source: अंगारक
+Prediction: angarak
+Target: angarak
+Correct: Yes
+--------------------------------------------------

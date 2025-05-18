@@ -1,0 +1,16 @@
+{"time":"2025-05-17T22:04:26.59364513+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250517_220426-r3slcrvf/logs/debug-core.log"}
+{"time":"2025-05-17T22:04:26.988386477+05:30","level":"INFO","msg":"created new stream","id":"r3slcrvf"}
+{"time":"2025-05-17T22:04:26.988452548+05:30","level":"INFO","msg":"stream: started","id":"r3slcrvf"}
+{"time":"2025-05-17T22:04:26.988479689+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"r3slcrvf"}
+{"time":"2025-05-17T22:04:26.98854537+05:30","level":"INFO","msg":"sender: started","stream_id":"r3slcrvf"}
+{"time":"2025-05-17T22:04:26.988605251+05:30","level":"INFO","msg":"handler: started","stream_id":"r3slcrvf"}
+{"time":"2025-05-17T22:04:27.29559422+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T22:21:36.485202721+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T22:21:36.485290103+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T22:21:37.48823529+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.415373611,"progress":"4.4KB/4.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.415361141,"progress":"283B/283B"},{"desc":"uploading config.yaml","runtime_seconds":0.064325601,"progress":"842B/842B"}],"total_operations":3}}
+{"time":"2025-05-17T22:21:37.80291829+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T22:21:38.127123488+05:30","level":"INFO","msg":"stream: closing","id":"r3slcrvf"}
+{"time":"2025-05-17T22:21:38.127147029+05:30","level":"INFO","msg":"handler: closed","stream_id":"r3slcrvf"}
+{"time":"2025-05-17T22:21:38.127160559+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"r3slcrvf"}
+{"time":"2025-05-17T22:21:38.12720456+05:30","level":"INFO","msg":"sender: closed","stream_id":"r3slcrvf"}
+{"time":"2025-05-17T22:21:38.127283251+05:30","level":"INFO","msg":"stream: closed","id":"r3slcrvf"}

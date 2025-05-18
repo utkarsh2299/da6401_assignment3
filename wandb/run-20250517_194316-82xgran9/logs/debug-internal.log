@@ -1,0 +1,16 @@
+{"time":"2025-05-17T19:43:16.416458413+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250517_194316-82xgran9/logs/debug-core.log"}
+{"time":"2025-05-17T19:43:16.809720104+05:30","level":"INFO","msg":"created new stream","id":"82xgran9"}
+{"time":"2025-05-17T19:43:16.809827062+05:30","level":"INFO","msg":"stream: started","id":"82xgran9"}
+{"time":"2025-05-17T19:43:16.809884771+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"82xgran9"}
+{"time":"2025-05-17T19:43:16.809940459+05:30","level":"INFO","msg":"handler: started","stream_id":"82xgran9"}
+{"time":"2025-05-17T19:43:16.810010568+05:30","level":"INFO","msg":"sender: started","stream_id":"82xgran9"}
+{"time":"2025-05-17T19:43:17.118283475+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T20:04:49.207061097+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T20:04:49.207207078+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T20:04:50.170718815+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.381026781,"progress":"210B/210B"},{"desc":"uploading output.log","runtime_seconds":0.381009731,"progress":"3.7KB/3.7KB"},{"desc":"uploading config.yaml","runtime_seconds":0.109650527,"progress":"844B/844B"}],"total_operations":3}}
+{"time":"2025-05-17T20:04:50.415400413+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T20:04:50.737932723+05:30","level":"INFO","msg":"stream: closing","id":"82xgran9"}
+{"time":"2025-05-17T20:04:50.737957643+05:30","level":"INFO","msg":"handler: closed","stream_id":"82xgran9"}
+{"time":"2025-05-17T20:04:50.737971053+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"82xgran9"}
+{"time":"2025-05-17T20:04:50.738024344+05:30","level":"INFO","msg":"sender: closed","stream_id":"82xgran9"}
+{"time":"2025-05-17T20:04:50.738095925+05:30","level":"INFO","msg":"stream: closed","id":"82xgran9"}

@@ -1,0 +1,69 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'hindi-transliteration' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 705,118 trainable parameters
+                                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 40.87s
+	Train Loss: 2.599
+	Val. Loss: 2.643
+	Best validation loss: 2.643
+Test Accuracy: 0.0000
+Sample 1:
+Source: अंक
+Prediction: sana
+Target: ank
+Correct: No
+--------------------------------------------------
+Sample 2:
+Source: अंक
+Prediction: sana
+Target: anka
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: अंकित
+Prediction: sana
+Target: ankit
+Correct: No
+--------------------------------------------------
+Sample 4:
+Source: अंकों
+Prediction: sana
+Target: anakon
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: अंकों
+Prediction: sana
+Target: ankhon
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: अंकों
+Prediction: sana
+Target: ankon
+Correct: No
+--------------------------------------------------
+Sample 7:
+Source: अंकोर
+Prediction: sana
+Target: angkor
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: अंकोर
+Prediction: sana
+Target: ankor
+Correct: No
+--------------------------------------------------
+Sample 9:
+Source: अंगारक
+Prediction: sana
+Target: angaarak
+Correct: No
+--------------------------------------------------
+Sample 10:
+Source: अंगारक
+Prediction: sana
+Target: angarak
+Correct: No
+--------------------------------------------------

@@ -39,7 +39,7 @@ class TransliterationDataset(Dataset):
                 print(f"Warning: Could not find file for split '{split}' in '{data_path}'")
                 return
                 
-            print(f"Loading data from: {file_path}")
+            # print(f"Loading data from: {file_path}")
             
             # Load data with robust parsing
             data_pairs = self._load_data_safely(file_path)
@@ -47,7 +47,7 @@ class TransliterationDataset(Dataset):
                 print("Warning: No valid data pairs loaded")
                 return
                 
-            print(f"Loaded {len(data_pairs)} valid data pairs")
+            # print(f"Loaded {len(data_pairs)} valid data pairs")
             
             # Extract source and target texts
             self.latin_texts, self.devanagari_texts = zip(*data_pairs)
@@ -66,8 +66,8 @@ class TransliterationDataset(Dataset):
             self.latin_idx2char = {idx: char for char, idx in self.latin_char2idx.items()}
             self.devanagari_idx2char = {idx: char for char, idx in self.devanagari_char2idx.items()}
             
-            print(f"Latin vocabulary size: {len(self.latin_vocab)}")
-            print(f"Devanagari vocabulary size: {len(self.devanagari_vocab)}")
+            # print(f"Latin vocabulary size: {len(self.latin_vocab)}")
+            # print(f"Devanagari vocabulary size: {len(self.devanagari_vocab)}")
             
         except Exception as e:
             print(f"Error initializing dataset: {e}")
@@ -85,7 +85,7 @@ class TransliterationDataset(Dataset):
         # List files in directory
         try:
             files = os.listdir(base_path)
-            print(f"Files in directory: {files}")
+            # print(f"Files in directory: {files}")
         except Exception as e:
             print(f"Error listing directory: {e}")
             files = []
@@ -121,7 +121,7 @@ class TransliterationDataset(Dataset):
             df = pd.read_csv(file_path, sep='\t', header=None, 
                              na_values=['nan', 'NaN', 'NULL', 'None', 'NA'],
                              dtype=str)  # Force string type
-            print(f"Loaded with pandas (tab): {df.shape}")
+            # print(f"Loaded with pandas (tab): {df.shape}")
             
             # Check and clean data
             valid_pairs = self._extract_valid_pairs(df)
@@ -201,12 +201,12 @@ class TransliterationDataset(Dataset):
                 
             # Skip NaN string representations
             if src.lower() in ('nan', 'none', 'null') or tgt.lower() in ('nan', 'none', 'null'):
-                print(f"Skipping NaN string at row {i}: {src} -> {tgt}")
+                # print(f"Skipping NaN string at row {i}: {src} -> {tgt}")
                 continue
             
             valid_pairs.append((src, tgt))
             
-        print(f"Extracted {len(valid_pairs)} valid pairs from DataFrame")
+        # print(f"Extracted {len(valid_pairs)} valid pairs from DataFrame")
         return valid_pairs
     
     def _extract_characters(self, texts: List[str]) -> set:
@@ -282,7 +282,7 @@ def collate_fn(batch):
 
 def get_dataloaders(data_path: str, batch_size: int) -> Dict[str, Any]:
     """Create DataLoaders for train, dev, and test sets"""
-    print(f"Creating dataloaders for path: {data_path}")
+    # print(f"Creating dataloaders for path: {data_path}")
     
     # Create datasets with proper error handling
     try:

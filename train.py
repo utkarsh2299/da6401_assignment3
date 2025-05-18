@@ -213,6 +213,11 @@ def train_model(model: nn.Module,
         # Validation
         valid_loss = evaluate(model, valid_iterator, criterion, device)
         
+        # Calculate accuracy on just a small batch for logging (won't affect training time significantly)
+        if log_wandb:
+            train_acc = calculate_sample_accuracy(model, train_iterator, device, max_batches=2)
+            valid_acc = calculate_sample_accuracy(model, valid_iterator, device, max_batches=2)
+        
         # Save history
         history['train_loss'].append(train_loss)
         history['valid_loss'].append(valid_loss)
@@ -226,6 +231,8 @@ def train_model(model: nn.Module,
             wandb.log({
                 'train_loss': train_loss,
                 'valid_loss': valid_loss,
+                'train_accuracy': train_acc,
+                'valid_accuracy': valid_acc,
                 'epoch': epoch
             })
         
@@ -233,6 +240,8 @@ def train_model(model: nn.Module,
         print(f'Epoch: {epoch+1:02} | Time: {epoch_mins}m {epoch_secs:.2f}s')
         print(f'\tTrain Loss: {train_loss:.3f}')
         print(f'\tVal. Loss: {valid_loss:.3f}')
+        if log_wandb:
+            print(f'\tTrain Acc: {train_acc:.3f} | Val. Acc: {valid_acc:.3f} (sample)')
         
         # Check if this is the best model
         if valid_loss < best_valid_loss - min_delta:
@@ -251,6 +260,35 @@ def train_model(model: nn.Module,
     
     return history
 
+def calculate_sample_accuracy(model, iterator, device, max_batches=2):
+    """
+    Calculate accuracy on a small sample of batches
+    """
+    model.eval()
+    correct = 0
+    total = 0
+    
+    with torch.no_grad():
+        for i, (src, trg) in enumerate(iterator):
+            if i >= max_batches:
+                break
+                
+            src = src.to(device)
+            trg = trg.to(device)
+            
+            # Forward pass
+            output = model(src, trg, 0)
+            predictions = output.argmax(dim=2)
+            target = trg[:, 1:]
+            
+            # Create mask to ignore padding
+            mask = (target != 0)
+            
+            # Count correct predictions
+            correct += ((predictions == target) * mask).sum().item()
+            total += mask.sum().item()
+    
+    return correct / total if total > 0 else 0
 
 def predict_batch(model: nn.Module, 
                  dataset: torch.utils.data.Dataset,

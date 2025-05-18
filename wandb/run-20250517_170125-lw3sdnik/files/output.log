@@ -1,0 +1,95 @@
+Creating dataloaders for path: dakshina_dataset_v1.0/hi/lexicons/
+Files in directory: ['hi.translit.sampled.dev.tsv', 'temp_nan.tsv', 'hi.translit.sampled.train.tsv', 'hi.translit.sampled.test.tsv']
+Loading data from: dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.train.tsv
+Loaded with pandas (tab): (44204, 3)
+Skipping NaN string at row 19724: नन -> none
+Extracted 44201 valid pairs from DataFrame
+Loaded 44201 valid data pairs
+Latin vocabulary size: 67
+Devanagari vocabulary size: 30
+Files in directory: ['hi.translit.sampled.dev.tsv', 'temp_nan.tsv', 'hi.translit.sampled.train.tsv', 'hi.translit.sampled.test.tsv']
+Loading data from: dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.dev.tsv
+Loaded with pandas (tab): (4358, 3)
+Extracted 4358 valid pairs from DataFrame
+Loaded 4358 valid data pairs
+Latin vocabulary size: 65
+Devanagari vocabulary size: 30
+Files in directory: ['hi.translit.sampled.dev.tsv', 'temp_nan.tsv', 'hi.translit.sampled.train.tsv', 'hi.translit.sampled.test.tsv']
+Loading data from: dakshina_dataset_v1.0/hi/lexicons/hi.translit.sampled.test.tsv
+Loaded with pandas (tab): (4502, 3)
+Extracted 4502 valid pairs from DataFrame
+Loaded 4502 valid data pairs
+Latin vocabulary size: 65
+Devanagari vocabulary size: 30
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 613,022 trainable parameters
+                                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 15.54s
+	Train Loss: 1.643
+	Val. Loss: 1.159
+	Best validation loss: 1.159
+Epoch: 02 | Time: 0.0m 15.63s
+	Train Loss: 0.897
+	Val. Loss: 0.978
+	Best validation loss: 0.978
+Test Accuracy: 0.2870
+Sample 1:
+Source: अंक
+Prediction: ank
+Target: ank
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: अंक
+Prediction: ank
+Target: anka
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: अंकित
+Prediction: ankit
+Target: ankit
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: अंकों
+Prediction: ankon
+Target: anakon
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: अंकों
+Prediction: ankon
+Target: ankhon
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: अंकों
+Prediction: ankon
+Target: ankon
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: अंकोर
+Prediction: ankorr
+Target: angkor
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: अंकोर
+Prediction: ankorr
+Target: ankor
+Correct: No
+--------------------------------------------------
+Sample 9:
+Source: अंगारक
+Prediction: angaarak
+Target: angaarak
+Correct: Yes
+--------------------------------------------------
+Sample 10:
+Source: अंगारक
+Prediction: angaarak
+Target: angarak
+Correct: No
+--------------------------------------------------

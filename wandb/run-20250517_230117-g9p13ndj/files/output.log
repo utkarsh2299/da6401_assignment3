@@ -1,0 +1,131 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 3,190,558 trainable parameters
+                                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 42.72s
+	Train Loss: 1.793
+	Val. Loss: 1.166
+	Train Acc: 0.587 | Val. Acc: 0.611 (sample)
+	Best validation loss: 1.166
+Epoch: 02 | Time: 0.0m 42.67s
+	Train Loss: 0.858
+	Val. Loss: 0.895
+	Train Acc: 0.719 | Val. Acc: 0.686 (sample)
+	Best validation loss: 0.895
+Epoch: 03 | Time: 0.0m 42.12s
+	Train Loss: 0.684
+	Val. Loss: 0.843
+	Train Acc: 0.749 | Val. Acc: 0.728 (sample)
+	Best validation loss: 0.843
+Epoch: 04 | Time: 0.0m 42.38s
+	Train Loss: 0.611
+	Val. Loss: 0.801
+	Train Acc: 0.790 | Val. Acc: 0.748 (sample)
+	Best validation loss: 0.801
+Epoch: 05 | Time: 0.0m 42.28s
+	Train Loss: 0.563
+	Val. Loss: 0.797
+	Train Acc: 0.748 | Val. Acc: 0.763 (sample)
+	Best validation loss: 0.797
+Epoch: 06 | Time: 0.0m 42.41s
+	Train Loss: 0.531
+	Val. Loss: 0.787
+	Train Acc: 0.741 | Val. Acc: 0.751 (sample)
+	Best validation loss: 0.787
+Epoch: 07 | Time: 0.0m 42.87s
+	Train Loss: 0.511
+	Val. Loss: 0.801
+	Train Acc: 0.784 | Val. Acc: 0.714 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 08 | Time: 0.0m 42.25s
+	Train Loss: 0.493
+	Val. Loss: 0.776
+	Train Acc: 0.763 | Val. Acc: 0.734 (sample)
+	Best validation loss: 0.776
+Epoch: 09 | Time: 0.0m 42.26s
+	Train Loss: 0.478
+	Val. Loss: 0.803
+	Train Acc: 0.818 | Val. Acc: 0.738 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 10 | Time: 0.0m 42.27s
+	Train Loss: 0.464
+	Val. Loss: 0.788
+	Train Acc: 0.821 | Val. Acc: 0.728 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 11 | Time: 0.0m 42.16s
+	Train Loss: 0.451
+	Val. Loss: 0.804
+	Train Acc: 0.771 | Val. Acc: 0.767 (sample)
+	No improvement in validation loss for 3 epochs
+Epoch: 12 | Time: 0.0m 42.57s
+	Train Loss: 0.444
+	Val. Loss: 0.777
+	Train Acc: 0.763 | Val. Acc: 0.712 (sample)
+	No improvement in validation loss for 4 epochs
+Epoch: 13 | Time: 0.0m 42.26s
+	Train Loss: 0.434
+	Val. Loss: 0.784
+	Train Acc: 0.822 | Val. Acc: 0.761 (sample)
+	No improvement in validation loss for 5 epochs
+Early stopping after 13 epochs
+Test Accuracy: 0.4160
+Sample 1:
+Source: अंक
+Prediction: ank
+Target: ank
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: अंक
+Prediction: ank
+Target: anka
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: अंकित
+Prediction: ankit
+Target: ankit
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: अंकों
+Prediction: ankon
+Target: anakon
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: अंकों
+Prediction: ankon
+Target: ankhon
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: अंकों
+Prediction: ankon
+Target: ankon
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: अंकोर
+Prediction: ankor
+Target: angkor
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: अंकोर
+Prediction: ankor
+Target: ankor
+Correct: Yes
+--------------------------------------------------
+Sample 9:
+Source: अंगारक
+Prediction: angarak
+Target: angaarak
+Correct: No
+--------------------------------------------------
+Sample 10:
+Source: अंगारक
+Prediction: angarak
+Target: angarak
+Correct: Yes
+--------------------------------------------------

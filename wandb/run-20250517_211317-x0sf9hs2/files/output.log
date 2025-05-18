@@ -1,0 +1,65 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 3,190,558 trainable parameters
+                                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 42.94s
+	Train Loss: 2.173
+	Val. Loss: 1.541
+	Best validation loss: 1.541
+Epoch: 02 | Time: 0.0m 42.25s
+	Train Loss: 1.069
+	Val. Loss: 1.001
+	Best validation loss: 1.001
+Epoch: 03 | Time: 0.0m 42.25s
+	Train Loss: 0.784
+	Val. Loss: 0.885
+	Best validation loss: 0.885
+Epoch: 04 | Time: 0.0m 42.32s
+	Train Loss: 0.676
+	Val. Loss: 0.832
+	Best validation loss: 0.832
+Epoch: 05 | Time: 0.0m 42.73s
+	Train Loss: 0.611
+	Val. Loss: 0.830
+	Best validation loss: 0.830
+Epoch: 06 | Time: 0.0m 42.20s
+	Train Loss: 0.569
+	Val. Loss: 0.835
+	No improvement in validation loss for 1 epochs
+Epoch: 07 | Time: 0.0m 42.51s
+	Train Loss: 0.543
+	Val. Loss: 0.795
+	Best validation loss: 0.795
+Epoch: 08 | Time: 0.0m 42.41s
+	Train Loss: 0.517
+	Val. Loss: 0.790
+	Best validation loss: 0.790
+Epoch: 09 | Time: 0.0m 42.27s
+	Train Loss: 0.492
+	Val. Loss: 0.808
+	No improvement in validation loss for 1 epochs
+Epoch: 10 | Time: 0.0m 42.39s
+	Train Loss: 0.481
+	Val. Loss: 0.784
+	Best validation loss: 0.784
+Epoch: 11 | Time: 0.0m 42.43s
+	Train Loss: 0.466
+	Val. Loss: 0.777
+	Best validation loss: 0.777
+Epoch: 12 | Time: 0.0m 42.50s
+	Train Loss: 0.456
+	Val. Loss: 0.781
+	No improvement in validation loss for 1 epochs
+Epoch: 13 | Time: 0.0m 42.44s
+	Train Loss: 0.440
+	Val. Loss: 0.798
+	No improvement in validation loss for 2 epochs
+Epoch: 14 | Time: 0.0m 42.19s
+	Train Loss: 0.431
+	Val. Loss: 0.778
+	No improvement in validation loss for 3 epochs
+Epoch: 15 | Time: 0.0m 42.52s
+	Train Loss: 0.424
+	Val. Loss: 0.786
+	No improvement in validation loss for 4 epochs
+Training:  27%|█████████████████████████████████████▋                                                                                                   | 380/1382 [00:11<00:29, 34.01it/s]

@@ -1,0 +1,29 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'hindi-transliteration' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 688,158 trainable parameters
+Traceback (most recent call last):                                                                                                                                                         
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 44, in sweep_train
+    main(model_config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 80, in main
+    history = train_model(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 211, in train_model
+    train_loss = train(model, train_iterator, optimizer, criterion, clip, device)
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 42, in train
+    output = model(src, trg, teacher_forcing_ratio)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 233, in forward
+    output, hidden = self.decoder(input, hidden)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 169, in forward
+    output, hidden = self.rnn(embedded, hidden)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 759, in forward
+    self.check_forward_args(input, hx, batch_sizes)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 685, in check_forward_args
+    self.check_hidden_size(hidden[0], self.get_expected_hidden_size(input, batch_sizes),
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 226, in check_hidden_size
+    raise RuntimeError(msg.format(expected_hidden_size, list(hx.size())))
+RuntimeError: Expected hidden[0] size (3, 32, 128), got [1, 32, 128]

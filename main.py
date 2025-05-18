@@ -129,10 +129,8 @@ if __name__ == "__main__":
                         help='Size of the embeddings')
     parser.add_argument('--hidden_size', type=int, default=128,
                         help='Size of the hidden states')
-    parser.add_argument('--num_encoder_layers', type=int, default=1,
-                        help='Number of layers in the encoder')
-    parser.add_argument('--num_decoder_layers', type=int, default=1,
-                        help='Number of layers in the decoder')
+    parser.add_argument('--num_layers', type=int, default=1,
+                        help='Number of layers in the encoder/decoder')
     parser.add_argument('--encoder_dropout', type=float, default=0.3,
                         help='Dropout probability for the encoder')
     parser.add_argument('--decoder_dropout', type=float, default=0.3,
@@ -143,7 +141,7 @@ if __name__ == "__main__":
                         help='Batch size for training')
     parser.add_argument('--learning_rate', type=float, default=0.001,
                         help='Learning rate for the optimizer')
-    parser.add_argument('--n_epochs', type=int, default=2,
+    parser.add_argument('--n_epochs', type=int, default=20,
                         help='Number of epochs to train for')
     parser.add_argument('--clip', type=float, default=1.0,
                         help='Gradient clipping value')
@@ -161,8 +159,8 @@ if __name__ == "__main__":
         data_path=args.data_path,
         embedding_size=args.embedding_size,
         hidden_size=args.hidden_size,
-        num_encoder_layers=args.num_encoder_layers,
-        num_decoder_layers=args.num_decoder_layers,
+        num_encoder_layers=args.num_layers,
+        num_decoder_layers=args.num_layers,
         encoder_dropout=args.encoder_dropout,
         decoder_dropout=args.decoder_dropout,
         cell_type=args.cell_type,

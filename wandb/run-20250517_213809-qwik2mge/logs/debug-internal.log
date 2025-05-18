@@ -1,0 +1,16 @@
+{"time":"2025-05-17T21:38:09.064975968+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250517_213809-qwik2mge/logs/debug-core.log"}
+{"time":"2025-05-17T21:38:09.455874889+05:30","level":"INFO","msg":"created new stream","id":"qwik2mge"}
+{"time":"2025-05-17T21:38:09.45598114+05:30","level":"INFO","msg":"stream: started","id":"qwik2mge"}
+{"time":"2025-05-17T21:38:09.45602086+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"qwik2mge"}
+{"time":"2025-05-17T21:38:09.456082301+05:30","level":"INFO","msg":"sender: started","stream_id":"qwik2mge"}
+{"time":"2025-05-17T21:38:09.456146231+05:30","level":"INFO","msg":"handler: started","stream_id":"qwik2mge"}
+{"time":"2025-05-17T21:38:09.746346593+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T21:58:03.019092863+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T21:58:03.019214296+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T21:58:04.022036497+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.381855719,"progress":"4.5KB/4.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.381838039,"progress":"282B/282B"},{"desc":"uploading config.yaml","runtime_seconds":0.112043176,"progress":"843B/843B"}],"total_operations":3}}
+{"time":"2025-05-17T21:58:04.245982421+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T21:58:04.56737632+05:30","level":"INFO","msg":"stream: closing","id":"qwik2mge"}
+{"time":"2025-05-17T21:58:04.567406231+05:30","level":"INFO","msg":"handler: closed","stream_id":"qwik2mge"}
+{"time":"2025-05-17T21:58:04.567422191+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"qwik2mge"}
+{"time":"2025-05-17T21:58:04.567464372+05:30","level":"INFO","msg":"sender: closed","stream_id":"qwik2mge"}
+{"time":"2025-05-17T21:58:04.567498903+05:30","level":"INFO","msg":"stream: closed","id":"qwik2mge"}

@@ -1,0 +1,15 @@
+{"time":"2025-05-17T17:09:12.936538305+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250517_170912-mhzxi05j/logs/debug-core.log"}
+{"time":"2025-05-17T17:09:13.329626879+05:30","level":"INFO","msg":"created new stream","id":"mhzxi05j"}
+{"time":"2025-05-17T17:09:13.32969585+05:30","level":"INFO","msg":"stream: started","id":"mhzxi05j"}
+{"time":"2025-05-17T17:09:13.329791582+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"mhzxi05j"}
+{"time":"2025-05-17T17:09:13.329823812+05:30","level":"INFO","msg":"handler: started","stream_id":"mhzxi05j"}
+{"time":"2025-05-17T17:09:13.329890623+05:30","level":"INFO","msg":"sender: started","stream_id":"mhzxi05j"}
+{"time":"2025-05-17T17:09:13.382377107+05:30","level":"INFO","msg":"stream: closing","id":"mhzxi05j"}
+{"time":"2025-05-17T17:09:13.694885507+05:30","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-05-17T17:09:13.994369346+05:30","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-05-17T17:09:13.994517198+05:30","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project /hindi-transliteration not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-05-17T17:09:13.99518644+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T17:09:13.995265082+05:30","level":"INFO","msg":"handler: closed","stream_id":"mhzxi05j"}
+{"time":"2025-05-17T17:09:13.995304242+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"mhzxi05j"}
+{"time":"2025-05-17T17:09:13.995311972+05:30","level":"INFO","msg":"sender: closed","stream_id":"mhzxi05j"}
+{"time":"2025-05-17T17:09:13.995422874+05:30","level":"INFO","msg":"stream: closed","id":"mhzxi05j"}

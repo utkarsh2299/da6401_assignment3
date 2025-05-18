@@ -1,0 +1,72 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 217,758 trainable parameters
+                                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 15.00s
+	Train Loss: 2.512
+	Val. Loss: 2.578
+	Best validation loss: 2.578
+Epoch: 02 | Time: 0.0m 14.86s
+	Train Loss: 2.402
+	Val. Loss: 2.523
+	Best validation loss: 2.523
+Test Accuracy: 0.0000
+Sample 1:
+Source: अंक
+Prediction: saaaa
+Target: ank
+Correct: No
+--------------------------------------------------
+Sample 2:
+Source: अंक
+Prediction: saaaa
+Target: anka
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: अंकित
+Prediction: saaaaa
+Target: ankit
+Correct: No
+--------------------------------------------------
+Sample 4:
+Source: अंकों
+Prediction: saaaaa
+Target: anakon
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: अंकों
+Prediction: saaaaa
+Target: ankhon
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: अंकों
+Prediction: saaaaa
+Target: ankon
+Correct: No
+--------------------------------------------------
+Sample 7:
+Source: अंकोर
+Prediction: saaaaa
+Target: angkor
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: अंकोर
+Prediction: saaaaa
+Target: ankor
+Correct: No
+--------------------------------------------------
+Sample 9:
+Source: अंगारक
+Prediction: saaaaaa
+Target: angaarak
+Correct: No
+--------------------------------------------------
+Sample 10:
+Source: अंगारक
+Prediction: saaaaaa
+Target: angarak
+Correct: No
+--------------------------------------------------

@@ -1,0 +1,16 @@
+{"time":"2025-05-17T18:05:47.302524492+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250517_180547-tziiki4k/logs/debug-core.log"}
+{"time":"2025-05-17T18:05:47.698876293+05:30","level":"INFO","msg":"created new stream","id":"tziiki4k"}
+{"time":"2025-05-17T18:05:47.698992655+05:30","level":"INFO","msg":"stream: started","id":"tziiki4k"}
+{"time":"2025-05-17T18:05:47.699021065+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"tziiki4k"}
+{"time":"2025-05-17T18:05:47.699088206+05:30","level":"INFO","msg":"sender: started","stream_id":"tziiki4k"}
+{"time":"2025-05-17T18:05:47.699159467+05:30","level":"INFO","msg":"handler: started","stream_id":"tziiki4k"}
+{"time":"2025-05-17T18:05:48.043449626+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T18:21:45.090272266+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T18:21:45.090349807+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T18:21:46.095039957+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.419280764,"progress":"3.2KB/3.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.418953449,"progress":"209B/209B"},{"desc":"uploading config.yaml","runtime_seconds":0.146469571,"progress":"843B/843B"}],"total_operations":3}}
+{"time":"2025-05-17T18:21:46.294648964+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T18:21:46.661438462+05:30","level":"INFO","msg":"stream: closing","id":"tziiki4k"}
+{"time":"2025-05-17T18:21:46.661469632+05:30","level":"INFO","msg":"handler: closed","stream_id":"tziiki4k"}
+{"time":"2025-05-17T18:21:46.661487492+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"tziiki4k"}
+{"time":"2025-05-17T18:21:46.661518593+05:30","level":"INFO","msg":"sender: closed","stream_id":"tziiki4k"}
+{"time":"2025-05-17T18:21:46.661631774+05:30","level":"INFO","msg":"stream: closed","id":"tziiki4k"}

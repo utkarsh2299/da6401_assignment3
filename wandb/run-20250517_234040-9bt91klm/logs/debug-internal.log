@@ -1,0 +1,16 @@
+{"time":"2025-05-17T23:40:40.884742452+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250517_234040-9bt91klm/logs/debug-core.log"}
+{"time":"2025-05-17T23:40:41.278445478+05:30","level":"INFO","msg":"created new stream","id":"9bt91klm"}
+{"time":"2025-05-17T23:40:41.278534961+05:30","level":"INFO","msg":"stream: started","id":"9bt91klm"}
+{"time":"2025-05-17T23:40:41.278563002+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"9bt91klm"}
+{"time":"2025-05-17T23:40:41.278637615+05:30","level":"INFO","msg":"handler: started","stream_id":"9bt91klm"}
+{"time":"2025-05-17T23:40:41.278694006+05:30","level":"INFO","msg":"sender: started","stream_id":"9bt91klm"}
+{"time":"2025-05-17T23:40:41.591477065+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T23:50:02.970146803+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T23:50:02.970281966+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T23:50:03.973156086+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.402925937,"progress":"4.5KB/4.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.402911748,"progress":"284B/284B"},{"desc":"uploading config.yaml","runtime_seconds":0.125267541,"progress":"846B/846B"}],"total_operations":3}}
+{"time":"2025-05-17T23:50:04.23241262+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T23:50:04.581956511+05:30","level":"INFO","msg":"stream: closing","id":"9bt91klm"}
+{"time":"2025-05-17T23:50:04.581990512+05:30","level":"INFO","msg":"handler: closed","stream_id":"9bt91klm"}
+{"time":"2025-05-17T23:50:04.582008762+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"9bt91klm"}
+{"time":"2025-05-17T23:50:04.582033583+05:30","level":"INFO","msg":"sender: closed","stream_id":"9bt91klm"}
+{"time":"2025-05-17T23:50:04.582116045+05:30","level":"INFO","msg":"stream: closed","id":"9bt91klm"}

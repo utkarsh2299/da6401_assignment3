@@ -1,0 +1,16 @@
+{"time":"2025-05-17T17:53:46.616532545+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250517_175346-gt8ehfli/logs/debug-core.log"}
+{"time":"2025-05-17T17:53:47.000868567+05:30","level":"INFO","msg":"created new stream","id":"gt8ehfli"}
+{"time":"2025-05-17T17:53:47.000981089+05:30","level":"INFO","msg":"stream: started","id":"gt8ehfli"}
+{"time":"2025-05-17T17:53:47.00103557+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"gt8ehfli"}
+{"time":"2025-05-17T17:53:47.001101341+05:30","level":"INFO","msg":"handler: started","stream_id":"gt8ehfli"}
+{"time":"2025-05-17T17:53:47.001155651+05:30","level":"INFO","msg":"sender: started","stream_id":"gt8ehfli"}
+{"time":"2025-05-17T17:53:47.307811045+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-17T17:57:06.642416483+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-17T17:57:06.642553985+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-17T17:57:07.646927785+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.405370085,"progress":"1.9KB/1.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.405360945,"progress":"207B/207B"},{"desc":"uploading config.yaml","runtime_seconds":0.09648613,"progress":"846B/846B"}],"total_operations":3}}
+{"time":"2025-05-17T17:57:07.947197409+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-17T17:57:08.588935915+05:30","level":"INFO","msg":"stream: closing","id":"gt8ehfli"}
+{"time":"2025-05-17T17:57:08.588968265+05:30","level":"INFO","msg":"handler: closed","stream_id":"gt8ehfli"}
+{"time":"2025-05-17T17:57:08.588985416+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"gt8ehfli"}
+{"time":"2025-05-17T17:57:08.589026146+05:30","level":"INFO","msg":"sender: closed","stream_id":"gt8ehfli"}
+{"time":"2025-05-17T17:57:08.589102427+05:30","level":"INFO","msg":"stream: closed","id":"gt8ehfli"}

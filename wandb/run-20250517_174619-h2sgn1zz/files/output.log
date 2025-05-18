@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/wandb_config.py", line 165, in __getattr__
+    return self.__getitem__(key)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+KeyError: 'num_encoder_layers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 20, in sweep_train
+    run_name = f"{config.cell_type}-ec_{config.num_encoder_layers}-dc_{config.num_encoder_layers}-hs_{config.hidden_size}-emb_{config.embedding_size}-bs_{config.batch_size}-lr_{config.learning_rate}"
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/wandb_config.py", line 167, in __getattr__
+    raise AttributeError(
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'num_encoder_layers'

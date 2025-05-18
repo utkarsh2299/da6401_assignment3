@@ -45,7 +45,8 @@ class ModelConfig:
     
     # Wandb
     log_wandb: bool = True
-    wandb_project: str = 'hindi-transliteration'
+    # wandb_project: str = 'hindi-transliteration'
+    wandb_project: str = 'da6401_assignment3'
     wandb_name: Optional[str] = None
     
     def __post_init__(self):
@@ -74,31 +75,34 @@ def setup_sweep_configuration():
         },
         'parameters': {
             'embedding_size': {
-                'values': [16, 32, 64, 128, 256]
+                'values': [16, 64, 128, 256]
             },
             'hidden_size': {
-                'values': [32, 64, 128, 256, 512]
+                'values': [64, 128, 256]
             },
-            'num_encoder_layers': {
-                'values': [1, 2, 3]
-            },
-            'num_decoder_layers': {
-                'values': [1, 2, 3]
+            # 'num_encoder_layers': {
+            #     'values': [1, 2, 3]
+            # },
+            # 'num_decoder_layers': {
+            #     'values': [1, 2, 3]
+            # },
+            'num_layers': {
+            'values': [1, 2, 3]
             },
             'cell_type': {
                 'values': ['rnn', 'lstm', 'gru']
             },
             'encoder_dropout': {
-                'values': [0.1, 0.2, 0.3, 0.4, 0.5]
+                'values': [ 0.2, 0.5]
             },
             'decoder_dropout': {
-                'values': [0.1, 0.2, 0.3, 0.4, 0.5]
+                'values': [ 0.2, 0.3, 0.5]
             },
             'batch_size': {
                 'values': [32, 64, 128]
             },
             'learning_rate': {
-                'values': [0.0001, 0.0005, 0.001, 0.005]
+                'values': [0.0001, 0.001, 0.0005]
             },
             'beam_size': {
                 'values': [None, 3, 5, 7]

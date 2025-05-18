@@ -1,0 +1,16 @@
+{"time":"2025-05-18T03:44:44.272996884+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250518_034444-snvnathp/logs/debug-core.log"}
+{"time":"2025-05-18T03:44:44.666112619+05:30","level":"INFO","msg":"created new stream","id":"snvnathp"}
+{"time":"2025-05-18T03:44:44.66620734+05:30","level":"INFO","msg":"stream: started","id":"snvnathp"}
+{"time":"2025-05-18T03:44:44.666237161+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"snvnathp"}
+{"time":"2025-05-18T03:44:44.666304602+05:30","level":"INFO","msg":"sender: started","stream_id":"snvnathp"}
+{"time":"2025-05-18T03:44:44.666423994+05:30","level":"INFO","msg":"handler: started","stream_id":"snvnathp"}
+{"time":"2025-05-18T03:44:44.969876121+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T04:01:27.643933495+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T04:01:27.644038107+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T04:01:28.647055808+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.402258203,"progress":"3.6KB/3.6KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.402221962,"progress":"283B/283B"},{"desc":"uploading config.yaml","runtime_seconds":0.073993569,"progress":"843B/843B"}],"total_operations":3}}
+{"time":"2025-05-18T04:01:29.632549399+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T04:01:29.946613283+05:30","level":"INFO","msg":"stream: closing","id":"snvnathp"}
+{"time":"2025-05-18T04:01:29.946641333+05:30","level":"INFO","msg":"handler: closed","stream_id":"snvnathp"}
+{"time":"2025-05-18T04:01:29.946657194+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"snvnathp"}
+{"time":"2025-05-18T04:01:29.946700614+05:30","level":"INFO","msg":"sender: closed","stream_id":"snvnathp"}
+{"time":"2025-05-18T04:01:29.946803276+05:30","level":"INFO","msg":"stream: closed","id":"snvnathp"}
