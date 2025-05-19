@@ -1,0 +1,16 @@
+{"time":"2025-05-19T02:34:39.498615708+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_023439-daqugdw1/logs/debug-core.log"}
+{"time":"2025-05-19T02:34:39.882625535+05:30","level":"INFO","msg":"created new stream","id":"daqugdw1"}
+{"time":"2025-05-19T02:34:39.882703586+05:30","level":"INFO","msg":"stream: started","id":"daqugdw1"}
+{"time":"2025-05-19T02:34:39.882739827+05:30","level":"INFO","msg":"handler: started","stream_id":"daqugdw1"}
+{"time":"2025-05-19T02:34:39.882773717+05:30","level":"INFO","msg":"sender: started","stream_id":"daqugdw1"}
+{"time":"2025-05-19T02:34:39.8829003+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"daqugdw1"}
+{"time":"2025-05-19T02:34:40.193398106+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T02:53:33.139003956+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T02:53:33.139106157+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T02:53:34.142138334+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_21_2b7380423f81d77c6c14.png","runtime_seconds":0.693356409,"progress":"291.8KB/291.8KB"},{"desc":"uploading output.log","runtime_seconds":0.335386675,"progress":"5.4KB/5.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.335370774,"progress":"527B/527B"},{"desc":"uploading config.yaml","runtime_seconds":0.082162262,"progress":"875B/875B"}],"total_operations":4}}
+{"time":"2025-05-19T02:53:35.124812645+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T02:53:35.477088567+05:30","level":"INFO","msg":"stream: closing","id":"daqugdw1"}
+{"time":"2025-05-19T02:53:35.477123448+05:30","level":"INFO","msg":"handler: closed","stream_id":"daqugdw1"}
+{"time":"2025-05-19T02:53:35.477142148+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"daqugdw1"}
+{"time":"2025-05-19T02:53:35.477169208+05:30","level":"INFO","msg":"sender: closed","stream_id":"daqugdw1"}
+{"time":"2025-05-19T02:53:35.47728575+05:30","level":"INFO","msg":"stream: closed","id":"daqugdw1"}

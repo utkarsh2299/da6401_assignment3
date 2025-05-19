@@ -34,7 +34,7 @@ class ModelConfig:
     beam_size: Optional[int] = None  # None for greedy decoding
     
     # Paths
-    save_path: str = 'models/'
+    save_path: str = 'models_true/'
     model_name: str = 'best_model.pt'
     
     # Reproducibility
@@ -48,6 +48,8 @@ class ModelConfig:
     # wandb_project: str = 'hindi-transliteration'
     wandb_project: str = 'da6401_assignment3'
     wandb_name: Optional[str] = None
+    
+    use_attention: bool = False
     
     def __post_init__(self):
         """Create model save directory if it doesn't exist"""
@@ -80,12 +82,7 @@ def setup_sweep_configuration():
             'hidden_size': {
                 'values': [64, 128, 256]
             },
-            # 'num_encoder_layers': {
-            #     'values': [1, 2, 3]
-            # },
-            # 'num_decoder_layers': {
-            #     'values': [1, 2, 3]
-            # },
+            
             'num_layers': {
             'values': [1, 2, 3]
             },
@@ -106,6 +103,9 @@ def setup_sweep_configuration():
             },
             'beam_size': {
                 'values': [None, 3, 5, 7]
+            },
+            'use_attention': {
+                'values': [False]
             }
         }
     }

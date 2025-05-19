@@ -1,0 +1,49 @@
+('an', 'ankganit', 'uncle', 'ankur', 'ankuran')
+('ankan', 'angkor', 'angira', 'angithi', 'angrej')
+('ank', 'anka', 'ankit', 'anakon', 'ankhon')
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 1,683,523 trainable parameters
+Traceback (most recent call last):                                                                                                                                                         
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 176, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 80, in main
+    history = train_model(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 211, in train_model
+    train_loss = train(model, train_iterator, optimizer, criterion, clip, device)
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 42, in train
+    output = model(src, trg, teacher_forcing_ratio)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 646, in forward
+    output, hidden, attn_weights = self.decoder(input, hidden, encoder_outputs)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 562, in forward
+    attention_weights = self.attention(attn_hidden, encoder_outputs)  # [batch_size, src_len]
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 454, in forward
+    energy = torch.tanh(self.attn(torch.cat((hidden, encoder_outputs), dim=2)))  # [batch_size, src_len, decoder_hidden_dim]
+RuntimeError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 0; 23.69 GiB total capacity; 116.90 MiB already allocated; 3.44 MiB free; 136.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 176, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 80, in main
+    history = train_model(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 211, in train_model
+    train_loss = train(model, train_iterator, optimizer, criterion, clip, device)
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 42, in train
+    output = model(src, trg, teacher_forcing_ratio)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 646, in forward
+    output, hidden, attn_weights = self.decoder(input, hidden, encoder_outputs)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 562, in forward
+    attention_weights = self.attention(attn_hidden, encoder_outputs)  # [batch_size, src_len]
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 454, in forward
+    energy = torch.tanh(self.attn(torch.cat((hidden, encoder_outputs), dim=2)))  # [batch_size, src_len, decoder_hidden_dim]
+RuntimeError: CUDA out of memory. Tried to allocate 2.00 MiB (GPU 0; 23.69 GiB total capacity; 116.90 MiB already allocated; 3.44 MiB free; 136.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

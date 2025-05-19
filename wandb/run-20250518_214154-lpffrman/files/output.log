@@ -1,0 +1,121 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 5,958,979 trainable parameters
+                                                                                                                                                                    
+Epoch: 01 | Time: 0.0m 17.44s
+	Train Loss: 3.032
+	Val. Loss: 2.909
+	Train Acc: 0.274 | Val. Acc: 0.273 (sample)
+	Best validation loss: 2.909
+Epoch: 02 | Time: 0.0m 17.52s
+	Train Loss: 2.193
+	Val. Loss: 1.810
+	Train Acc: 0.509 | Val. Acc: 0.474 (sample)
+	Best validation loss: 1.810
+Epoch: 03 | Time: 0.0m 17.43s
+	Train Loss: 1.347
+	Val. Loss: 1.352
+	Train Acc: 0.635 | Val. Acc: 0.617 (sample)
+	Best validation loss: 1.352
+Epoch: 04 | Time: 0.0m 17.50s
+	Train Loss: 0.978
+	Val. Loss: 1.199
+	Train Acc: 0.702 | Val. Acc: 0.671 (sample)
+	Best validation loss: 1.199
+Epoch: 05 | Time: 0.0m 17.52s
+	Train Loss: 0.789
+	Val. Loss: 1.115
+	Train Acc: 0.723 | Val. Acc: 0.714 (sample)
+	Best validation loss: 1.115
+Epoch: 06 | Time: 0.0m 17.61s
+	Train Loss: 0.683
+	Val. Loss: 1.088
+	Train Acc: 0.785 | Val. Acc: 0.710 (sample)
+	Best validation loss: 1.088
+Epoch: 07 | Time: 0.0m 17.54s
+	Train Loss: 0.601
+	Val. Loss: 1.103
+	Train Acc: 0.823 | Val. Acc: 0.718 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 08 | Time: 0.0m 17.51s
+	Train Loss: 0.524
+	Val. Loss: 1.071
+	Train Acc: 0.837 | Val. Acc: 0.717 (sample)
+	Best validation loss: 1.071
+Epoch: 09 | Time: 0.0m 17.50s
+	Train Loss: 0.468
+	Val. Loss: 1.070
+	Train Acc: 0.873 | Val. Acc: 0.711 (sample)
+	Best validation loss: 1.070
+Epoch: 10 | Time: 0.0m 17.70s
+	Train Loss: 0.419
+	Val. Loss: 1.119
+	Train Acc: 0.875 | Val. Acc: 0.726 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 11 | Time: 0.0m 17.54s
+	Train Loss: 0.375
+	Val. Loss: 1.088
+	Train Acc: 0.913 | Val. Acc: 0.711 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 12 | Time: 0.0m 17.33s
+	Train Loss: 0.334
+	Val. Loss: 1.107
+	Train Acc: 0.923 | Val. Acc: 0.725 (sample)
+	No improvement in validation loss for 3 epochs
+Epoch: 13 | Time: 0.0m 17.57s
+	Train Loss: 0.303
+	Val. Loss: 1.125
+	Train Acc: 0.915 | Val. Acc: 0.731 (sample)
+	No improvement in validation loss for 4 epochs
+Epoch: 14 | Time: 0.0m 17.52s
+	Train Loss: 0.274
+	Val. Loss: 1.155
+	Train Acc: 0.938 | Val. Acc: 0.740 (sample)
+	No improvement in validation loss for 5 epochs
+Early stopping after 14 epochs
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 50, in sweep_train
+    main(model_config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 100, in main
+    model.load_state_dict(torch.load(model_save_path))
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1497, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for Seq2Seq:
+	size mismatch for encoder.rnn.weight_ih_l0: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.weight_hh_l0: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l0_reverse: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.weight_hh_l0_reverse: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l0_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l0_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l1: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l1: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l1_reverse: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l1_reverse: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l1_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l1_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l2: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l2: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l2_reverse: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l2_reverse: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l2_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l2_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.fc.weight: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([256, 512]).
+	size mismatch for encoder.fc.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for decoder.rnn.weight_ih_l0: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.weight_hh_l0: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.bias_ih_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.bias_hh_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.weight_ih_l1: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.weight_hh_l1: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.bias_ih_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.bias_hh_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.weight_ih_l2: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.weight_hh_l2: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.bias_ih_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.bias_hh_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.fc_out.weight: copying a param with shape torch.Size([67, 128]) from checkpoint, the shape in current model is torch.Size([67, 256]).

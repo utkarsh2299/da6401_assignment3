@@ -1,0 +1,163 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+inside attention
+The model has 1,683,523 trainable parameters
+                                                                                                                                                                    
+Epoch: 01 | Time: 0.0m 22.77s
+	Train Loss: 1.202
+	Val. Loss: 1.111
+	Train Acc: 0.650 | Val. Acc: 0.766 (sample)
+	Best validation loss: 1.111
+Test Accuracy: 0.3045
+Sample 1:
+Source: ank
+Prediction: अंक
+Target: अंक
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: अंगकोर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: अंकोर
+Target: अंकोर
+Correct: Yes
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगरक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Matplotlib currently does not support Devanagari natively.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2306 (\N{DEVANAGARI SIGN ANUSVARA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2325 (\N{DEVANAGARI LETTER KA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2366 (\N{DEVANAGARI VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2367 (\N{DEVANAGARI VOWEL SIGN I}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2340 (\N{DEVANAGARI LETTER TA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2344 (\N{DEVANAGARI LETTER NA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2379 (\N{DEVANAGARI VOWEL SIGN O}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2326 (\N{DEVANAGARI LETTER KHA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2327 (\N{DEVANAGARI LETTER GA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:190: UserWarning: Glyph 2352 (\N{DEVANAGARI LETTER RA}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2309 (\N{DEVANAGARI LETTER A}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Matplotlib currently does not support Devanagari natively.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2306 (\N{DEVANAGARI SIGN ANUSVARA}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2325 (\N{DEVANAGARI LETTER KA}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2366 (\N{DEVANAGARI VOWEL SIGN AA}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2367 (\N{DEVANAGARI VOWEL SIGN I}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2340 (\N{DEVANAGARI LETTER TA}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2344 (\N{DEVANAGARI LETTER NA}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2379 (\N{DEVANAGARI VOWEL SIGN O}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2326 (\N{DEVANAGARI LETTER KHA}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2327 (\N{DEVANAGARI LETTER GA}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+/speech/utkarsh/da6401_assignment3/utils.py:191: UserWarning: Glyph 2352 (\N{DEVANAGARI LETTER RA}) missing from font(s) DejaVu Sans.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+Attention heatmaps saved to: attention_heatmaps.png
+Example 1:
+  Source (Latin): ank
+  Prediction (Devanagari): अंक
+  Target (Devanagari): अंक
+  Correct: ✓
+Example 2:
+  Source (Latin): anka
+  Prediction (Devanagari): अंका
+  Target (Devanagari): अंक
+  Correct: ✗
+Example 3:
+  Source (Latin): ankit
+  Prediction (Devanagari): अंकित
+  Target (Devanagari): अंकित
+  Correct: ✓
+Example 4:
+  Source (Latin): anakon
+  Prediction (Devanagari): अनकों
+  Target (Devanagari): अंकों
+  Correct: ✗
+Example 5:
+  Source (Latin): ankhon
+  Prediction (Devanagari): अंखों
+  Target (Devanagari): अंकों
+  Correct: ✗
+Example 6:
+  Source (Latin): ankon
+  Prediction (Devanagari): अंकों
+  Target (Devanagari): अंकों
+  Correct: ✓
+Example 7:
+  Source (Latin): angkor
+  Prediction (Devanagari): अंगकोर
+  Target (Devanagari): अंकोर
+  Correct: ✗
+Example 8:
+  Source (Latin): ankor
+  Prediction (Devanagari): अंकोर
+  Target (Devanagari): अंकोर
+  Correct: ✓
+Example 9:
+  Source (Latin): angaarak
+  Prediction (Devanagari): अंगारक
+  Target (Devanagari): अंगारक
+  Correct: ✓

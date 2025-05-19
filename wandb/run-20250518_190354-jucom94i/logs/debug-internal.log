@@ -1,0 +1,15 @@
+{"time":"2025-05-18T19:03:54.92935837+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250518_190354-jucom94i/logs/debug-core.log"}
+{"time":"2025-05-18T19:03:55.322083614+05:30","level":"INFO","msg":"created new stream","id":"jucom94i"}
+{"time":"2025-05-18T19:03:55.322155085+05:30","level":"INFO","msg":"stream: started","id":"jucom94i"}
+{"time":"2025-05-18T19:03:55.322194846+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"jucom94i"}
+{"time":"2025-05-18T19:03:55.322266667+05:30","level":"INFO","msg":"sender: started","stream_id":"jucom94i"}
+{"time":"2025-05-18T19:03:55.322214056+05:30","level":"INFO","msg":"handler: started","stream_id":"jucom94i"}
+{"time":"2025-05-18T19:03:55.721618019+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T19:06:52.915499735+05:30","level":"INFO","msg":"stream: closing","id":"jucom94i"}
+{"time":"2025-05-18T19:06:52.915568536+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T19:06:52.915728579+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T19:06:53.878448165+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T19:06:54.556316256+05:30","level":"INFO","msg":"handler: closed","stream_id":"jucom94i"}
+{"time":"2025-05-18T19:06:54.556360627+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"jucom94i"}
+{"time":"2025-05-18T19:06:54.556372247+05:30","level":"INFO","msg":"sender: closed","stream_id":"jucom94i"}
+{"time":"2025-05-18T19:06:54.556522619+05:30","level":"INFO","msg":"stream: closed","id":"jucom94i"}

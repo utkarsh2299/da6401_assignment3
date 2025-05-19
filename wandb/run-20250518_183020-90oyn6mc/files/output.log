@@ -1,0 +1,27 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 1,683,523 trainable parameters
+Traceback (most recent call last):                                                                                                                                                         
+Epoch: 01 | Time: 0.0m 21.96s
+	Train Loss: 1.202
+	Val. Loss: 1.111
+	Train Acc: 0.650 | Val. Acc: 0.766 (sample)
+	Best validation loss: 1.111
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 180, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 103, in main
+    accuracy, samples = test(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 149, in test
+    output_indices = model.greedy_decode(src_tensor, max_len=100)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 789, in greedy_decode
+    input = torch.tensor([[top1]]).to(self.device)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 180, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 103, in main
+    accuracy, samples = test(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 149, in test
+    output_indices = model.greedy_decode(src_tensor, max_len=100)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 789, in greedy_decode
+    input = torch.tensor([[top1]]).to(self.device)
+KeyboardInterrupt

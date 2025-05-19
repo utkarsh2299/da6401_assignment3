@@ -1,0 +1,84 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 1,050,307 trainable parameters
+                                                                                                                                                                    
+Epoch: 01 | Time: 0.0m 15.88s
+	Train Loss: 1.663
+	Val. Loss: 1.397
+	Train Acc: 0.593 | Val. Acc: 0.613 (sample)
+	Best validation loss: 1.397
+Test Accuracy: 0.1673
+Sample 1:
+Source: ank
+Prediction: आंक
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अनकक
+Target: अंकित
+Correct: No
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: अंगकर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: अंकर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगरक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगरक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 204, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 124, in main
+    examples = visualize_attention(
+  File "/speech/utkarsh/da6401_assignment3/utils.py", line 135, in visualize_attention
+    output_indices, attention_weights = model.greedy_decode(src_tensor, max_len=100)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 204, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 124, in main
+    examples = visualize_attention(
+  File "/speech/utkarsh/da6401_assignment3/utils.py", line 135, in visualize_attention
+    output_indices, attention_weights = model.greedy_decode(src_tensor, max_len=100)
+ValueError: too many values to unpack (expected 2)

@@ -1,0 +1,7 @@
+{"time":"2025-05-18T18:35:36.232810693+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250518_183536-ezb3ityj/logs/debug-core.log"}
+{"time":"2025-05-18T18:35:36.62470973+05:30","level":"INFO","msg":"created new stream","id":"ezb3ityj"}
+{"time":"2025-05-18T18:35:36.624785091+05:30","level":"INFO","msg":"stream: started","id":"ezb3ityj"}
+{"time":"2025-05-18T18:35:36.624814552+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ezb3ityj"}
+{"time":"2025-05-18T18:35:36.624881783+05:30","level":"INFO","msg":"sender: started","stream_id":"ezb3ityj"}
+{"time":"2025-05-18T18:35:36.624955524+05:30","level":"INFO","msg":"handler: started","stream_id":"ezb3ityj"}
+{"time":"2025-05-18T18:35:37.001914671+05:30","level":"INFO","msg":"Starting system monitor"}

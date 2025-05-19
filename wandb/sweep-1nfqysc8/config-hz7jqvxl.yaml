@@ -1,0 +1,22 @@
+wandb_version: 1
+
+batch_size:
+  value: 128
+beam_size:
+  value: 3
+cell_type:
+  value: gru
+decoder_dropout:
+  value: 0.5
+embedding_size:
+  value: 16
+encoder_dropout:
+  value: 0.5
+hidden_size:
+  value: 64
+learning_rate:
+  value: 0.0001
+num_layers:
+  value: 2
+use_attention:
+  value: true

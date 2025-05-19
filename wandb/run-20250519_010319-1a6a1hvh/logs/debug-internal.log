@@ -1,0 +1,16 @@
+{"time":"2025-05-19T01:03:19.072009268+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_010319-1a6a1hvh/logs/debug-core.log"}
+{"time":"2025-05-19T01:03:19.461385318+05:30","level":"INFO","msg":"created new stream","id":"1a6a1hvh"}
+{"time":"2025-05-19T01:03:19.461480811+05:30","level":"INFO","msg":"stream: started","id":"1a6a1hvh"}
+{"time":"2025-05-19T01:03:19.461534372+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"1a6a1hvh"}
+{"time":"2025-05-19T01:03:19.461600813+05:30","level":"INFO","msg":"handler: started","stream_id":"1a6a1hvh"}
+{"time":"2025-05-19T01:03:19.461694856+05:30","level":"INFO","msg":"sender: started","stream_id":"1a6a1hvh"}
+{"time":"2025-05-19T01:03:19.739168073+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T01:13:17.839298768+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T01:13:17.839399719+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T01:13:18.84229715+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_21_e6d14ed98ed3dd41631b.png","runtime_seconds":0.696353947,"progress":"298.3KB/298.3KB"},{"desc":"uploading output.log","runtime_seconds":0.431927941,"progress":"5.4KB/5.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.431914311,"progress":"524B/524B"},{"desc":"uploading config.yaml","runtime_seconds":0.130758942,"progress":"875B/875B"}],"total_operations":4}}
+{"time":"2025-05-19T01:13:19.72283235+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T01:13:20.070758552+05:30","level":"INFO","msg":"stream: closing","id":"1a6a1hvh"}
+{"time":"2025-05-19T01:13:20.070790973+05:30","level":"INFO","msg":"handler: closed","stream_id":"1a6a1hvh"}
+{"time":"2025-05-19T01:13:20.070814973+05:30","level":"INFO","msg":"sender: closed","stream_id":"1a6a1hvh"}
+{"time":"2025-05-19T01:13:20.070811703+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"1a6a1hvh"}
+{"time":"2025-05-19T01:13:20.070984236+05:30","level":"INFO","msg":"stream: closed","id":"1a6a1hvh"}

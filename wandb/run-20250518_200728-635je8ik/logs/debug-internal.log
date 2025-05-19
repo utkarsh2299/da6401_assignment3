@@ -1,0 +1,16 @@
+{"time":"2025-05-18T20:07:28.864841765+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250518_200728-635je8ik/logs/debug-core.log"}
+{"time":"2025-05-18T20:07:29.250817406+05:30","level":"INFO","msg":"created new stream","id":"635je8ik"}
+{"time":"2025-05-18T20:07:29.250890488+05:30","level":"INFO","msg":"stream: started","id":"635je8ik"}
+{"time":"2025-05-18T20:07:29.250921179+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"635je8ik"}
+{"time":"2025-05-18T20:07:29.251014651+05:30","level":"INFO","msg":"handler: started","stream_id":"635je8ik"}
+{"time":"2025-05-18T20:07:29.251062502+05:30","level":"INFO","msg":"sender: started","stream_id":"635je8ik"}
+{"time":"2025-05-18T20:07:29.681045728+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T20:11:45.878730322+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T20:11:45.878861945+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T20:11:46.881535842+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_2_aba76a1037c4c62f2432.png","runtime_seconds":0.639859628,"progress":"306.0KB/306.0KB"},{"desc":"uploading output.log","runtime_seconds":0.320096148,"progress":"27.4KB/27.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.320075507,"progress":"522B/522B"}],"total_operations":3}}
+{"time":"2025-05-18T20:11:47.773074326+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T20:11:48.182476617+05:30","level":"INFO","msg":"stream: closing","id":"635je8ik"}
+{"time":"2025-05-18T20:11:48.182508127+05:30","level":"INFO","msg":"handler: closed","stream_id":"635je8ik"}
+{"time":"2025-05-18T20:11:48.182524478+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"635je8ik"}
+{"time":"2025-05-18T20:11:48.182581879+05:30","level":"INFO","msg":"sender: closed","stream_id":"635je8ik"}
+{"time":"2025-05-18T20:11:48.182665111+05:30","level":"INFO","msg":"stream: closed","id":"635je8ik"}

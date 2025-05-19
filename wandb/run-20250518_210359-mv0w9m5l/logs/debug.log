@@ -1,0 +1,105 @@
+2025-05-18 21:03:59,095 INFO    Thread-10 (_run_job):966699 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_210359-mv0w9m5l/logs/debug.log
+2025-05-18 21:03:59,095 INFO    Thread-10 (_run_job):966699 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_210359-mv0w9m5l/logs/debug-internal.log
+2025-05-18 21:03:59,095 INFO    Thread-10 (_run_job):966699 [wandb_init.py:init():781] calling init triggers
+2025-05-18 21:03:59,095 INFO    Thread-10 (_run_job):966699 [wandb_init.py:init():786] wandb.init called with sweep_config: {'batch_size': 64, 'beam_size': 5, 'cell_type': 'lstm', 'decoder_dropout': 0.5, 'embedding_size': 16, 'encoder_dropout': 0.2, 'hidden_size': 256, 'learning_rate': 0.001, 'num_layers': 1, 'use_attention': True}
+config: {'data_path': 'dakshina_dataset_v1.0/hi/lexicons/', 'embedding_size': 16, 'hidden_size': 256, 'num_encoder_layers': 1, 'num_decoder_layers': 1, 'encoder_dropout': 0.2, 'decoder_dropout': 0.5, 'cell_type': 'lstm', 'batch_size': 64, 'learning_rate': 0.001, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'patience': 5, 'min_delta': 0.0, 'beam_size': 5, 'save_path': 'models/', 'model_name': 'best_model.pt', 'seed': 42, 'log_wandb': True, 'wandb_project': 'da6401_assignment3', 'wandb_name': 'lstm-ec_1-dc_1-hs_256-emb_16-bs_64-lr_0.001', 'use_attention': False, '_wandb': {}}
+2025-05-18 21:03:59,095 INFO    Thread-10 (_run_job):966699 [wandb_init.py:init():801] wandb.init() called while a run is active
+2025-05-18 21:19:08,560 INFO    Thread-10 (_run_job):966699 [wandb_run.py:_finish():2189] finishing run da24s011-indian-institute-of-technology-madras/da6401_assignment3/mv0w9m5l
+2025-05-18 21:19:08,561 INFO    Thread-10 (_run_job):966699 [wandb_run.py:_atexit_cleanup():2419] got exitcode: 1
+2025-05-18 21:19:08,561 INFO    Thread-10 (_run_job):966699 [wandb_run.py:_restore():2401] restore
+2025-05-18 21:19:08,561 INFO    Thread-10 (_run_job):966699 [wandb_run.py:_restore():2407] restore done
+2025-05-18 21:19:10,103 INFO    Thread-10 (_run_job):966699 [wandb_run.py:_footer_history_summary_info():4064] rendering history
+2025-05-18 21:19:10,103 INFO    Thread-10 (_run_job):966699 [wandb_run.py:_footer_history_summary_info():4096] rendering summary
+2025-05-18 21:19:10,103 INFO    Thread-10 (_run_job):966699 [wandb_run.py:_footer_sync_info():4025] logging synced files
+2025-05-18 21:19:10,105 ERROR   MainThread:966699 [pyagent.py:_run_jobs_from_queue():234] [no run ID] Run mv0w9m5l errored:
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 50, in sweep_train
+    main(model_config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 124, in main
+    examples = visualize_attention(
+  File "/speech/utkarsh/da6401_assignment3/utils.py", line 177, in visualize_attention
+    output_indices, attention_weights = model.greedy_decode(src_tensor, max_len=100)
+ValueError: too many values to unpack (expected 2)
+
+2025-05-18 21:19:14,106 INFO    MsgRouterThr:966699 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-18 21:31:40,269 ERROR   MainThread:966699 [pyagent.py:_run_jobs_from_queue():234] [no run ID] Run qkaxbcbr errored:
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 50, in sweep_train
+    main(model_config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 124, in main
+    examples = visualize_attention(
+  File "/speech/utkarsh/da6401_assignment3/utils.py", line 177, in visualize_attention
+    output_indices, attention_weights = model.greedy_decode(src_tensor, max_len=100)
+ValueError: too many values to unpack (expected 2)
+
+2025-05-18 21:31:43,267 INFO    MsgRouterThr:966699 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-18 21:41:49,118 ERROR   MainThread:966699 [pyagent.py:_run_jobs_from_queue():234] [no run ID] Run hz7jqvxl errored:
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 50, in sweep_train
+    main(model_config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 124, in main
+    examples = visualize_attention(
+  File "/speech/utkarsh/da6401_assignment3/utils.py", line 177, in visualize_attention
+    output_indices, attention_weights = model.greedy_decode(src_tensor, max_len=100)
+ValueError: too many values to unpack (expected 2)
+
+2025-05-18 21:41:54,120 INFO    MsgRouterThr:966699 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-18 21:46:05,732 ERROR   MainThread:966699 [pyagent.py:_run_jobs_from_queue():234] [no run ID] Run lpffrman errored:
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 50, in sweep_train
+    main(model_config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 100, in main
+    model.load_state_dict(torch.load(model_save_path))
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1497, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for Seq2Seq:
+	size mismatch for encoder.rnn.weight_ih_l0: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.weight_hh_l0: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l0_reverse: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.weight_hh_l0_reverse: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l0_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l0_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l1: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l1: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l1_reverse: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l1_reverse: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l1_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l1_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l2: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l2: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l2_reverse: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l2_reverse: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l2_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l2_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.fc.weight: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([256, 512]).
+	size mismatch for encoder.fc.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for decoder.rnn.weight_ih_l0: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.weight_hh_l0: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.bias_ih_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.bias_hh_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.weight_ih_l1: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.weight_hh_l1: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.bias_ih_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.bias_hh_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.weight_ih_l2: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.weight_hh_l2: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.bias_ih_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.bias_hh_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.fc_out.weight: copying a param with shape torch.Size([67, 128]) from checkpoint, the shape in current model is torch.Size([67, 256]).
+
+2025-05-18 21:46:05,734 ERROR   MainThread:966699 [pyagent.py:_run_jobs_from_queue():259] [no run ID] Detected 5 failed runs in a row at start, killing sweep.
+2025-05-18 21:46:06,731 INFO    MsgRouterThr:966699 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

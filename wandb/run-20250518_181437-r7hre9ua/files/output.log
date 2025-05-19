@@ -1,0 +1,7 @@
+('an', 'ankganit', 'uncle', 'ankur', 'ankuran')
+('अं', 'अंकगणित', 'अंकल', 'अंकुर', 'अंकुरण')
+('ankan', 'angkor', 'angira', 'angithi', 'angrej')
+('अंकन', 'अंगकोर', 'अंगिरा', 'अंगीठी', 'अंग्रेज')
+('ank', 'anka', 'ankit', 'anakon', 'ankhon')
+('अंक', 'अंक', 'अंकित', 'अंकों', 'अंकों')
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples

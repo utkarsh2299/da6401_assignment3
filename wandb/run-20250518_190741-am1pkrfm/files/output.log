@@ -1,0 +1,32 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+inside attention
+The model has 1,683,523 trainable parameters
+Traceback (most recent call last):                                                                                                                                  
+Epoch: 01 | Time: 0.0m 22.36s
+	Train Loss: 1.202
+	Val. Loss: 1.111
+	Train Acc: 0.650 | Val. Acc: 0.766 (sample)
+	Best validation loss: 1.111
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 204, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 103, in main
+    accuracy, samples = test(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 154, in test
+    pred_text = test_data.decode_devanagari(output_indices)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 266, in decode_devanagari
+    return ''.join([self.devanagari_idx2char.get(idx, '<UNK>') for idx in indices
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 266, in <listcomp>
+    return ''.join([self.devanagari_idx2char.get(idx, '<UNK>') for idx in indices
+TypeError: unhashable type: 'list'
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 204, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 103, in main
+    accuracy, samples = test(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 154, in test
+    pred_text = test_data.decode_devanagari(output_indices)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 266, in decode_devanagari
+    return ''.join([self.devanagari_idx2char.get(idx, '<UNK>') for idx in indices
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 266, in <listcomp>
+    return ''.join([self.devanagari_idx2char.get(idx, '<UNK>') for idx in indices
+TypeError: unhashable type: 'list'

@@ -1,0 +1,178 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 2,358,867 trainable parameters
+                                                                                                                                                            
+Epoch: 01 | Time: 0.0m 9.41s
+	Train Loss: 2.832
+	Val. Loss: 2.262
+	Train Acc: 0.396 | Val. Acc: 0.380 (sample)
+	Best validation loss: 2.262
+Epoch: 02 | Time: 0.0m 9.16s
+	Train Loss: 2.057
+	Val. Loss: 1.703
+	Train Acc: 0.485 | Val. Acc: 0.476 (sample)
+	Best validation loss: 1.703
+Epoch: 03 | Time: 0.0m 9.83s
+	Train Loss: 1.656
+	Val. Loss: 1.447
+	Train Acc: 0.592 | Val. Acc: 0.539 (sample)
+	Best validation loss: 1.447
+Epoch: 04 | Time: 0.0m 9.96s
+	Train Loss: 1.423
+	Val. Loss: 1.317
+	Train Acc: 0.604 | Val. Acc: 0.585 (sample)
+	Best validation loss: 1.317
+Epoch: 05 | Time: 0.0m 9.92s
+	Train Loss: 1.266
+	Val. Loss: 1.250
+	Train Acc: 0.623 | Val. Acc: 0.632 (sample)
+	Best validation loss: 1.250
+Epoch: 06 | Time: 0.0m 9.87s
+	Train Loss: 1.167
+	Val. Loss: 1.196
+	Train Acc: 0.643 | Val. Acc: 0.642 (sample)
+	Best validation loss: 1.196
+Epoch: 07 | Time: 0.0m 9.70s
+	Train Loss: 1.088
+	Val. Loss: 1.145
+	Train Acc: 0.695 | Val. Acc: 0.691 (sample)
+	Best validation loss: 1.145
+Epoch: 08 | Time: 0.0m 10.02s
+	Train Loss: 1.020
+	Val. Loss: 1.121
+	Train Acc: 0.700 | Val. Acc: 0.683 (sample)
+	Best validation loss: 1.121
+Epoch: 09 | Time: 0.0m 9.55s
+	Train Loss: 0.961
+	Val. Loss: 1.139
+	Train Acc: 0.709 | Val. Acc: 0.692 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 10 | Time: 0.0m 10.19s
+	Train Loss: 0.919
+	Val. Loss: 1.078
+	Train Acc: 0.751 | Val. Acc: 0.689 (sample)
+	Best validation loss: 1.078
+Epoch: 11 | Time: 0.0m 10.30s
+	Train Loss: 0.880
+	Val. Loss: 1.053
+	Train Acc: 0.760 | Val. Acc: 0.712 (sample)
+	Best validation loss: 1.053
+Epoch: 12 | Time: 0.0m 9.75s
+	Train Loss: 0.841
+	Val. Loss: 1.066
+	Train Acc: 0.736 | Val. Acc: 0.718 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 13 | Time: 0.0m 10.36s
+	Train Loss: 0.809
+	Val. Loss: 1.042
+	Train Acc: 0.770 | Val. Acc: 0.703 (sample)
+	Best validation loss: 1.042
+Epoch: 14 | Time: 0.0m 9.90s
+	Train Loss: 0.781
+	Val. Loss: 1.054
+	Train Acc: 0.792 | Val. Acc: 0.709 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 15 | Time: 0.0m 9.63s
+	Train Loss: 0.754
+	Val. Loss: 1.052
+	Train Acc: 0.766 | Val. Acc: 0.713 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 16 | Time: 0.0m 10.05s
+	Train Loss: 0.724
+	Val. Loss: 1.034
+	Train Acc: 0.778 | Val. Acc: 0.703 (sample)
+	Best validation loss: 1.034
+Epoch: 17 | Time: 0.0m 10.12s
+	Train Loss: 0.705
+	Val. Loss: 1.039
+	Train Acc: 0.791 | Val. Acc: 0.704 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 18 | Time: 0.0m 9.68s
+	Train Loss: 0.690
+	Val. Loss: 1.033
+	Train Acc: 0.811 | Val. Acc: 0.712 (sample)
+	Best validation loss: 1.033
+Epoch: 19 | Time: 0.0m 10.03s
+	Train Loss: 0.652
+	Val. Loss: 1.059
+	Train Acc: 0.831 | Val. Acc: 0.703 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 20 | Time: 0.0m 9.44s
+	Train Loss: 0.638
+	Val. Loss: 1.046
+	Train Acc: 0.820 | Val. Acc: 0.706 (sample)
+	No improvement in validation loss for 2 epochs
+Test Accuracy: 0.3452
+Sample 1:
+Source: ank
+Prediction: अंक
+Target: अंक
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनाकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: अंगकोर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: अंकोर
+Target: अंकोर
+Correct: Yes
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगराक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:224: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Nirmala UI.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+Attention heatmaps saved to: attention_heatmaps.png

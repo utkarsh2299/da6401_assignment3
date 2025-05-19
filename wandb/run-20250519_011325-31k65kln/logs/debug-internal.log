@@ -1,0 +1,16 @@
+{"time":"2025-05-19T01:13:25.83037903+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_011325-31k65kln/logs/debug-core.log"}
+{"time":"2025-05-19T01:13:26.216723401+05:30","level":"INFO","msg":"created new stream","id":"31k65kln"}
+{"time":"2025-05-19T01:13:26.216794412+05:30","level":"INFO","msg":"stream: started","id":"31k65kln"}
+{"time":"2025-05-19T01:13:26.216822652+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"31k65kln"}
+{"time":"2025-05-19T01:13:26.216897294+05:30","level":"INFO","msg":"handler: started","stream_id":"31k65kln"}
+{"time":"2025-05-19T01:13:26.216914094+05:30","level":"INFO","msg":"sender: started","stream_id":"31k65kln"}
+{"time":"2025-05-19T01:13:26.533147804+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T01:18:36.220122282+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T01:18:36.220232664+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T01:18:37.223223679+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_17_8168510b699888ff2dd7.png","runtime_seconds":0.700616022,"progress":"295.7KB/295.7KB"},{"desc":"uploading output.log","runtime_seconds":0.434136376,"progress":"4.9KB/4.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.434120346,"progress":"526B/526B"},{"desc":"uploading config.yaml","runtime_seconds":0.164784433,"progress":"878B/878B"}],"total_operations":4}}
+{"time":"2025-05-19T01:18:38.135433248+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T01:18:38.466516769+05:30","level":"INFO","msg":"stream: closing","id":"31k65kln"}
+{"time":"2025-05-19T01:18:38.466559859+05:30","level":"INFO","msg":"handler: closed","stream_id":"31k65kln"}
+{"time":"2025-05-19T01:18:38.46658262+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"31k65kln"}
+{"time":"2025-05-19T01:18:38.466624931+05:30","level":"INFO","msg":"sender: closed","stream_id":"31k65kln"}
+{"time":"2025-05-19T01:18:38.466715952+05:30","level":"INFO","msg":"stream: closed","id":"31k65kln"}

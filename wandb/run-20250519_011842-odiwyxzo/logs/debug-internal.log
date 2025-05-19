@@ -1,0 +1,16 @@
+{"time":"2025-05-19T01:18:42.233900907+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_011842-odiwyxzo/logs/debug-core.log"}
+{"time":"2025-05-19T01:18:42.619449944+05:30","level":"INFO","msg":"created new stream","id":"odiwyxzo"}
+{"time":"2025-05-19T01:18:42.619528775+05:30","level":"INFO","msg":"stream: started","id":"odiwyxzo"}
+{"time":"2025-05-19T01:18:42.619582446+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"odiwyxzo"}
+{"time":"2025-05-19T01:18:42.619647917+05:30","level":"INFO","msg":"handler: started","stream_id":"odiwyxzo"}
+{"time":"2025-05-19T01:18:42.619700478+05:30","level":"INFO","msg":"sender: started","stream_id":"odiwyxzo"}
+{"time":"2025-05-19T01:18:42.927964082+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T01:24:22.004434819+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T01:24:22.004589412+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T01:24:23.006415852+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_21_c6abb31ba48e17086653.png","runtime_seconds":0.693371314,"progress":"293.0KB/293.0KB"},{"desc":"uploading output.log","runtime_seconds":0.397053638,"progress":"5.4KB/5.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.397038368,"progress":"525B/525B"},{"desc":"uploading config.yaml","runtime_seconds":0.125265528,"progress":"876B/876B"}],"total_operations":4}}
+{"time":"2025-05-19T01:24:23.910236912+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T01:24:24.210109563+05:30","level":"INFO","msg":"stream: closing","id":"odiwyxzo"}
+{"time":"2025-05-19T01:24:24.210142244+05:30","level":"INFO","msg":"handler: closed","stream_id":"odiwyxzo"}
+{"time":"2025-05-19T01:24:24.210157834+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"odiwyxzo"}
+{"time":"2025-05-19T01:24:24.210203605+05:30","level":"INFO","msg":"sender: closed","stream_id":"odiwyxzo"}
+{"time":"2025-05-19T01:24:24.210255885+05:30","level":"INFO","msg":"stream: closed","id":"odiwyxzo"}

@@ -1,0 +1,8 @@
+{"time":"2025-05-18T20:48:32.869636138+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250518_204832-bg774cn9/logs/debug-core.log"}
+{"time":"2025-05-18T20:48:33.271897791+05:30","level":"INFO","msg":"created new stream","id":"bg774cn9"}
+{"time":"2025-05-18T20:48:33.271979072+05:30","level":"INFO","msg":"stream: started","id":"bg774cn9"}
+{"time":"2025-05-18T20:48:33.272025792+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"bg774cn9"}
+{"time":"2025-05-18T20:48:33.272108003+05:30","level":"INFO","msg":"handler: started","stream_id":"bg774cn9"}
+{"time":"2025-05-18T20:48:33.272053953+05:30","level":"INFO","msg":"sender: started","stream_id":"bg774cn9"}
+{"time":"2025-05-18T20:48:33.33585356+05:30","level":"INFO","msg":"stream: closing","id":"bg774cn9"}
+{"time":"2025-05-18T20:48:33.566185905+05:30","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}

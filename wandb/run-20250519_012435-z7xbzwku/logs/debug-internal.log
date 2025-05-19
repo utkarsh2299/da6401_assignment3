@@ -1,0 +1,16 @@
+{"time":"2025-05-19T01:24:35.977914051+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_012435-z7xbzwku/logs/debug-core.log"}
+{"time":"2025-05-19T01:24:36.361062294+05:30","level":"INFO","msg":"created new stream","id":"z7xbzwku"}
+{"time":"2025-05-19T01:24:36.361150086+05:30","level":"INFO","msg":"stream: started","id":"z7xbzwku"}
+{"time":"2025-05-19T01:24:36.361202347+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"z7xbzwku"}
+{"time":"2025-05-19T01:24:36.361313968+05:30","level":"INFO","msg":"sender: started","stream_id":"z7xbzwku"}
+{"time":"2025-05-19T01:24:36.361339009+05:30","level":"INFO","msg":"handler: started","stream_id":"z7xbzwku"}
+{"time":"2025-05-19T01:24:36.692823352+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T01:37:31.607127761+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T01:37:31.607234963+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T01:37:32.609843644+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_17_649596312d7240f0abd3.png","runtime_seconds":0.683852764,"progress":"287.0KB/287.0KB"},{"desc":"uploading output.log","runtime_seconds":0.3105785,"progress":"4.9KB/4.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.310556919,"progress":"524B/524B"},{"desc":"uploading config.yaml","runtime_seconds":0.04101826,"progress":"877B/877B"}],"total_operations":4}}
+{"time":"2025-05-19T01:37:33.489639915+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T01:37:33.796742371+05:30","level":"INFO","msg":"stream: closing","id":"z7xbzwku"}
+{"time":"2025-05-19T01:37:33.796789142+05:30","level":"INFO","msg":"handler: closed","stream_id":"z7xbzwku"}
+{"time":"2025-05-19T01:37:33.796812573+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"z7xbzwku"}
+{"time":"2025-05-19T01:37:33.796860493+05:30","level":"INFO","msg":"sender: closed","stream_id":"z7xbzwku"}
+{"time":"2025-05-19T01:37:33.796942195+05:30","level":"INFO","msg":"stream: closed","id":"z7xbzwku"}

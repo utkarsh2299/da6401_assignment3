@@ -1,0 +1,52 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 174,019 trainable parameters
+                                                                                                                                                            
+Epoch: 01 | Time: 0.0m 15.40s
+	Train Loss: 2.873
+	Val. Loss: 2.575
+	Train Acc: 0.349 | Val. Acc: 0.372 (sample)
+	Best validation loss: 2.575
+Epoch: 02 | Time: 0.0m 15.42s
+	Train Loss: 2.242
+	Val. Loss: 2.240
+	Train Acc: 0.363 | Val. Acc: 0.373 (sample)
+	Best validation loss: 2.240
+Epoch: 03 | Time: 0.0m 15.84s
+	Train Loss: 1.942
+	Val. Loss: 2.037
+	Train Acc: 0.413 | Val. Acc: 0.433 (sample)
+	Best validation loss: 2.037
+Epoch: 04 | Time: 0.0m 15.92s
+	Train Loss: 1.762
+	Val. Loss: 1.873
+	Train Acc: 0.464 | Val. Acc: 0.460 (sample)
+	Best validation loss: 1.873
+Epoch: 05 | Time: 0.0m 16.11s
+	Train Loss: 1.626
+	Val. Loss: 1.787
+	Train Acc: 0.503 | Val. Acc: 0.506 (sample)
+	Best validation loss: 1.787
+Epoch: 06 | Time: 0.0m 16.04s
+	Train Loss: 1.531
+	Val. Loss: 1.703
+	Train Acc: 0.462 | Val. Acc: 0.534 (sample)
+	Best validation loss: 1.703
+Epoch: 07 | Time: 0.0m 15.83s
+	Train Loss: 1.450
+	Val. Loss: 1.638
+	Train Acc: 0.511 | Val. Acc: 0.557 (sample)
+	Best validation loss: 1.638
+Training:  20%|█████████████████████▋                                                                                     | 140/691 [00:03<00:12, 43.59it/s]Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x7f156cfecb80>
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 94, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 226, in teardown
+    self._router.join()
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt:

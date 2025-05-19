@@ -1,0 +1,7 @@
+{"time":"2025-05-18T18:13:17.395819213+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250518_181317-mq20w2ge/logs/debug-core.log"}
+{"time":"2025-05-18T18:13:17.780063561+05:30","level":"INFO","msg":"created new stream","id":"mq20w2ge"}
+{"time":"2025-05-18T18:13:17.780181985+05:30","level":"INFO","msg":"stream: started","id":"mq20w2ge"}
+{"time":"2025-05-18T18:13:17.780242807+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"mq20w2ge"}
+{"time":"2025-05-18T18:13:17.780314979+05:30","level":"INFO","msg":"handler: started","stream_id":"mq20w2ge"}
+{"time":"2025-05-18T18:13:17.78036234+05:30","level":"INFO","msg":"sender: started","stream_id":"mq20w2ge"}
+{"time":"2025-05-18T18:13:18.178359652+05:30","level":"INFO","msg":"Starting system monitor"}

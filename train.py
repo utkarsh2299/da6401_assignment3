@@ -144,9 +144,17 @@ def test(model: nn.Module,
                 
                 # Get indices with beam search or greedy decoding
                 if beam_size:
-                    output_indices = model.beam_search(src_tensor, max_len=100, beam_size=beam_size)
+                    # Handle models with attention (which return attention weights too)
+                    if hasattr(model, 'decoder') and hasattr(model.decoder, 'attention'):
+                        output_indices, _ = model.beam_search(src_tensor, max_len=100, beam_size=beam_size)
+                    else:
+                        output_indices = model.beam_search(src_tensor, max_len=100, beam_size=beam_size)
                 else:
-                    output_indices = model.greedy_decode(src_tensor, max_len=100)
+                    # Handle models with attention (which return attention weights too)
+                    if hasattr(model, 'decoder') and hasattr(model.decoder, 'attention'):
+                        output_indices, _ = model.greedy_decode(src_tensor, max_len=100)
+                    else:
+                        output_indices = model.greedy_decode(src_tensor, max_len=100)
                 
                 # Convert indices to text
                 src_text = test_data.decode_latin(src_tensor.squeeze().cpu().numpy().tolist())

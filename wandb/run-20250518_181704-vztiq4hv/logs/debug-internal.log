@@ -1,0 +1,16 @@
+{"time":"2025-05-18T18:17:04.741069196+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250518_181704-vztiq4hv/logs/debug-core.log"}
+{"time":"2025-05-18T18:17:05.128856473+05:30","level":"INFO","msg":"created new stream","id":"vztiq4hv"}
+{"time":"2025-05-18T18:17:05.128951436+05:30","level":"INFO","msg":"stream: started","id":"vztiq4hv"}
+{"time":"2025-05-18T18:17:05.129015808+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"vztiq4hv"}
+{"time":"2025-05-18T18:17:05.129146061+05:30","level":"INFO","msg":"sender: started","stream_id":"vztiq4hv"}
+{"time":"2025-05-18T18:17:05.129210913+05:30","level":"INFO","msg":"handler: started","stream_id":"vztiq4hv"}
+{"time":"2025-05-18T18:17:05.576748415+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T18:20:08.903961924+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T18:20:08.904063507+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T18:20:09.908625343+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.393664513,"progress":"2.0KB/2.0KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.393638572,"progress":"278B/278B"},{"desc":"uploading config.yaml","runtime_seconds":0.135118799,"progress":"1.1KB/1.1KB"}],"total_operations":3}}
+{"time":"2025-05-18T18:20:10.8743711+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T18:20:11.481880939+05:30","level":"INFO","msg":"stream: closing","id":"vztiq4hv"}
+{"time":"2025-05-18T18:20:11.48192339+05:30","level":"INFO","msg":"handler: closed","stream_id":"vztiq4hv"}
+{"time":"2025-05-18T18:20:11.48194684+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"vztiq4hv"}
+{"time":"2025-05-18T18:20:11.481983161+05:30","level":"INFO","msg":"sender: closed","stream_id":"vztiq4hv"}
+{"time":"2025-05-18T18:20:11.482110304+05:30","level":"INFO","msg":"stream: closed","id":"vztiq4hv"}

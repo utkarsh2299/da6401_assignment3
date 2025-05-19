@@ -1,0 +1,115 @@
+2025-05-18 21:31:44,018 INFO    Thread-16 (_run_job):966699 [wandb_setup.py:_flush():67] Current SDK version is 0.19.9
+2025-05-18 21:31:44,018 INFO    Thread-16 (_run_job):966699 [wandb_setup.py:_flush():67] Configure stats pid to 966699
+2025-05-18 21:31:44,018 INFO    Thread-16 (_run_job):966699 [wandb_setup.py:_flush():67] Loading settings from /speech/utkarsh/.config/wandb/settings
+2025-05-18 21:31:44,018 INFO    Thread-16 (_run_job):966699 [wandb_setup.py:_flush():67] Loading settings from /speech/utkarsh/da6401_assignment3/wandb/settings
+2025-05-18 21:31:44,018 INFO    Thread-16 (_run_job):966699 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-05-18 21:31:44,018 INFO    Thread-16 (_run_job):966699 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_213144-hz7jqvxl/logs/debug.log
+2025-05-18 21:31:44,019 INFO    Thread-16 (_run_job):966699 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_213144-hz7jqvxl/logs/debug-internal.log
+2025-05-18 21:31:44,019 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():781] calling init triggers
+2025-05-18 21:31:44,019 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():786] wandb.init called with sweep_config: {'batch_size': 128, 'beam_size': 3, 'cell_type': 'gru', 'decoder_dropout': 0.5, 'embedding_size': 16, 'encoder_dropout': 0.5, 'hidden_size': 64, 'learning_rate': 0.0001, 'num_layers': 2, 'use_attention': True}
+config: {'_wandb': {}}
+2025-05-18 21:31:44,019 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():809] starting backend
+2025-05-18 21:31:44,019 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():813] sending inform_init request
+2025-05-18 21:31:44,021 INFO    Thread-16 (_run_job):966699 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-05-18 21:31:44,021 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():823] backend started and connected
+2025-05-18 21:31:44,023 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_config_callback():1327] config_cb None None {'batch_size': 128, 'beam_size': 3, 'cell_type': 'gru', 'decoder_dropout': 0.5, 'embedding_size': 16, 'encoder_dropout': 0.5, 'hidden_size': 64, 'learning_rate': 0.0001, 'num_layers': 2, 'use_attention': True}
+2025-05-18 21:31:44,026 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():915] updated telemetry
+2025-05-18 21:31:44,033 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():939] communicating run to backend with 90.0 second timeout
+2025-05-18 21:31:44,713 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():1014] starting run threads in backend
+2025-05-18 21:31:44,915 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_console_start():2454] atexit reg
+2025-05-18 21:31:44,916 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-05-18 21:31:44,916 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_redirect():2371] Wrapping output streams.
+2025-05-18 21:31:44,916 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_redirect():2394] Redirects installed.
+2025-05-18 21:31:44,917 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():1056] run started, returning control to user process
+2025-05-18 21:31:44,920 INFO    Thread-16 (_run_job):966699 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_213144-hz7jqvxl/logs/debug.log
+2025-05-18 21:31:44,920 INFO    Thread-16 (_run_job):966699 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_213144-hz7jqvxl/logs/debug.log
+2025-05-18 21:31:44,920 INFO    Thread-16 (_run_job):966699 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_213144-hz7jqvxl/logs/debug-internal.log
+2025-05-18 21:31:44,920 INFO    Thread-16 (_run_job):966699 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_213144-hz7jqvxl/logs/debug-internal.log
+2025-05-18 21:31:44,920 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():781] calling init triggers
+2025-05-18 21:31:44,920 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():781] calling init triggers
+2025-05-18 21:31:44,921 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():786] wandb.init called with sweep_config: {'batch_size': 128, 'beam_size': 3, 'cell_type': 'gru', 'decoder_dropout': 0.5, 'embedding_size': 16, 'encoder_dropout': 0.5, 'hidden_size': 64, 'learning_rate': 0.0001, 'num_layers': 2, 'use_attention': True}
+config: {'data_path': 'dakshina_dataset_v1.0/hi/lexicons/', 'embedding_size': 16, 'hidden_size': 64, 'num_encoder_layers': 2, 'num_decoder_layers': 2, 'encoder_dropout': 0.5, 'decoder_dropout': 0.5, 'cell_type': 'gru', 'batch_size': 128, 'learning_rate': 0.0001, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'patience': 5, 'min_delta': 0.0, 'beam_size': 3, 'save_path': 'models/', 'model_name': 'best_model.pt', 'seed': 42, 'log_wandb': True, 'wandb_project': 'da6401_assignment3', 'wandb_name': 'gru-ec_2-dc_2-hs_64-emb_16-bs_128-lr_0.0001', 'use_attention': False, '_wandb': {}}
+2025-05-18 21:31:44,921 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():786] wandb.init called with sweep_config: {'batch_size': 128, 'beam_size': 3, 'cell_type': 'gru', 'decoder_dropout': 0.5, 'embedding_size': 16, 'encoder_dropout': 0.5, 'hidden_size': 64, 'learning_rate': 0.0001, 'num_layers': 2, 'use_attention': True}
+config: {'data_path': 'dakshina_dataset_v1.0/hi/lexicons/', 'embedding_size': 16, 'hidden_size': 64, 'num_encoder_layers': 2, 'num_decoder_layers': 2, 'encoder_dropout': 0.5, 'decoder_dropout': 0.5, 'cell_type': 'gru', 'batch_size': 128, 'learning_rate': 0.0001, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'patience': 5, 'min_delta': 0.0, 'beam_size': 3, 'save_path': 'models/', 'model_name': 'best_model.pt', 'seed': 42, 'log_wandb': True, 'wandb_project': 'da6401_assignment3', 'wandb_name': 'gru-ec_2-dc_2-hs_64-emb_16-bs_128-lr_0.0001', 'use_attention': False, '_wandb': {}}
+2025-05-18 21:31:44,921 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():801] wandb.init() called while a run is active
+2025-05-18 21:31:44,921 INFO    Thread-16 (_run_job):966699 [wandb_init.py:init():801] wandb.init() called while a run is active
+2025-05-18 21:41:47,605 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_finish():2189] finishing run da24s011-indian-institute-of-technology-madras/da6401_assignment3/hz7jqvxl
+2025-05-18 21:41:47,605 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_finish():2189] finishing run da24s011-indian-institute-of-technology-madras/da6401_assignment3/hz7jqvxl
+2025-05-18 21:41:47,605 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_atexit_cleanup():2419] got exitcode: 1
+2025-05-18 21:41:47,605 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_atexit_cleanup():2419] got exitcode: 1
+2025-05-18 21:41:47,605 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_restore():2401] restore
+2025-05-18 21:41:47,605 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_restore():2401] restore
+2025-05-18 21:41:47,605 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_restore():2407] restore done
+2025-05-18 21:41:47,605 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_restore():2407] restore done
+2025-05-18 21:41:49,116 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_footer_history_summary_info():4064] rendering history
+2025-05-18 21:41:49,116 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_footer_history_summary_info():4064] rendering history
+2025-05-18 21:41:49,116 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_footer_history_summary_info():4096] rendering summary
+2025-05-18 21:41:49,116 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_footer_history_summary_info():4096] rendering summary
+2025-05-18 21:41:49,116 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_footer_sync_info():4025] logging synced files
+2025-05-18 21:41:49,116 INFO    Thread-16 (_run_job):966699 [wandb_run.py:_footer_sync_info():4025] logging synced files
+2025-05-18 21:41:49,118 ERROR   MainThread:966699 [pyagent.py:_run_jobs_from_queue():234] [no run ID] Run hz7jqvxl errored:
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 50, in sweep_train
+    main(model_config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 124, in main
+    examples = visualize_attention(
+  File "/speech/utkarsh/da6401_assignment3/utils.py", line 177, in visualize_attention
+    output_indices, attention_weights = model.greedy_decode(src_tensor, max_len=100)
+ValueError: too many values to unpack (expected 2)
+
+2025-05-18 21:41:54,120 INFO    MsgRouterThr:966699 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-18 21:46:05,732 ERROR   MainThread:966699 [pyagent.py:_run_jobs_from_queue():234] [no run ID] Run lpffrman errored:
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 50, in sweep_train
+    main(model_config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 100, in main
+    model.load_state_dict(torch.load(model_save_path))
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1497, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for Seq2Seq:
+	size mismatch for encoder.rnn.weight_ih_l0: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.weight_hh_l0: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l0_reverse: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.weight_hh_l0_reverse: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l0_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l0_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l1: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l1: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l1_reverse: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l1_reverse: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l1_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l1_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l2: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l2: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.weight_ih_l2_reverse: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 512]).
+	size mismatch for encoder.rnn.weight_hh_l2_reverse: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for encoder.rnn.bias_ih_l2_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.rnn.bias_hh_l2_reverse: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for encoder.fc.weight: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([256, 512]).
+	size mismatch for encoder.fc.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([256]).
+	size mismatch for decoder.rnn.weight_ih_l0: copying a param with shape torch.Size([128, 256]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.weight_hh_l0: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.bias_ih_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.bias_hh_l0: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.weight_ih_l1: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.weight_hh_l1: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.bias_ih_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.bias_hh_l1: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.weight_ih_l2: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.weight_hh_l2: copying a param with shape torch.Size([128, 128]) from checkpoint, the shape in current model is torch.Size([1024, 256]).
+	size mismatch for decoder.rnn.bias_ih_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.rnn.bias_hh_l2: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([1024]).
+	size mismatch for decoder.fc_out.weight: copying a param with shape torch.Size([67, 128]) from checkpoint, the shape in current model is torch.Size([67, 256]).
+
+2025-05-18 21:46:05,734 ERROR   MainThread:966699 [pyagent.py:_run_jobs_from_queue():259] [no run ID] Detected 5 failed runs in a row at start, killing sweep.
+2025-05-18 21:46:06,731 INFO    MsgRouterThr:966699 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

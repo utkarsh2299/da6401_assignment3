@@ -9,7 +9,7 @@ import argparse
 from data import get_dataloaders
 from model import create_model
 from train import train_model, test
-from utils import set_seed, count_parameters, plot_loss_curves, display_sample_predictions
+from utils import set_seed, count_parameters, plot_loss_curves, display_sample_predictions, visualize_attention
 from config import ModelConfig
 
 
@@ -60,7 +60,8 @@ def main(config: ModelConfig):
         cell_type=config.cell_type,
         device=config.device,
         sos_idx=sos_idx,
-        eos_idx=eos_idx
+        eos_idx=eos_idx,
+        use_attention=config.use_attention
     )
     
     # Move model to device
@@ -74,7 +75,7 @@ def main(config: ModelConfig):
     criterion = nn.CrossEntropyLoss(ignore_index=0)  # ignore padding index
     
     # Define model save path
-    model_save_path = os.path.join(config.save_path, config.model_name)
+    model_save_path_new = os.path.join(config.save_path, config.model_name)
     
     # Train model
     history = train_model(
@@ -88,7 +89,7 @@ def main(config: ModelConfig):
         device=config.device,
         patience=config.patience,
         min_delta=config.min_delta,
-        save_path=model_save_path,
+        save_path=model_save_path_new,
         log_wandb=config.log_wandb
     )
     
@@ -96,7 +97,7 @@ def main(config: ModelConfig):
     # plot_loss_curves(history, save_path=os.path.join(config.save_path, 'loss_curves.png'))
     
     # Load best model
-    model.load_state_dict(torch.load(model_save_path))
+    model.load_state_dict(torch.load(model_save_path_new))
     
     # Test model
     accuracy, samples = test(
@@ -115,6 +116,27 @@ def main(config: ModelConfig):
     
     # Display sample predictions
     display_sample_predictions(samples, n=10)
+    
+    # After loading your best model
+    model.eval()
+    device = "cuda" if torch.cuda.is_available() else 'cpu'
+    
+    if config.use_attention:
+    # Generate and visualize attention heatmaps
+        examples = visualize_attention(
+            model=model,
+            test_dataset=test_dataset,
+            iterator=test_loader,
+            device=device,
+            n_examples=9,
+            n_rows=3,
+            n_cols=3,
+            save_path='attention_heatmaps.png'
+        )
+
+        # Log attention heatmaps to wandb
+        if config.log_wandb:
+            wandb.log({"attention_heatmaps": wandb.Image('attention_heatmaps.png')})
     
     # Close wandb run
     if config.log_wandb:
@@ -151,6 +173,8 @@ if __name__ == "__main__":
                         help='Random seed for reproducibility')
     parser.add_argument('--log_wandb', action='store_true', default=True,
                         help='Whether to log metrics to wandb')
+    parser.add_argument('--use_attention', action='store_true', default=False,
+                        help='Whether to use attention or not')
     
     args = parser.parse_args()
     
@@ -170,7 +194,8 @@ if __name__ == "__main__":
         clip=args.clip,
         beam_size=args.beam_size,
         seed=args.seed,
-        log_wandb=args.log_wandb
+        log_wandb=args.log_wandb,
+        use_attention=args.use_attention
     )
     
     main(config)

@@ -1,0 +1,16 @@
+{"time":"2025-05-19T02:10:55.166447616+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_021055-le7lx6jl/logs/debug-core.log"}
+{"time":"2025-05-19T02:10:55.556282982+05:30","level":"INFO","msg":"created new stream","id":"le7lx6jl"}
+{"time":"2025-05-19T02:10:55.556367483+05:30","level":"INFO","msg":"stream: started","id":"le7lx6jl"}
+{"time":"2025-05-19T02:10:55.556392014+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"le7lx6jl"}
+{"time":"2025-05-19T02:10:55.556462165+05:30","level":"INFO","msg":"sender: started","stream_id":"le7lx6jl"}
+{"time":"2025-05-19T02:10:55.556528666+05:30","level":"INFO","msg":"handler: started","stream_id":"le7lx6jl"}
+{"time":"2025-05-19T02:10:55.871230715+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T02:28:20.479106103+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T02:28:20.479210065+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T02:28:21.481844934+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_20_00e4c283bc9b22cbf9c7.png","runtime_seconds":0.691081439,"progress":"289.1KB/289.1KB"},{"desc":"uploading output.log","runtime_seconds":0.398318882,"progress":"5.4KB/5.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.398296941,"progress":"527B/527B"},{"desc":"uploading config.yaml","runtime_seconds":0.122894564,"progress":"876B/876B"}],"total_operations":4}}
+{"time":"2025-05-19T02:28:22.377621298+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T02:28:22.69669317+05:30","level":"INFO","msg":"stream: closing","id":"le7lx6jl"}
+{"time":"2025-05-19T02:28:22.696733001+05:30","level":"INFO","msg":"handler: closed","stream_id":"le7lx6jl"}
+{"time":"2025-05-19T02:28:22.696751291+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"le7lx6jl"}
+{"time":"2025-05-19T02:28:22.696799512+05:30","level":"INFO","msg":"sender: closed","stream_id":"le7lx6jl"}
+{"time":"2025-05-19T02:28:22.696865343+05:30","level":"INFO","msg":"stream: closed","id":"le7lx6jl"}

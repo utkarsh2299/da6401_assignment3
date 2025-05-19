@@ -11,7 +11,7 @@ from typing import Dict, List, Tuple, Any, Union
 class TransliterationDataset(Dataset):
     def __init__(self, data_path: str, split: str = 'train'):
         """
-        Dataset class for transliteration data with enhanced error handling
+        Dataset class for transliteration data 
         """
         self.data_path = data_path
         self.split = split
@@ -31,7 +31,7 @@ class TransliterationDataset(Dataset):
         self.latin_idx2char = {i: token for i, token in enumerate(special_tokens)}
         self.devanagari_idx2char = {i: token for i, token in enumerate(special_tokens)}
         
-        # Try loading data
+        # loading data
         try:
             # Find correct file path
             file_path = self._find_file_path(data_path, split)
@@ -50,8 +50,10 @@ class TransliterationDataset(Dataset):
             # print(f"Loaded {len(data_pairs)} valid data pairs")
             
             # Extract source and target texts
-            self.latin_texts, self.devanagari_texts = zip(*data_pairs)
-            
+            # self.latin_texts, self.devanagari_texts = zip(*data_pairs)
+            self.devanagari_texts, self.latin_texts = zip(*data_pairs)
+            # print(self.latin_texts[:5])
+            # print(self.devanagari_texts[:5])
             # Now build vocabularies from clean data
             latin_chars = self._extract_characters(self.latin_texts)
             devanagari_chars = self._extract_characters(self.devanagari_texts)
@@ -73,7 +75,7 @@ class TransliterationDataset(Dataset):
             print(f"Error initializing dataset: {e}")
     
     def _find_file_path(self, base_path: str, split: str) -> str:
-        """Find the correct file path with various naming conventions"""
+        """Find the correct file path """
         possible_extensions = ['.tsv']
         possible_prefixes = ['', 'hi.translit.sampled.']
         
@@ -233,6 +235,8 @@ class TransliterationDataset(Dataset):
             latin_text = self.latin_texts[idx] if isinstance(self.latin_texts[idx], str) else ""
             devanagari_text = self.devanagari_texts[idx] if isinstance(self.devanagari_texts[idx], str) else ""
         
+        # print(f"Latin text: {latin_text}")
+        # print(f"Devanagari text: {devanagari_text}")
         # Convert characters to indices with safety
         latin_indices = []
         for char in latin_text:

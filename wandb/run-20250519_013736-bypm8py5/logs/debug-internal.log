@@ -1,0 +1,16 @@
+{"time":"2025-05-19T01:37:36.557904349+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_013736-bypm8py5/logs/debug-core.log"}
+{"time":"2025-05-19T01:37:36.950553802+05:30","level":"INFO","msg":"created new stream","id":"bypm8py5"}
+{"time":"2025-05-19T01:37:36.950642824+05:30","level":"INFO","msg":"stream: started","id":"bypm8py5"}
+{"time":"2025-05-19T01:37:36.950712915+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"bypm8py5"}
+{"time":"2025-05-19T01:37:36.950731756+05:30","level":"INFO","msg":"sender: started","stream_id":"bypm8py5"}
+{"time":"2025-05-19T01:37:36.950819907+05:30","level":"INFO","msg":"handler: started","stream_id":"bypm8py5"}
+{"time":"2025-05-19T01:37:37.281477788+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T01:43:18.553554485+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T01:43:18.553676057+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T01:43:19.555616373+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_17_0a6479151a4b19316533.png","runtime_seconds":0.693350746,"progress":"279.3KB/279.3KB"},{"desc":"uploading output.log","runtime_seconds":0.418106716,"progress":"4.9KB/4.9KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.418093146,"progress":"525B/525B"},{"desc":"uploading config.yaml","runtime_seconds":0.136366949,"progress":"879B/879B"}],"total_operations":4}}
+{"time":"2025-05-19T01:43:21.276990928+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T01:43:21.595421231+05:30","level":"INFO","msg":"stream: closing","id":"bypm8py5"}
+{"time":"2025-05-19T01:43:21.595443741+05:30","level":"INFO","msg":"handler: closed","stream_id":"bypm8py5"}
+{"time":"2025-05-19T01:43:21.595454891+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"bypm8py5"}
+{"time":"2025-05-19T01:43:21.595463822+05:30","level":"INFO","msg":"sender: closed","stream_id":"bypm8py5"}
+{"time":"2025-05-19T01:43:21.595556053+05:30","level":"INFO","msg":"stream: closed","id":"bypm8py5"}

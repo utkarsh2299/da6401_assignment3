@@ -1,0 +1,16 @@
+{"time":"2025-05-19T03:38:53.549508885+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_033853-1kmaml9r/logs/debug-core.log"}
+{"time":"2025-05-19T03:38:53.935654827+05:30","level":"INFO","msg":"created new stream","id":"1kmaml9r"}
+{"time":"2025-05-19T03:38:53.935731589+05:30","level":"INFO","msg":"stream: started","id":"1kmaml9r"}
+{"time":"2025-05-19T03:38:53.935759259+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"1kmaml9r"}
+{"time":"2025-05-19T03:38:53.93579982+05:30","level":"INFO","msg":"handler: started","stream_id":"1kmaml9r"}
+{"time":"2025-05-19T03:38:53.93584729+05:30","level":"INFO","msg":"sender: started","stream_id":"1kmaml9r"}
+{"time":"2025-05-19T03:38:54.219009119+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T03:52:21.111988108+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T03:52:21.112127571+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T03:52:22.114134342+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_11_4d88d737bb4fb075980e.png","runtime_seconds":0.699141082,"progress":"297.7KB/297.7KB"},{"desc":"uploading output.log","runtime_seconds":0.299984245,"progress":"4.1KB/4.1KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.299958865,"progress":"523B/523B"},{"desc":"uploading config.yaml","runtime_seconds":0.02019925,"progress":"875B/875B"}],"total_operations":4}}
+{"time":"2025-05-19T03:52:23.285472061+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T03:52:23.58310651+05:30","level":"INFO","msg":"stream: closing","id":"1kmaml9r"}
+{"time":"2025-05-19T03:52:23.583138531+05:30","level":"INFO","msg":"handler: closed","stream_id":"1kmaml9r"}
+{"time":"2025-05-19T03:52:23.583158331+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"1kmaml9r"}
+{"time":"2025-05-19T03:52:23.583208352+05:30","level":"INFO","msg":"sender: closed","stream_id":"1kmaml9r"}
+{"time":"2025-05-19T03:52:23.583328935+05:30","level":"INFO","msg":"stream: closed","id":"1kmaml9r"}

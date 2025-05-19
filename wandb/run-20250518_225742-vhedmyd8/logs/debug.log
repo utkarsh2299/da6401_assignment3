@@ -1,0 +1,36 @@
+2025-05-18 22:57:42,248 INFO    Thread-3 (_run_job):1011658 [wandb_setup.py:_flush():67] Current SDK version is 0.19.9
+2025-05-18 22:57:42,248 INFO    Thread-3 (_run_job):1011658 [wandb_setup.py:_flush():67] Configure stats pid to 1011658
+2025-05-18 22:57:42,248 INFO    Thread-3 (_run_job):1011658 [wandb_setup.py:_flush():67] Loading settings from /speech/utkarsh/.config/wandb/settings
+2025-05-18 22:57:42,248 INFO    Thread-3 (_run_job):1011658 [wandb_setup.py:_flush():67] Loading settings from /speech/utkarsh/da6401_assignment3/wandb/settings
+2025-05-18 22:57:42,248 INFO    Thread-3 (_run_job):1011658 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-05-18 22:57:42,248 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_225742-vhedmyd8/logs/debug.log
+2025-05-18 22:57:42,248 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_225742-vhedmyd8/logs/debug-internal.log
+2025-05-18 22:57:42,248 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():781] calling init triggers
+2025-05-18 22:57:42,249 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():786] wandb.init called with sweep_config: {'batch_size': 64, 'beam_size': None, 'cell_type': 'lstm', 'decoder_dropout': 0.3, 'embedding_size': 16, 'encoder_dropout': 0.5, 'hidden_size': 64, 'learning_rate': 0.0001, 'num_layers': 3, 'use_attention': True}
+config: {'_wandb': {}}
+2025-05-18 22:57:42,249 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():809] starting backend
+2025-05-18 22:57:42,249 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():813] sending inform_init request
+2025-05-18 22:57:42,254 INFO    Thread-3 (_run_job):1011658 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-05-18 22:57:42,255 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():823] backend started and connected
+2025-05-18 22:57:42,256 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_config_callback():1327] config_cb None None {'batch_size': 64, 'beam_size': None, 'cell_type': 'lstm', 'decoder_dropout': 0.3, 'embedding_size': 16, 'encoder_dropout': 0.5, 'hidden_size': 64, 'learning_rate': 0.0001, 'num_layers': 3, 'use_attention': True}
+2025-05-18 22:57:42,256 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():915] updated telemetry
+2025-05-18 22:57:42,265 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():939] communicating run to backend with 90.0 second timeout
+2025-05-18 22:57:43,010 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():1014] starting run threads in backend
+2025-05-18 22:57:43,199 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_console_start():2454] atexit reg
+2025-05-18 22:57:43,200 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-05-18 22:57:43,200 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_redirect():2371] Wrapping output streams.
+2025-05-18 22:57:43,200 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_redirect():2394] Redirects installed.
+2025-05-18 22:57:43,201 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():1056] run started, returning control to user process
+2025-05-18 22:57:43,670 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_225743-vhedmyd8/logs/debug.log
+2025-05-18 22:57:43,671 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250518_225743-vhedmyd8/logs/debug-internal.log
+2025-05-18 22:57:43,671 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():781] calling init triggers
+2025-05-18 22:57:43,671 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():786] wandb.init called with sweep_config: {'batch_size': 64, 'beam_size': None, 'cell_type': 'lstm', 'decoder_dropout': 0.3, 'embedding_size': 16, 'encoder_dropout': 0.5, 'hidden_size': 64, 'learning_rate': 0.0001, 'num_layers': 3, 'use_attention': True}
+config: {'data_path': 'dakshina_dataset_v1.0/hi/lexicons/', 'embedding_size': 16, 'hidden_size': 64, 'num_encoder_layers': 3, 'num_decoder_layers': 3, 'encoder_dropout': 0.5, 'decoder_dropout': 0.3, 'cell_type': 'lstm', 'batch_size': 64, 'learning_rate': 0.0001, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'patience': 5, 'min_delta': 0.0, 'beam_size': None, 'save_path': 'models_true/', 'model_name': 'best_model.pt', 'seed': 42, 'log_wandb': True, 'wandb_project': 'da6401_assignment3', 'wandb_name': 'lstm-ec_3-dc_3-hs_64-emb_16-bs_64-lr_0.0001', 'use_attention': False, '_wandb': {}}
+2025-05-18 22:57:43,671 INFO    Thread-3 (_run_job):1011658 [wandb_init.py:init():801] wandb.init() called while a run is active
+2025-05-18 23:07:08,606 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_finish():2189] finishing run da24s011-indian-institute-of-technology-madras/da6401_assignment3/vhedmyd8
+2025-05-18 23:07:08,606 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_atexit_cleanup():2419] got exitcode: 1
+2025-05-18 23:07:08,606 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_restore():2401] restore
+2025-05-18 23:07:08,606 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_restore():2407] restore done
+2025-05-18 23:07:11,131 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_footer_history_summary_info():4064] rendering history
+2025-05-18 23:07:11,132 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_footer_history_summary_info():4096] rendering summary
+2025-05-18 23:07:11,133 INFO    Thread-3 (_run_job):1011658 [wandb_run.py:_footer_sync_info():4025] logging synced files

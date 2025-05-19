@@ -1,0 +1,16 @@
+{"time":"2025-05-19T01:53:15.158083199+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_015315-078bzvhj/logs/debug-core.log"}
+{"time":"2025-05-19T01:53:15.540586182+05:30","level":"INFO","msg":"created new stream","id":"078bzvhj"}
+{"time":"2025-05-19T01:53:15.540671973+05:30","level":"INFO","msg":"stream: started","id":"078bzvhj"}
+{"time":"2025-05-19T01:53:15.540750334+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"078bzvhj"}
+{"time":"2025-05-19T01:53:15.540784865+05:30","level":"INFO","msg":"handler: started","stream_id":"078bzvhj"}
+{"time":"2025-05-19T01:53:15.540863936+05:30","level":"INFO","msg":"sender: started","stream_id":"078bzvhj"}
+{"time":"2025-05-19T01:53:15.83069043+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T02:10:47.049595691+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T02:10:47.049704173+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T02:10:48.052446231+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_18_d5c186cefff9e2afde79.png","runtime_seconds":0.694929472,"progress":"296.8KB/296.8KB"},{"desc":"uploading output.log","runtime_seconds":0.392240634,"progress":"5.1KB/5.1KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.392227894,"progress":"525B/525B"},{"desc":"uploading config.yaml","runtime_seconds":0.114033159,"progress":"876B/876B"}],"total_operations":4}}
+{"time":"2025-05-19T02:10:48.991672941+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T02:10:49.395223689+05:30","level":"INFO","msg":"stream: closing","id":"078bzvhj"}
+{"time":"2025-05-19T02:10:49.395269829+05:30","level":"INFO","msg":"handler: closed","stream_id":"078bzvhj"}
+{"time":"2025-05-19T02:10:49.39529413+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"078bzvhj"}
+{"time":"2025-05-19T02:10:49.395370871+05:30","level":"INFO","msg":"sender: closed","stream_id":"078bzvhj"}
+{"time":"2025-05-19T02:10:49.395456943+05:30","level":"INFO","msg":"stream: closed","id":"078bzvhj"}

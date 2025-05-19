@@ -1,0 +1,69 @@
+_wandb:
+    value:
+        cli_version: 0.19.9
+        m: []
+        python_version: 3.10.14
+        t:
+            "1":
+                - 1
+                - 55
+                - 105
+            "2":
+                - 1
+                - 55
+                - 105
+            "3":
+                - 2
+                - 16
+                - 23
+                - 55
+            "4": 3.10.14
+            "5": 0.19.9
+            "8":
+                - 5
+            "12": 0.19.9
+            "13": linux-x86_64
+batch_size:
+    value: 64
+beam_size:
+    value: null
+cell_type:
+    value: gru
+clip:
+    value: 1
+data_path:
+    value: dakshina_dataset_v1.0/hi/lexicons/
+decoder_dropout:
+    value: 0.3
+embedding_size:
+    value: 128
+encoder_dropout:
+    value: 0.3
+hidden_size:
+    value: 256
+learning_rate:
+    value: 0.001
+log_wandb:
+    value: true
+min_delta:
+    value: 0
+model_name:
+    value: best_model.pt
+n_epochs:
+    value: 1
+num_decoder_layers:
+    value: 1
+num_encoder_layers:
+    value: 1
+patience:
+    value: 5
+save_path:
+    value: models/
+seed:
+    value: 42
+teacher_forcing_ratio:
+    value: 0.5
+wandb_name:
+    value: null
+wandb_project:
+    value: da6401_assignment3

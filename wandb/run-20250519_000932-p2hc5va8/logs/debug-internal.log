@@ -1,0 +1,16 @@
+{"time":"2025-05-19T00:09:32.97776319+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_000932-p2hc5va8/logs/debug-core.log"}
+{"time":"2025-05-19T00:09:33.364913729+05:30","level":"INFO","msg":"created new stream","id":"p2hc5va8"}
+{"time":"2025-05-19T00:09:33.36499769+05:30","level":"INFO","msg":"stream: started","id":"p2hc5va8"}
+{"time":"2025-05-19T00:09:33.365046201+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"p2hc5va8"}
+{"time":"2025-05-19T00:09:33.365089351+05:30","level":"INFO","msg":"sender: started","stream_id":"p2hc5va8"}
+{"time":"2025-05-19T00:09:33.365155142+05:30","level":"INFO","msg":"handler: started","stream_id":"p2hc5va8"}
+{"time":"2025-05-19T00:09:33.662270711+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T00:26:15.122010346+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T00:26:15.122164788+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T00:26:16.125190376+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_20_c7c2052d80ce7978ec28.png","runtime_seconds":0.692319792,"progress":"319.5KB/319.5KB"},{"desc":"uploading output.log","runtime_seconds":0.428501993,"progress":"5.4KB/5.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.428483653,"progress":"527B/527B"},{"desc":"uploading config.yaml","runtime_seconds":0.146401428,"progress":"874B/874B"}],"total_operations":4}}
+{"time":"2025-05-19T00:26:16.996175255+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T00:26:17.293908138+05:30","level":"INFO","msg":"stream: closing","id":"p2hc5va8"}
+{"time":"2025-05-19T00:26:17.293932138+05:30","level":"INFO","msg":"handler: closed","stream_id":"p2hc5va8"}
+{"time":"2025-05-19T00:26:17.293946368+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"p2hc5va8"}
+{"time":"2025-05-19T00:26:17.293956868+05:30","level":"INFO","msg":"sender: closed","stream_id":"p2hc5va8"}
+{"time":"2025-05-19T00:26:17.294041659+05:30","level":"INFO","msg":"stream: closed","id":"p2hc5va8"}

@@ -1,0 +1,129 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 4,205,251 trainable parameters
+                                                                                                                                                            
+Epoch: 01 | Time: 0.0m 40.52s
+	Train Loss: 1.864
+	Val. Loss: 1.318
+	Train Acc: 0.591 | Val. Acc: 0.631 (sample)
+	Best validation loss: 1.318
+Epoch: 02 | Time: 0.0m 40.81s
+	Train Loss: 1.042
+	Val. Loss: 1.187
+	Train Acc: 0.670 | Val. Acc: 0.657 (sample)
+	Best validation loss: 1.187
+Epoch: 03 | Time: 0.0m 40.07s
+	Train Loss: 0.849
+	Val. Loss: 1.122
+	Train Acc: 0.763 | Val. Acc: 0.668 (sample)
+	Best validation loss: 1.122
+Epoch: 04 | Time: 0.0m 40.87s
+	Train Loss: 0.749
+	Val. Loss: 1.085
+	Train Acc: 0.779 | Val. Acc: 0.675 (sample)
+	Best validation loss: 1.085
+Epoch: 05 | Time: 0.0m 40.36s
+	Train Loss: 0.677
+	Val. Loss: 1.063
+	Train Acc: 0.771 | Val. Acc: 0.689 (sample)
+	Best validation loss: 1.063
+Epoch: 06 | Time: 0.0m 40.64s
+	Train Loss: 0.622
+	Val. Loss: 1.109
+	Train Acc: 0.781 | Val. Acc: 0.696 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 07 | Time: 0.0m 40.93s
+	Train Loss: 0.577
+	Val. Loss: 1.091
+	Train Acc: 0.814 | Val. Acc: 0.698 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 08 | Time: 0.0m 41.24s
+	Train Loss: 0.547
+	Val. Loss: 1.104
+	Train Acc: 0.873 | Val. Acc: 0.707 (sample)
+	No improvement in validation loss for 3 epochs
+Epoch: 09 | Time: 0.0m 40.81s
+	Train Loss: 0.523
+	Val. Loss: 1.087
+	Train Acc: 0.834 | Val. Acc: 0.680 (sample)
+	No improvement in validation loss for 4 epochs
+Epoch: 10 | Time: 0.0m 41.16s
+	Train Loss: 0.500
+	Val. Loss: 1.085
+	Train Acc: 0.893 | Val. Acc: 0.666 (sample)
+	No improvement in validation loss for 5 epochs
+Early stopping after 10 epochs
+Test Accuracy: 0.3623
+Sample 1:
+Source: ank
+Prediction: अंक
+Target: अंक
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनाकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: अंगकर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: एंकोर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगरक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+Using uniform attention weights (model may not have attention)
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/utils.py:224: UserWarning: Glyph 8594 (\N{RIGHTWARDS ARROW}) missing from font(s) Nirmala UI.
+  plt.savefig(save_path, dpi=300, bbox_inches='tight')
+Attention heatmaps saved to: attention_heatmaps.png

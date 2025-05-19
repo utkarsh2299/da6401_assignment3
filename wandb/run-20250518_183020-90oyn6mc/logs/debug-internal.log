@@ -1,0 +1,10 @@
+{"time":"2025-05-18T18:30:20.621122081+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250518_183020-90oyn6mc/logs/debug-core.log"}
+{"time":"2025-05-18T18:30:21.014570192+05:30","level":"INFO","msg":"created new stream","id":"90oyn6mc"}
+{"time":"2025-05-18T18:30:21.014669254+05:30","level":"INFO","msg":"stream: started","id":"90oyn6mc"}
+{"time":"2025-05-18T18:30:21.014738546+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"90oyn6mc"}
+{"time":"2025-05-18T18:30:21.014794187+05:30","level":"INFO","msg":"handler: started","stream_id":"90oyn6mc"}
+{"time":"2025-05-18T18:30:21.014845328+05:30","level":"INFO","msg":"sender: started","stream_id":"90oyn6mc"}
+{"time":"2025-05-18T18:30:21.345904563+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T18:31:08.909863492+05:30","level":"INFO","msg":"stream: closing","id":"90oyn6mc"}
+{"time":"2025-05-18T18:31:08.909942074+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T18:31:08.910022435+05:30","level":"INFO","msg":"Stopped system monitor"}

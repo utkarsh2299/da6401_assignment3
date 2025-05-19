@@ -1,0 +1,139 @@
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 3,450,051 trainable parameters
+                                                                                                                                                                    
+Epoch: 01 | Time: 0.0m 10.55s
+	Train Loss: 2.805
+	Val. Loss: 2.419
+	Train Acc: 0.381 | Val. Acc: 0.369 (sample)
+	Best validation loss: 2.419
+Epoch: 02 | Time: 0.0m 10.33s
+	Train Loss: 1.703
+	Val. Loss: 1.549
+	Train Acc: 0.567 | Val. Acc: 0.537 (sample)
+	Best validation loss: 1.549
+Epoch: 03 | Time: 0.0m 10.52s
+	Train Loss: 1.120
+	Val. Loss: 1.301
+	Train Acc: 0.629 | Val. Acc: 0.606 (sample)
+	Best validation loss: 1.301
+Epoch: 04 | Time: 0.0m 10.55s
+	Train Loss: 0.880
+	Val. Loss: 1.199
+	Train Acc: 0.690 | Val. Acc: 0.673 (sample)
+	Best validation loss: 1.199
+Epoch: 05 | Time: 0.0m 9.79s
+	Train Loss: 0.728
+	Val. Loss: 1.140
+	Train Acc: 0.758 | Val. Acc: 0.703 (sample)
+	Best validation loss: 1.140
+Epoch: 06 | Time: 0.0m 10.03s
+	Train Loss: 0.647
+	Val. Loss: 1.093
+	Train Acc: 0.770 | Val. Acc: 0.695 (sample)
+	Best validation loss: 1.093
+Epoch: 07 | Time: 0.0m 9.30s
+	Train Loss: 0.560
+	Val. Loss: 1.118
+	Train Acc: 0.821 | Val. Acc: 0.724 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 08 | Time: 0.0m 10.10s
+	Train Loss: 0.498
+	Val. Loss: 1.076
+	Train Acc: 0.835 | Val. Acc: 0.751 (sample)
+	Best validation loss: 1.076
+Epoch: 09 | Time: 0.0m 10.06s
+	Train Loss: 0.446
+	Val. Loss: 1.114
+	Train Acc: 0.855 | Val. Acc: 0.716 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 10 | Time: 0.0m 10.42s
+	Train Loss: 0.402
+	Val. Loss: 1.125
+	Train Acc: 0.895 | Val. Acc: 0.737 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 11 | Time: 0.0m 10.48s
+	Train Loss: 0.357
+	Val. Loss: 1.138
+	Train Acc: 0.901 | Val. Acc: 0.717 (sample)
+	No improvement in validation loss for 3 epochs
+Epoch: 12 | Time: 0.0m 9.29s
+	Train Loss: 0.321
+	Val. Loss: 1.139
+	Train Acc: 0.908 | Val. Acc: 0.724 (sample)
+	No improvement in validation loss for 4 epochs
+Epoch: 13 | Time: 0.0m 9.48s
+	Train Loss: 0.295
+	Val. Loss: 1.174
+	Train Acc: 0.919 | Val. Acc: 0.727 (sample)
+	No improvement in validation loss for 5 epochs
+Early stopping after 13 epochs
+Test Accuracy: 0.3778
+Sample 1:
+Source: ank
+Prediction: अंक
+Target: अंक
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: अंगकोर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: अंकोर
+Target: अंकोर
+Correct: Yes
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगरक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+  File "/speech/utkarsh/da6401_assignment3/sweep.py", line 50, in sweep_train
+    main(model_config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 124, in main
+    examples = visualize_attention(
+  File "/speech/utkarsh/da6401_assignment3/utils.py", line 177, in visualize_attention
+    output_indices, attention_weights = model.greedy_decode(src_tensor, max_len=100)
+ValueError: too many values to unpack (expected 2)

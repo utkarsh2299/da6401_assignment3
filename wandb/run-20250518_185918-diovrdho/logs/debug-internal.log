@@ -1,0 +1,15 @@
+{"time":"2025-05-18T18:59:18.97709475+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250518_185918-diovrdho/logs/debug-core.log"}
+{"time":"2025-05-18T18:59:19.37001233+05:30","level":"INFO","msg":"created new stream","id":"diovrdho"}
+{"time":"2025-05-18T18:59:19.370137272+05:30","level":"INFO","msg":"stream: started","id":"diovrdho"}
+{"time":"2025-05-18T18:59:19.370173963+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"diovrdho"}
+{"time":"2025-05-18T18:59:19.370242244+05:30","level":"INFO","msg":"handler: started","stream_id":"diovrdho"}
+{"time":"2025-05-18T18:59:19.370310275+05:30","level":"INFO","msg":"sender: started","stream_id":"diovrdho"}
+{"time":"2025-05-18T18:59:19.735783297+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-18T19:02:16.936050542+05:30","level":"INFO","msg":"stream: closing","id":"diovrdho"}
+{"time":"2025-05-18T19:02:16.936113223+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-18T19:02:16.936202945+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-18T19:02:17.936644655+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-18T19:02:18.561998462+05:30","level":"INFO","msg":"handler: closed","stream_id":"diovrdho"}
+{"time":"2025-05-18T19:02:18.562065283+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"diovrdho"}
+{"time":"2025-05-18T19:02:18.562094424+05:30","level":"INFO","msg":"sender: closed","stream_id":"diovrdho"}
+{"time":"2025-05-18T19:02:18.562208736+05:30","level":"INFO","msg":"stream: closed","id":"diovrdho"}

@@ -1,0 +1,49 @@
+_wandb:
+    value:
+        cli_version: 0.19.9
+        m: []
+        python_version: 3.10.14
+        t:
+            "1":
+                - 1
+                - 55
+                - 105
+            "2":
+                - 1
+                - 55
+                - 105
+            "3":
+                - 2
+                - 14
+                - 17
+                - 23
+                - 24
+                - 55
+            "4": 3.10.14
+            "5": 0.19.9
+            "8":
+                - 5
+            "10":
+                - 3
+            "12": 0.19.9
+            "13": linux-x86_64
+batch_size:
+    value: 128
+beam_size:
+    value: 7
+cell_type:
+    value: gru
+decoder_dropout:
+    value: 0.5
+embedding_size:
+    value: 16
+encoder_dropout:
+    value: 0.5
+hidden_size:
+    value: 256
+learning_rate:
+    value: 0.0005
+num_layers:
+    value: 2
+use_attention:
+    value: false
