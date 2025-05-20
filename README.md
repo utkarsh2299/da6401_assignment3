@@ -2,7 +2,7 @@
 
 # Hindi Transliteration Model
 
-This project implements a sequence-to-sequence (seq2seq) RNN-based model for transliterating Latin script (romanized) to Devanagari script for Hindi using the Google Dakshina dataset.
+This project implements a sequence-to-sequence (seq2seq) RNN-based model for transliterating Latin script (romanized) to Devanagari script for Hindi using the Google Dakshina dataset (Using with and without Attention).
 
 ## Project Structure
 
@@ -76,6 +76,8 @@ Train with custom parameters:
 ```bash
 python main.py --embedding_size 128 --hidden_size 256 --cell_type lstm
 ```
+
+You can also use `--use_attention` parameter to use attention in your model.
 
 ### You can use the Run that gave bests score : gru-ec_3-dc_3-hs_256-emb_256-bs_128-lr_0.0005 :
 
