@@ -173,9 +173,9 @@ def main():
     parser = argparse.ArgumentParser(description='Train and test a transliteration model')
     parser.add_argument('--data_path', type=str, default='dakshina_dataset_v1.0/hi/lexicons/',
                        help='Path to the dataset')
-    parser.add_argument('--beam_size', type=int, default=7,
+    parser.add_argument('--beam_size', type=int, default=3,
                        help='Beam size for decoding (None for greedy)')
-    parser.add_argument('--output_file', type=str, default='prediction_out_attention.csv',
+    parser.add_argument('--output_file', type=str, default='prediction_out_no_attention.csv',
                        help='Path to save prediction results (optional)')
     parser.add_argument('--display_samples', type=int, default=10,
                        help='Number of sample predictions to display')
@@ -191,13 +191,13 @@ def main():
                        help='Type of RNN cell (rnn, lstm, gru)')
     parser.add_argument('--batch_size', type=int, default=128,
                        help='Batch size for testing')
-    parser.add_argument('--learning_rate', type=float, default=0.001,
+    parser.add_argument('--learning_rate', type=float, default=0.0005,
                        help='Learning rate for training')
     parser.add_argument('--epochs', type=int, default=20,
                        help='Number of epochs to train for')
     parser.add_argument('--encoder_dropout', type=float, default=0.5,
                        help='Dropout for encoder')
-    parser.add_argument('--decoder_dropout', type=float, default=0.2,
+    parser.add_argument('--decoder_dropout', type=float, default=0.5,
                        help='Dropout for decoder')
     parser.add_argument('--seed', type=int, default=42,
                        help='Random seed for reproducibility')

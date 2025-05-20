@@ -812,7 +812,7 @@ def create_model(src_vocab_size: int,
                  device: torch.device,
                  sos_idx: int,
                  eos_idx: int,
-                 use_attention: bool = True) -> nn.Module:
+                 use_attention: bool = False) -> nn.Module:
     """
     Create a Seq2Seq model with or without attention
     
