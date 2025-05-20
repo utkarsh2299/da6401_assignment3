@@ -96,3 +96,13 @@ python test_model.py
 
 The model is evaluated based on exact match accuracy - the transliteration is correct only if it exactly matches the reference Devanagari text.
 
+### Notes
+
+I have used Nirmala fonts as Devanagari and latin fonts together were not rendered properly in Matplotlib.
+
+You can open the .html files to see the attention visualisaition which is interactive.
+
+
+### Feedback
+
+Let me know if there is any issue with the code. Thank you.
