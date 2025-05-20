@@ -143,18 +143,27 @@ def test(model: nn.Module,
                 trg_tensor = trg[j].unsqueeze(0)
                 
                 # Get indices with beam search or greedy decoding
-                if beam_size:
-                    # Handle models with attention (which return attention weights too)
-                    if hasattr(model, 'decoder') and hasattr(model.decoder, 'attention'):
+                # Handle both models with and without attention
+                try:
+                    if beam_size:
+                        # For attention models
                         output_indices, _ = model.beam_search(src_tensor, max_len=100, beam_size=beam_size)
                     else:
-                        output_indices = model.beam_search(src_tensor, max_len=100, beam_size=beam_size)
-                else:
-                    # Handle models with attention (which return attention weights too)
-                    if hasattr(model, 'decoder') and hasattr(model.decoder, 'attention'):
+                        # For attention models
                         output_indices, _ = model.greedy_decode(src_tensor, max_len=100)
+                except ValueError:
+                    # For non-attention models
+                    if beam_size:
+                        output_indices = model.beam_search(src_tensor, max_len=100, beam_size=beam_size)
                     else:
                         output_indices = model.greedy_decode(src_tensor, max_len=100)
+                except Exception as e:
+                    print(f"Error in decoding: {e}")
+                    continue
+                
+                # Handle case where output_indices is a single integer
+                if isinstance(output_indices, int):
+                    output_indices = [output_indices]
                 
                 # Convert indices to text
                 src_text = test_data.decode_latin(src_tensor.squeeze().cpu().numpy().tolist())

@@ -36,29 +36,6 @@ def count_parameters(model: torch.nn.Module) -> int:
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
 
-def plot_loss_curves(history: Dict[str, List[float]], save_path: str = None):
-    """
-    Plot the training and validation loss curves
-    
-    Args:
-        history: Dictionary containing training and validation loss history
-        save_path: Path to save the plot
-    """
-    plt.figure(figsize=(10, 6))
-    plt.plot(history['train_loss'], label='Training Loss')
-    plt.plot(history['valid_loss'], label='Validation Loss')
-    plt.xlabel('Epochs')
-    plt.ylabel('Loss')
-    plt.legend()
-    plt.title('Training and Validation Loss')
-    plt.grid(True)
-    
-    if save_path:
-        plt.savefig(save_path)
-    
-    plt.show()
-
-
 def calculate_accuracy(predictions: List[str], targets: List[str]) -> float:
     """
     Calculate accuracy of predictions

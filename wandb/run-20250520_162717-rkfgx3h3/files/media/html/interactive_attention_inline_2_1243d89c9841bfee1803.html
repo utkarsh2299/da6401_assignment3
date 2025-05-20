@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><base target="_blank"><link rel="stylesheet" type="text/css" href="https://app.wandb.ai/normalize.css" />
+    <meta charset="UTF-8">
+    <title>Interactive Attention Visualization</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+        }
+        .char {
+            display: inline-block;
+            margin: 4px;
+            padding: 5px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .row {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover over source characters to highlight attention to target</h2>
+    <div class="row" id="source">
+        <span class="char source" data-idx="0">d</span><span class="char source" data-idx="1">a</span><span class="char source" data-idx="2">n</span><span class="char source" data-idx="3">g</span><span class="char source" data-idx="4">e</span><span class="char source" data-idx="5">r</span><span class="char source" data-idx="6">o</span><span class="char source" data-idx="7">u</span><span class="char source" data-idx="8">s</span>
+    </div>
+    <div class="row" id="target">
+        <span class="char target" id="t0">द</span><span class="char target" id="t1">ं</span><span class="char target" id="t2">ग</span><span class="char target" id="t3">े</span><span class="char target" id="t4">र</span><span class="char target" id="t5">ू</span><span class="char target" id="t6">स</span><span class="char target" id="t7">स</span><span class="char target" id="t8">स</span>
+    </div>
+
+<script>
+const attn = [
+[1.0000, 0.0453, 0.0465, 0.0104, 0.0044, 0.0043, 0.0024, 0.0025, 0.0009],
+[0.1003, 1.0000, 0.8073, 0.2038, 0.0432, 0.0371, 0.0179, 0.0185, 0.0060],
+[0.0057, 0.1695, 1.0000, 1.0000, 0.1873, 0.1070, 0.0410, 0.0320, 0.0102],
+[0.0000, 0.0007, 0.0188, 0.5648, 1.0000, 0.5587, 0.1410, 0.0660, 0.0201],
+[0.0000, 0.0001, 0.0024, 0.2570, 0.3686, 1.0000, 0.7116, 0.3576, 0.1039],
+[0.0000, 0.0000, 0.0001, 0.0106, 0.2555, 0.4244, 1.0000, 0.8078, 0.2348],
+[0.0000, 0.0000, 0.0000, 0.0014, 0.0220, 0.0908, 0.4411, 1.0000, 0.7080],
+[0.0001, 0.0000, 0.0001, 0.0003, 0.0034, 0.0111, 0.3259, 0.8457, 0.8563],
+[0.0004, 0.0003, 0.0004, 0.0017, 0.0096, 0.0159, 0.2422, 0.5180, 1.0000]
+];
+
+document.querySelectorAll('.source').forEach(sourceChar => {
+    sourceChar.addEventListener('mouseover', () => {
+        const srcIdx = parseInt(sourceChar.dataset.idx);
+        const weights = attn.map(row => row[srcIdx]);
+
+        weights.forEach((weight, tgtIdx) => {
+            const tgtElem = document.getElementById("t" + tgtIdx);
+            let opacity = 0.8 * weight;
+            tgtElem.style.backgroundColor = `rgba(100, 200, 255, ${opacity.toFixed(2)})`;
+
+
+        });
+    });
+    sourceChar.addEventListener('mouseout', () => {
+        document.querySelectorAll('.target').forEach(el => {
+            el.style.backgroundColor = "";
+        });
+    });
+});
+</script>
+</body>
+</html>

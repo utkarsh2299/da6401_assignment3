@@ -173,13 +173,13 @@ def main():
     parser = argparse.ArgumentParser(description='Train and test a transliteration model')
     parser.add_argument('--data_path', type=str, default='dakshina_dataset_v1.0/hi/lexicons/',
                        help='Path to the dataset')
-    parser.add_argument('--beam_size', type=int, default=5,
+    parser.add_argument('--beam_size', type=int, default=7,
                        help='Beam size for decoding (None for greedy)')
-    parser.add_argument('--output_file', type=str, default='prediction_out.csv',
+    parser.add_argument('--output_file', type=str, default='prediction_out_attention.csv',
                        help='Path to save prediction results (optional)')
     parser.add_argument('--display_samples', type=int, default=10,
                        help='Number of sample predictions to display')
-    parser.add_argument('--embedding_size', type=int, default=128,
+    parser.add_argument('--embedding_size', type=int, default=256,
                        help='Size of the embeddings')
     parser.add_argument('--hidden_size', type=int, default=256,
                        help='Size of the hidden states')
@@ -189,13 +189,13 @@ def main():
                        help='Number of layers in the decoder')
     parser.add_argument('--cell_type', type=str, default='lstm',
                        help='Type of RNN cell (rnn, lstm, gru)')
-    parser.add_argument('--batch_size', type=int, default=32,
+    parser.add_argument('--batch_size', type=int, default=128,
                        help='Batch size for testing')
     parser.add_argument('--learning_rate', type=float, default=0.001,
                        help='Learning rate for training')
     parser.add_argument('--epochs', type=int, default=20,
                        help='Number of epochs to train for')
-    parser.add_argument('--encoder_dropout', type=float, default=0.3,
+    parser.add_argument('--encoder_dropout', type=float, default=0.5,
                        help='Dropout for encoder')
     parser.add_argument('--decoder_dropout', type=float, default=0.2,
                        help='Dropout for decoder')

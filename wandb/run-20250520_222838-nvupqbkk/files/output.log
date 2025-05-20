@@ -1,0 +1,85 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+inside attention
+The model has 6,731,843 trainable parameters
+                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 15.84s
+	Train Loss: 2.123
+	Val. Loss: 1.361
+	Train Acc: 0.631 | Val. Acc: 0.613 (sample)
+	Best validation loss: 1.361
+Epoch: 02 | Time: 0.0m 15.74s
+	Train Loss: 1.038
+	Val. Loss: 1.151
+	Train Acc: 0.683 | Val. Acc: 0.703 (sample)
+	Best validation loss: 1.151
+Epoch: 03 | Time: 0.0m 15.66s
+	Train Loss: 0.846
+	Val. Loss: 1.072
+	Train Acc: 0.729 | Val. Acc: 0.728 (sample)
+	Best validation loss: 1.072
+Epoch: 04 | Time: 0.0m 15.68s
+	Train Loss: 0.747
+	Val. Loss: 1.052
+	Train Acc: 0.734 | Val. Acc: 0.741 (sample)
+	Best validation loss: 1.052
+Epoch: 05 | Time: 0.0m 15.78s
+	Train Loss: 0.666
+	Val. Loss: 0.995
+	Train Acc: 0.784 | Val. Acc: 0.765 (sample)
+	Best validation loss: 0.995
+Epoch: 06 | Time: 0.0m 15.83s
+	Train Loss: 0.620
+	Val. Loss: 1.020
+	Train Acc: 0.733 | Val. Acc: 0.759 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 07 | Time: 0.0m 15.82s
+	Train Loss: 0.577
+	Val. Loss: 0.985
+	Train Acc: 0.816 | Val. Acc: 0.765 (sample)
+	Best validation loss: 0.985
+Epoch: 08 | Time: 0.0m 16.03s
+	Train Loss: 0.546
+	Val. Loss: 0.935
+	Train Acc: 0.793 | Val. Acc: 0.778 (sample)
+	Best validation loss: 0.935
+Epoch: 09 | Time: 0.0m 15.78s
+	Train Loss: 0.505
+	Val. Loss: 0.936
+	Train Acc: 0.819 | Val. Acc: 0.790 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 10 | Time: 0.0m 15.77s
+	Train Loss: 0.482
+	Val. Loss: 0.948
+	Train Acc: 0.856 | Val. Acc: 0.778 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 11 | Time: 0.0m 15.86s
+	Train Loss: 0.450
+	Val. Loss: 0.979
+	Train Acc: 0.823 | Val. Acc: 0.780 (sample)
+	No improvement in validation loss for 3 epochs
+Epoch: 12 | Time: 0.0m 15.89s
+	Train Loss: 0.428
+	Val. Loss: 0.957
+	Train Acc: 0.864 | Val. Acc: 0.774 (sample)
+	No improvement in validation loss for 4 epochs
+Epoch: 13 | Time: 0.0m 16.13s
+	Train Loss: 0.405
+	Val. Loss: 0.981
+	Train Acc: 0.857 | Val. Acc: 0.767 (sample)
+	No improvement in validation loss for 5 epochs
+Early stopping after 13 epochs
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 302, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 104, in main
+    accuracy, samples = test(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 149, in test
+    output_indices, _ = model.beam_search(src_tensor, max_len=100, beam_size=beam_size)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 302, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 104, in main
+    accuracy, samples = test(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 149, in test
+    output_indices, _ = model.beam_search(src_tensor, max_len=100, beam_size=beam_size)
+ValueError: too many values to unpack (expected 2)

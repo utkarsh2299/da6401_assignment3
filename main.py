@@ -94,9 +94,6 @@ def main(config: ModelConfig):
         log_wandb=config.log_wandb
     )
     
-    # Plot loss curves
-    # plot_loss_curves(history, save_path=os.path.join(config.save_path, 'loss_curves.png'))
-    
     # Load best model
     model.load_state_dict(torch.load(model_save_path_new))
     
@@ -122,87 +119,24 @@ def main(config: ModelConfig):
     model.eval()
     device = "cuda" if torch.cuda.is_available() else 'cpu'
     
-    
-    # if hasattr(config, 'visualize_connectivity') and config.visualize_connectivity:
-        
-        # text = "context the formal study of grammar advanced learning"
-        # selected_char = "a"  # character to visualize connectivity for
 
-        # # Build all model variants (GRU, LSTM, etc.)
-        # models_dict = {
-        #     "GRU": create_model(
-        #         src_vocab_size, trg_vocab_size, config.embedding_size, config.hidden_size,
-        #         config.num_encoder_layers, config.num_decoder_layers, config.encoder_dropout,
-        #         config.decoder_dropout, 'gru', config.device, sos_idx, eos_idx, config.use_attention
-        #     ).to(config.device),
+    from interactive_UI import export_interactive_html
 
-        #     "LSTM": create_model(
-        #         src_vocab_size, trg_vocab_size, config.embedding_size, config.hidden_size,
-        #         config.num_encoder_layers, config.num_decoder_layers, config.encoder_dropout,
-        #         config.decoder_dropout, 'lstm', config.device, sos_idx, eos_idx, config.use_attention
-        #     ).to(config.device)
-        # }
-
-        # print(f"\n[INFO] Generating character-level connectivity diagram...")
-        # visualize_for_models(text=text,
-        #                      tokenizer=test_dataset,  # uses encode_latin
-        #                      models_dict=models_dict,
-        #                      selected_char=selected_char)
-
-    
-        # text = "ankit"
-        # input_tensor = torch.tensor([test_dataset.encode_latin(text)], dtype=torch.long).to(config.device)
-        # output_indices, attn_weights = model.greedy_decode(input_tensor, max_len=30)
-
-        # # Convert predictions to characters
-        # output_text = test_dataset.decode_devanagari(output_indices)
-
-        # # Convert stacked attention to numpy
-        # attention_matrix = torch.stack(attn_weights).cpu().numpy()  # shape: [output_len, input_len]
-
-        # # Choose an output character to visualize (e.g., index 2 = 'ग')
-        # selected_idx = 2
-        # visualize_decoder_attention(
-        #     text=text,
-        #     output_text=output_text,
-        #     attention_matrix=attention_matrix,
-        #     selected_output_idx=selected_idx,
-        #     model_name="LSTM + Attention"
-# )
-
-
-    # text = "angaarak"
-    # input_tensor = torch.tensor([test_dataset.encode_latin(text)], dtype=torch.long).to(config.device)
-    # output_indices, attn_weights = model.greedy_decode(input_tensor, max_len=30)
-
-    # output_text = test_dataset.decode_devanagari(output_indices)
-    # attention_matrix = torch.stack(attn_weights).cpu().numpy()
-
-    # show_interactive_attention(
-    #     input_text=text,
-    #     output_text=output_text,
-    #     attention_matrix=attention_matrix,
-    #     title="Hover to see how input influences output"
-    # )
-
-    from export_interactive_attention import export_interactive_html
-
-    # Step 1: Define the input
-    raw_input_text = "dangerous"
+   
+    raw_input_text = "bachaane"
     input_tensor = torch.tensor([test_dataset.encode_latin(raw_input_text)], dtype=torch.long).to(config.device)
 
-    # Step 2: Get prediction
+   
     pred_indices, attn_weights = model.greedy_decode(input_tensor, max_len=30)
 
-    # Step 3: Decode & clean output
+  
     target = test_dataset.decode_devanagari(pred_indices)  # may include EOS — strip it
     target = target.replace("<EOS>", "").replace("<SOS>", "").strip()
 
-    # Step 4: Get actual number of chars in decoded output
+
     target_len = len(target)
     source_len = len(raw_input_text)
 
-    # Step 5: Slice attention weights
     attn_matrix = torch.stack(attn_weights).cpu().numpy()[:target_len, :source_len]
 
     export_interactive_html(raw_input_text, target, attn_matrix, output_path="interactive_attention.html")
@@ -221,15 +155,6 @@ def main(config: ModelConfig):
     #         n_cols=3,
     #         save_path='attention_heatmaps.png'
     #     )
-
-    #     exampless = visualize_attention_connectivity(
-    #         model=model,
-    #         test_dataset=test_dataset,
-    #         iterator=test_loader,
-    #         device=device,
-    #         n_examples=9,
-    #         save_path='attention_heatmaps_connectivity.png'
-    #     )
         
     #     # Log attention heatmaps to wandb
     #     if config.log_wandb:
@@ -245,27 +170,27 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Train a transliteration model')
     parser.add_argument('--data_path', type=str, default='dakshina_dataset_v1.0/hi/lexicons/',
                         help='Path to the Dakshina dataset')
-    parser.add_argument('--embedding_size', type=int, default=64,
+    parser.add_argument('--embedding_size', type=int, default=256,
                         help='Size of the embeddings')
-    parser.add_argument('--hidden_size', type=int, default=128,
+    parser.add_argument('--hidden_size', type=int, default=256,
                         help='Size of the hidden states')
-    parser.add_argument('--num_layers', type=int, default=1,
+    parser.add_argument('--num_layers', type=int, default=3,
                         help='Number of layers in the encoder/decoder')
-    parser.add_argument('--encoder_dropout', type=float, default=0.3,
+    parser.add_argument('--encoder_dropout', type=float, default=0.5,
                         help='Dropout probability for the encoder')
-    parser.add_argument('--decoder_dropout', type=float, default=0.3,
+    parser.add_argument('--decoder_dropout', type=float, default=0.2,
                         help='Dropout probability for the decoder')
     parser.add_argument('--cell_type', type=str, default='lstm',
                         help='Type of RNN cell (rnn, lstm, gru)')
-    parser.add_argument('--batch_size', type=int, default=64,
+    parser.add_argument('--batch_size', type=int, default=128,
                         help='Batch size for training')
-    parser.add_argument('--learning_rate', type=float, default=0.001,
+    parser.add_argument('--learning_rate', type=float, default=0.0005,
                         help='Learning rate for the optimizer')
     parser.add_argument('--n_epochs', type=int, default=20,
                         help='Number of epochs to train for')
     parser.add_argument('--clip', type=float, default=1.0,
                         help='Gradient clipping value')
-    parser.add_argument('--beam_size', type=int, default=None,
+    parser.add_argument('--beam_size', type=int, default=7,
                         help='Beam size for beam search (None for greedy)')
     parser.add_argument('--seed', type=int, default=42,
                         help='Random seed for reproducibility')

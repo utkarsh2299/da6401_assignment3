@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head><base target="_blank"><link rel="stylesheet" type="text/css" href="https://app.wandb.ai/normalize.css" />
+    <meta charset="UTF-8">
+    <title>Interactive Attention Visualization</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+        }
+        .char {
+            display: inline-block;
+            margin: 4px;
+            padding: 5px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .row {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover over source characters to highlight attention to target</h2>
+    <div class="row" id="source">
+        <span class="char source" data-idx="0">b</span><span class="char source" data-idx="1">a</span><span class="char source" data-idx="2">c</span><span class="char source" data-idx="3">h</span><span class="char source" data-idx="4">a</span><span class="char source" data-idx="5">a</span><span class="char source" data-idx="6">n</span><span class="char source" data-idx="7">e</span>
+    </div>
+    <div class="row" id="target">
+        <span class="char target" id="t0">ब</span><span class="char target" id="t1">च</span><span class="char target" id="t2">ा</span><span class="char target" id="t3">न</span><span class="char target" id="t4">े</span>
+    </div>
+
+<script>
+const attn = [
+[1.0000, 0.2715, 0.3662, 0.1779, 0.0150, 0.0056, 0.0024, 0.0008],
+[0.0035, 1.0000, 1.0000, 1.0000, 0.3076, 0.0569, 0.0165, 0.0033],
+[0.0001, 0.0244, 0.0498, 0.1028, 1.0000, 1.0000, 0.4847, 0.1202],
+[0.0000, 0.0004, 0.0003, 0.0008, 0.0421, 0.1771, 1.0000, 0.5141],
+[0.0000, 0.0001, 0.0001, 0.0001, 0.0011, 0.0092, 0.1681, 1.0000]
+];
+
+document.querySelectorAll('.source').forEach(sourceChar => {
+    sourceChar.addEventListener('mouseover', () => {
+        const srcIdx = parseInt(sourceChar.dataset.idx);
+        const weights = attn.map(row => row[srcIdx]);
+
+        weights.forEach((weight, tgtIdx) => {
+            const tgtElem = document.getElementById("t" + tgtIdx);
+            let opacity = 0.8 * weight;
+            tgtElem.style.backgroundColor = `rgba(100, 200, 255, ${opacity.toFixed(2)})`;
+
+
+        });
+    });
+    sourceChar.addEventListener('mouseout', () => {
+        document.querySelectorAll('.target').forEach(el => {
+            el.style.backgroundColor = "";
+        });
+    });
+});
+</script>
+</body>
+</html>

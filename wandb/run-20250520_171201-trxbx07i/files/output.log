@@ -1,0 +1,151 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 4,512,579 trainable parameters
+                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 12.93s
+	Train Loss: 2.428
+	Val. Loss: 1.783
+	Train Acc: 0.448 | Val. Acc: 0.450 (sample)
+	Best validation loss: 1.783
+Epoch: 02 | Time: 0.0m 12.67s
+	Train Loss: 1.432
+	Val. Loss: 1.439
+	Train Acc: 0.603 | Val. Acc: 0.559 (sample)
+	Best validation loss: 1.439
+Epoch: 03 | Time: 0.0m 12.89s
+	Train Loss: 1.084
+	Val. Loss: 1.243
+	Train Acc: 0.667 | Val. Acc: 0.653 (sample)
+	Best validation loss: 1.243
+Epoch: 04 | Time: 0.0m 12.92s
+	Train Loss: 0.922
+	Val. Loss: 1.195
+	Train Acc: 0.683 | Val. Acc: 0.653 (sample)
+	Best validation loss: 1.195
+Epoch: 05 | Time: 0.0m 12.33s
+	Train Loss: 0.811
+	Val. Loss: 1.150
+	Train Acc: 0.709 | Val. Acc: 0.721 (sample)
+	Best validation loss: 1.150
+Epoch: 06 | Time: 0.0m 12.34s
+	Train Loss: 0.737
+	Val. Loss: 1.133
+	Train Acc: 0.769 | Val. Acc: 0.712 (sample)
+	Best validation loss: 1.133
+Epoch: 07 | Time: 0.0m 12.09s
+	Train Loss: 0.680
+	Val. Loss: 1.105
+	Train Acc: 0.753 | Val. Acc: 0.738 (sample)
+	Best validation loss: 1.105
+Epoch: 08 | Time: 0.0m 12.91s
+	Train Loss: 0.635
+	Val. Loss: 1.081
+	Train Acc: 0.818 | Val. Acc: 0.745 (sample)
+	Best validation loss: 1.081
+Epoch: 09 | Time: 0.0m 12.45s
+	Train Loss: 0.589
+	Val. Loss: 1.105
+	Train Acc: 0.819 | Val. Acc: 0.737 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 10 | Time: 0.0m 12.52s
+	Train Loss: 0.562
+	Val. Loss: 1.073
+	Train Acc: 0.830 | Val. Acc: 0.762 (sample)
+	Best validation loss: 1.073
+Epoch: 11 | Time: 0.0m 12.50s
+	Train Loss: 0.526
+	Val. Loss: 1.091
+	Train Acc: 0.861 | Val. Acc: 0.748 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 12 | Time: 0.0m 12.24s
+	Train Loss: 0.496
+	Val. Loss: 1.134
+	Train Acc: 0.849 | Val. Acc: 0.729 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 13 | Time: 0.0m 12.75s
+	Train Loss: 0.470
+	Val. Loss: 1.111
+	Train Acc: 0.845 | Val. Acc: 0.731 (sample)
+	No improvement in validation loss for 3 epochs
+Epoch: 14 | Time: 0.0m 12.67s
+	Train Loss: 0.454
+	Val. Loss: 1.094
+	Train Acc: 0.887 | Val. Acc: 0.747 (sample)
+	No improvement in validation loss for 4 epochs
+Epoch: 15 | Time: 0.0m 12.70s
+	Train Loss: 0.436
+	Val. Loss: 1.095
+	Train Acc: 0.871 | Val. Acc: 0.730 (sample)
+	No improvement in validation loss for 5 epochs
+Early stopping after 15 epochs
+Test Accuracy: 0.3623
+Sample 1:
+Source: ank
+Prediction: एंक
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनाकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: एंगकोर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: एंकोर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 302, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 195, in main
+    pred_indices, attn_weights = model.greedy_decode(input_tensor, max_len=30)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 302, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 195, in main
+    pred_indices, attn_weights = model.greedy_decode(input_tensor, max_len=30)
+ValueError: too many values to unpack (expected 2)

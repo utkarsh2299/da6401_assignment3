@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head><base target="_blank"><link rel="stylesheet" type="text/css" href="https://app.wandb.ai/normalize.css" />
+    <meta charset="UTF-8">
+    <title>Interactive Attention Visualization</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+        }
+        .char {
+            display: inline-block;
+            margin: 4px;
+            padding: 5px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .row {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover over source characters to highlight attention to target</h2>
+    <div class="row" id="source">
+        <span class="char source" data-idx="0">s</span><span class="char source" data-idx="1">a</span><span class="char source" data-idx="2">h</span><span class="char source" data-idx="3">a</span><span class="char source" data-idx="4">b</span>
+    </div>
+    <div class="row" id="target">
+        <span class="char target" id="t0">स</span><span class="char target" id="t1">ह</span><span class="char target" id="t2">ा</span><span class="char target" id="t3">ब</span><span class="char target" id="t4">ब</span><span class="char target" id="t5">ब</span>
+    </div>
+
+<script>
+const attn = [
+[1.0000, 0.1323, 0.0913, 0.0229, 0.0061],
+[0.1721, 1.0000, 1.0000, 0.1705, 0.0504],
+[0.0016, 0.0408, 0.8729, 1.0000, 0.3793],
+[0.0000, 0.0006, 0.0818, 0.6189, 0.8055],
+[0.0000, 0.0000, 0.0016, 0.2014, 0.9687],
+[0.0001, 0.0004, 0.0019, 0.1029, 1.0000]
+];
+
+document.querySelectorAll('.source').forEach(sourceChar => {
+    sourceChar.addEventListener('mouseover', () => {
+        const srcIdx = parseInt(sourceChar.dataset.idx);
+        const weights = attn.map(row => row[srcIdx]);
+
+        weights.forEach((weight, tgtIdx) => {
+            const tgtElem = document.getElementById("t" + tgtIdx);
+            let opacity = 0.8 * weight;
+            tgtElem.style.backgroundColor = `rgba(100, 200, 255, ${opacity.toFixed(2)})`;
+
+
+        });
+    });
+    sourceChar.addEventListener('mouseout', () => {
+        document.querySelectorAll('.target').forEach(el => {
+            el.style.backgroundColor = "";
+        });
+    });
+});
+</script>
+</body>
+</html>
