@@ -11,8 +11,7 @@ from model import create_model
 from train import train_model, test
 from utils import set_seed, count_parameters, plot_loss_curves, display_sample_predictions, visualize_attention, visualize_attention_connectivity
 from config import ModelConfig
-from connectivity_visualizer import visualize_for_models, visualize_decoder_attention  
-from interactive_attention import show_interactive_attention
+from interactive_UI import export_interactive_html
 
 def main(config: ModelConfig):
     """
@@ -120,18 +119,20 @@ def main(config: ModelConfig):
     device = "cuda" if torch.cuda.is_available() else 'cpu'
     
 
-    from interactive_UI import export_interactive_html
+    # from interactive_UI import export_interactive_html
 
-   
+   #PUT YOUR TXT HERE for the interactive UI
     raw_input_text = "bachaane"
+    
+    
     input_tensor = torch.tensor([test_dataset.encode_latin(raw_input_text)], dtype=torch.long).to(config.device)
 
    
     pred_indices, attn_weights = model.greedy_decode(input_tensor, max_len=30)
 
   
-    target = test_dataset.decode_devanagari(pred_indices)  # may include EOS — strip it
-    target = target.replace("<EOS>", "").replace("<SOS>", "").strip()
+    target = test_dataset.decode_devanagari(pred_indices)  
+    target = target.replace("<EOS>", "").replace("<SOS>", "").strip()  #Striip the string 
 
 
     target_len = len(target)
