@@ -121,7 +121,7 @@ python sweep.py --count 10
 
 ### Testing a Trained Model
 
-Test a trained model:
+Test a trained model: You need to update the config inside:
 ```bash
 python test_model.py 
 ```
