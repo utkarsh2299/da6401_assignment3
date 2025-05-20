@@ -134,7 +134,7 @@ The model is evaluated based on exact match accuracy - the transliteration is co
 
 I have used Nirmala fonts as Devanagari and latin fonts together were not rendered properly in Matplotlib.
 
-You can open the .html files to see the attention visualisaition which is interactive.
+**You can open the .html files to see the attention visualisaition which is interactive.**
 
 
 ### Feedback
