@@ -77,6 +77,40 @@ Train with custom parameters:
 python main.py --embedding_size 128 --hidden_size 256 --cell_type lstm
 ```
 
+### Run that gave bests score : gru-ec_3-dc_3-hs_256-emb_256-bs_128-lr_0.0005
+
+```
+batch_size:
+    value: 128
+
+beam_size:
+    value: 3
+
+cell_type:
+    value: gru
+
+decoder_dropout:
+    value: 0.5
+
+embedding_size:
+    value: 256
+
+encoder_dropout:
+    value: 0.5
+
+hidden_size:
+    value: 256
+
+learning_rate:
+    value: 0.0005
+
+num_layers:
+    value: 3
+
+use_attention:
+    value: false
+```
+
 ### Hyperparameter Optimization
 
 Run a standard hyperparameter sweep:
