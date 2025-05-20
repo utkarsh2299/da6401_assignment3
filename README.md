@@ -12,7 +12,6 @@ This project implements a sequence-to-sequence (seq2seq) RNN-based model for tra
 ├── data.py            # Data loading and preprocessing
 ├── main.py            # Main script to run experiments
 ├── model.py           # Seq2Seq model architecture
-├── model_analysis.py  # Analysis of model complexity
 ├── sweep.py           # Hyperparameter sweep configuration
 ├── test_model.py      # Script to test trained models
 ├── train.py           # Training and testing functions

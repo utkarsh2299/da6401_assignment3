@@ -1,0 +1,94 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+inside attention
+The model has 547,651 trainable parameters
+                                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 24.80s
+	Train Loss: 1.660
+	Val. Loss: 1.264
+	Train Acc: 0.580 | Val. Acc: 0.666 (sample)
+	Best validation loss: 1.264
+Test Accuracy: 0.2110
+Sample 1:
+Source: ank
+Prediction: अंक
+Target: अंक
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनाकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: अंगकर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: अंकोर
+Target: अंकोर
+Correct: Yes
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगाराक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+{'text/html': '        <script type="text/javascript">\n        window.PlotlyConfig = {MathJaxConfig: \'local\'};\n        if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}\n        </script>\n        <script>/**\n* plotly.js v3.0.1\n* Copyright 2012-2025, Plotly, Inc.\n* All rights reserved.\n* Licensed under the MIT license\n*/\n(\n function(root, factory) {\n  if (typeof module === "object" && module.exports) {\n   module.exports = factory();\n  } else {\n   root.moduleName = factory();\n  }\n} (typeof self !== "undefined" ? self : this, () => {\n"use strict";var Plotly=(()=>{var VQe=Object.create;var MS=Object.defineProperty,HQe=Object.defineProperties,GQe=Object.getOwnPropertyDescriptor,jQe=Object.getOwnPropertyDescriptors,WQe=Object.getOwnPropertyNames,XQ=Object.getOwnPropertySymbols,ZQe=Object.getPrototypeOf,KQ=Object.prototype.hasOwnProperty,XQe=Object.prototype.propertyIsEnumerable;var YQ=(e,t,r)=>t in e?MS(e,t,{enumerable:!0,configurable:!0,writable:!0,value:r}):e[t]=r,JQ=(e,t)=>{for(var r in t||(t={}))KQ.call(t,r)&&YQ(e,r,t[r]);if(XQ)for(var r of XQ(t))XQe.call(t,r)&&YQ(e,r,t[r]);return e},$Q=(e,t)=>HQe(e,jQe(t));var Ll=(e,t)=>()=>(e&&(t=e(e=0)),t);var ye=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),QQ=(e,t)=>{for(var r in t)MS(e,r,{get:t[r],enumerable:!0})},eee=(e,t,r,n)=>{if(t&&typeof t=="object"||typeof t=="function")for(let i of WQe(t))!KQ.call(e,i)&&i!==r&&MS(e,i,{get:()=>t[i],enumerable:!(n=GQe(t,i))||n.enumerable});return e};var YQe=(e,t,r)=>(r=e!=null?VQe(ZQe(e)):{},eee(t||!e||!e.__esModule?MS(r,"default",{value:e,enumerable:!0}):r,e)),B1=e=>eee(MS({},"__esModule",{value:!0}),e);var e6=ye(tee=>{"use strict";tee.version="3.0.1"});var iee=ye((ree,t6)=>{(function(t,r,n){r[t]=r[t]||n(),typeof t6!="undefined"&&t6.exports&&(t6.exports=r[t])})("Promise",typeof window!="undefined"?window:ree,function(){"use strict";var t,r,n,i=Object.prototype.toString,a=typeof setImmediate!="undefined"?function(E){return setImmediate(E)}:setTimeout;try{Object.defineProperty({},"x",{}),t=function(E,k,A,L){return Object.defineProperty(E,k,{value:A,writable:!0,configurable:L!==!1})}}catch(p){t=function(k,A,L){return k[A]=L,k}}n=function(){var E,k,A;function L(_,C){this.fn=_,this.self=C,this.next=void 0}return{add:function(C,M){A=new L(C,M),k?k.next=A:E=A,k=A,A=void 0},drain:function(){var C=E;for(E=k=r=void 0;C;)C.fn.call(C.self),C=C.next}}}();function o(p,E){n.add(p,E),r||(r=a(n.drain))}function s(p){var E,k=typeof p;return p!=null&&(k=="object"||k=="function")&&(E=p.then),typeof E=="function"?E:!1}function l(){for(var p=0;p<this.chain.length;p++)u(this,this.state===1?this.chain[p].success:this.chain[p].failure,this.chain[p]);this.chain.length=0}function u(p,E,k){var A,L;try{E===!1?k.reject(p.msg):(E===!0?A=p.msg:A=E.call(void 0,p.msg),A===k.promise?k.reject(TypeError("Promise-chain cycle")):(L=s(A))?L.call(A,k.resolve,k.reject):k.resolve(A))}catch(_){k.reject(_)}}function c(p){var E,k=this;if(!k.triggered){k.triggered=!0,k.def&&(k=k.def);try{(E=s(p))?o(function(){var A=new d(k);try{E.call(p,function(){c.apply(A,arguments)},function(){f.apply(A,arguments)})}catch(L){f.call(A,L)}}):(k.msg=p,k.state=1,k.chain.length>0&&o(l,k))}catch(A){f.call(new d(k),A)}}}function f(p){var E=this;E.triggered||(E.triggered=!0,E.def&&(E=E.def),E.msg=p,E.state=2,E.chain.length>0&&o(l,E))}function h(p,E,k,A){for(var L=0;L<E.length;L++)(function(C){p.resolve(E[C]).then(function(g){k(C,g)},A)})(L)}function d(p){this.def=p,this.triggered=!1}function v(p){this.promise=p,this.state=0,this.triggered=!1,this.chain=[],this.msg=void 0}function x(p){if(typeof p!="function")throw TypeError("Not a function");if(this.__NPO__!==0)throw TypeError("Not a promise");this.__NPO__=1;var E=new v(this);this.then=function(A,L){var _={success:typeof A=="function"?A:!0,failure:typeof L=="function"?L:!1};return _.promise=new this.constructor(function(M,g){if(typeof M!="function"||typeof g!="function")throw TypeError("Not a function");_.resolve=M,_.reject=g}),E.chain.push(_),E.state!==0&&o
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 280, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 181, in main
+    show_interactive_attention(
+  File "/speech/utkarsh/da6401_assignment3/interactive_attention.py", line 39, in show_interactive_attention
+    fig.show()
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/site-packages/plotly/basedatatypes.py", line 3436, in show
+    return pio.show(self, *args, **kwargs)
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/site-packages/plotly/io/_renderers.py", line 425, in show
+    raise ValueError(
+ValueError: Mime type rendering requires nbformat>=4.2.0 but it is not installed
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 280, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 181, in main
+    show_interactive_attention(
+  File "/speech/utkarsh/da6401_assignment3/interactive_attention.py", line 39, in show_interactive_attention
+    fig.show()
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/site-packages/plotly/basedatatypes.py", line 3436, in show
+    return pio.show(self, *args, **kwargs)
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/site-packages/plotly/io/_renderers.py", line 425, in show
+    raise ValueError(
+ValueError: Mime type rendering requires nbformat>=4.2.0 but it is not installed

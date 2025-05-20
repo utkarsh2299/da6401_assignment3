@@ -260,7 +260,9 @@ class TransliterationDataset(Dataset):
                         if idx not in [self.latin_char2idx['<PAD>'], 
                                        self.latin_char2idx['<SOS>'],
                                        self.latin_char2idx['<EOS>']]])
-    
+    def encode_latin(self, text: str) -> List[int]:
+        return [self.latin_char2idx.get(c, self.latin_char2idx['<UNK>']) for c in text]
+
     def decode_devanagari(self, indices: List[int]) -> str:
         """Convert a list of indices to Devanagari text"""
         return ''.join([self.devanagari_idx2char.get(idx, '<UNK>') for idx in indices 

@@ -1,0 +1,16 @@
+{"time":"2025-05-19T23:48:34.637637844+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_234834-lslhn2mh/logs/debug-core.log"}
+{"time":"2025-05-19T23:48:35.013970145+05:30","level":"INFO","msg":"created new stream","id":"lslhn2mh"}
+{"time":"2025-05-19T23:48:35.014023147+05:30","level":"INFO","msg":"stream: started","id":"lslhn2mh"}
+{"time":"2025-05-19T23:48:35.014042437+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"lslhn2mh"}
+{"time":"2025-05-19T23:48:35.014060768+05:30","level":"INFO","msg":"handler: started","stream_id":"lslhn2mh"}
+{"time":"2025-05-19T23:48:35.014082339+05:30","level":"INFO","msg":"sender: started","stream_id":"lslhn2mh"}
+{"time":"2025-05-19T23:48:35.385332153+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T23:52:59.721673819+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T23:52:59.721797542+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T23:53:00.724609483+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/attention_heatmaps_2_8149f9ebd54032a58513.png","runtime_seconds":1.350282989,"progress":"338.4KB/338.4KB"},{"desc":"uploading media/images/attention_heatmaps_connectivity_3_c546880e5d1867e2ce47.png","runtime_seconds":0.698373662,"progress":"837.8KB/837.8KB"},{"desc":"uploading output.log","runtime_seconds":0.380843721,"progress":"3.2KB/3.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.380831541,"progress":"793B/793B"},{"desc":"uploading config.yaml","runtime_seconds":0.079882462,"progress":"1.3KB/1.3KB"}],"total_operations":5}}
+{"time":"2025-05-19T23:53:02.268049933+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T23:53:02.580239226+05:30","level":"INFO","msg":"stream: closing","id":"lslhn2mh"}
+{"time":"2025-05-19T23:53:02.580263506+05:30","level":"INFO","msg":"handler: closed","stream_id":"lslhn2mh"}
+{"time":"2025-05-19T23:53:02.580278616+05:30","level":"INFO","msg":"sender: closed","stream_id":"lslhn2mh"}
+{"time":"2025-05-19T23:53:02.580275296+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"lslhn2mh"}
+{"time":"2025-05-19T23:53:02.580382119+05:30","level":"INFO","msg":"stream: closed","id":"lslhn2mh"}

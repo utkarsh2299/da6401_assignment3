@@ -1,0 +1,33 @@
+2025-05-19 13:19:08,772 INFO    Thread-7 (_run_job):1156901 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250519_131908-ixe4kqnr/logs/debug.log
+2025-05-19 13:19:08,773 INFO    Thread-7 (_run_job):1156901 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250519_131908-ixe4kqnr/logs/debug-internal.log
+2025-05-19 13:19:08,773 INFO    Thread-7 (_run_job):1156901 [wandb_init.py:init():781] calling init triggers
+2025-05-19 13:19:08,773 INFO    Thread-7 (_run_job):1156901 [wandb_init.py:init():786] wandb.init called with sweep_config: {'batch_size': 32, 'beam_size': None, 'cell_type': 'lstm', 'decoder_dropout': 0.2, 'embedding_size': 16, 'encoder_dropout': 0.5, 'hidden_size': 256, 'learning_rate': 0.0005, 'num_layers': 3, 'use_attention': True}
+config: {'data_path': 'dakshina_dataset_v1.0/hi/lexicons/', 'embedding_size': 16, 'hidden_size': 256, 'num_encoder_layers': 3, 'num_decoder_layers': 3, 'encoder_dropout': 0.5, 'decoder_dropout': 0.2, 'cell_type': 'lstm', 'batch_size': 32, 'learning_rate': 0.0005, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'patience': 5, 'min_delta': 0.0, 'beam_size': None, 'save_path': 'models_true/', 'model_name': 'best_model.pt', 'seed': 42, 'log_wandb': True, 'wandb_project': 'da6401_assignment3', 'wandb_name': 'lstm-ec_3-dc_3-hs_256-emb_16-bs_32-lr_0.0005', 'use_attention': False, '_wandb': {}}
+2025-05-19 13:19:08,773 INFO    Thread-7 (_run_job):1156901 [wandb_init.py:init():801] wandb.init() called while a run is active
+2025-05-19 13:33:15,133 INFO    Thread-7 (_run_job):1156901 [wandb_run.py:_finish():2189] finishing run da24s011-indian-institute-of-technology-madras/da6401_assignment3/ixe4kqnr
+2025-05-19 13:33:15,134 INFO    Thread-7 (_run_job):1156901 [wandb_run.py:_atexit_cleanup():2419] got exitcode: 0
+2025-05-19 13:33:15,134 INFO    Thread-7 (_run_job):1156901 [wandb_run.py:_restore():2401] restore
+2025-05-19 13:33:15,134 INFO    Thread-7 (_run_job):1156901 [wandb_run.py:_restore():2407] restore done
+2025-05-19 13:33:16,753 INFO    Thread-7 (_run_job):1156901 [wandb_run.py:_footer_history_summary_info():4064] rendering history
+2025-05-19 13:33:16,754 INFO    Thread-7 (_run_job):1156901 [wandb_run.py:_footer_history_summary_info():4096] rendering summary
+2025-05-19 13:33:16,754 INFO    Thread-7 (_run_job):1156901 [wandb_run.py:_footer_sync_info():4025] logging synced files
+2025-05-19 13:33:16,761 INFO    Thread-7 (_run_job):1156901 [wandb_run.py:_finish():2189] finishing run da24s011-indian-institute-of-technology-madras/da6401_assignment3/ixe4kqnr
+2025-05-19 13:33:27,766 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 13:50:21,539 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 14:04:20,988 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 14:23:01,330 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 14:37:37,981 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 14:56:27,952 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 15:15:54,624 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 15:25:57,396 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 15:44:57,200 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 15:50:14,279 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 15:56:13,596 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 16:13:33,773 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 16:32:06,977 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 16:47:30,314 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 17:01:19,663 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 17:09:09,224 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 17:22:47,426 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 17:42:24,090 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-05-19 17:56:46,391 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

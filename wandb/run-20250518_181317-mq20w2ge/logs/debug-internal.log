@@ -5,3 +5,4 @@
 {"time":"2025-05-18T18:13:17.780314979+05:30","level":"INFO","msg":"handler: started","stream_id":"mq20w2ge"}
 {"time":"2025-05-18T18:13:17.78036234+05:30","level":"INFO","msg":"sender: started","stream_id":"mq20w2ge"}
 {"time":"2025-05-18T18:13:18.178359652+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T19:40:32.155474708+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24s011-indian-institute-of-technology-madras/da6401_assignment3/mq20w2ge/file_stream\": EOF"}

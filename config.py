@@ -50,6 +50,8 @@ class ModelConfig:
     wandb_name: Optional[str] = None
     
     use_attention: bool = False
+    visualize_connectivity: bool = False
+    
     
     def __post_init__(self):
         """Create model save directory if it doesn't exist"""
@@ -105,7 +107,7 @@ def setup_sweep_configuration():
                 'values': [None, 3, 5, 7]
             },
             'use_attention': {
-                'values': [False]
+                'values': [True]
             }
         }
     }

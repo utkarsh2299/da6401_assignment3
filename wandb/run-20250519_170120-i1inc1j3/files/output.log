@@ -1,0 +1,146 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 4,512,579 trainable parameters
+                                                                                                                                                                    
+Epoch: 01 | Time: 0.0m 16.17s
+	Train Loss: 2.375
+	Val. Loss: 1.735
+	Train Acc: 0.469 | Val. Acc: 0.469 (sample)
+	Best validation loss: 1.735
+Epoch: 02 | Time: 0.0m 16.60s
+	Train Loss: 1.372
+	Val. Loss: 1.406
+	Train Acc: 0.592 | Val. Acc: 0.601 (sample)
+	Best validation loss: 1.406
+Epoch: 03 | Time: 0.0m 16.32s
+	Train Loss: 1.041
+	Val. Loss: 1.238
+	Train Acc: 0.629 | Val. Acc: 0.663 (sample)
+	Best validation loss: 1.238
+Epoch: 04 | Time: 0.0m 16.17s
+	Train Loss: 0.873
+	Val. Loss: 1.189
+	Train Acc: 0.669 | Val. Acc: 0.696 (sample)
+	Best validation loss: 1.189
+Epoch: 05 | Time: 0.0m 16.20s
+	Train Loss: 0.763
+	Val. Loss: 1.101
+	Train Acc: 0.757 | Val. Acc: 0.710 (sample)
+	Best validation loss: 1.101
+Epoch: 06 | Time: 0.0m 16.15s
+	Train Loss: 0.684
+	Val. Loss: 1.132
+	Train Acc: 0.769 | Val. Acc: 0.699 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 07 | Time: 0.0m 16.17s
+	Train Loss: 0.633
+	Val. Loss: 1.103
+	Train Acc: 0.792 | Val. Acc: 0.716 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 08 | Time: 0.0m 16.08s
+	Train Loss: 0.578
+	Val. Loss: 1.129
+	Train Acc: 0.821 | Val. Acc: 0.705 (sample)
+	No improvement in validation loss for 3 epochs
+Epoch: 09 | Time: 0.0m 15.76s
+	Train Loss: 0.542
+	Val. Loss: 1.089
+	Train Acc: 0.813 | Val. Acc: 0.736 (sample)
+	Best validation loss: 1.089
+Epoch: 10 | Time: 0.0m 13.93s
+	Train Loss: 0.510
+	Val. Loss: 1.075
+	Train Acc: 0.857 | Val. Acc: 0.745 (sample)
+	Best validation loss: 1.075
+Epoch: 11 | Time: 0.0m 13.82s
+	Train Loss: 0.472
+	Val. Loss: 1.051
+	Train Acc: 0.877 | Val. Acc: 0.745 (sample)
+	Best validation loss: 1.051
+Epoch: 12 | Time: 0.0m 13.79s
+	Train Loss: 0.448
+	Val. Loss: 1.126
+	Train Acc: 0.877 | Val. Acc: 0.731 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 13 | Time: 0.0m 13.80s
+	Train Loss: 0.422
+	Val. Loss: 1.106
+	Train Acc: 0.868 | Val. Acc: 0.742 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 14 | Time: 0.0m 13.79s
+	Train Loss: 0.409
+	Val. Loss: 1.075
+	Train Acc: 0.897 | Val. Acc: 0.746 (sample)
+	No improvement in validation loss for 3 epochs
+Epoch: 15 | Time: 0.0m 13.90s
+	Train Loss: 0.390
+	Val. Loss: 1.087
+	Train Acc: 0.871 | Val. Acc: 0.733 (sample)
+	No improvement in validation loss for 4 epochs
+Epoch: 16 | Time: 0.0m 15.96s
+	Train Loss: 0.366
+	Val. Loss: 1.129
+	Train Acc: 0.934 | Val. Acc: 0.729 (sample)
+	No improvement in validation loss for 5 epochs
+Early stopping after 16 epochs
+Test Accuracy: 0.3809
+Sample 1:
+Source: ank
+Prediction: एंक
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनाकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: एंकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: एंगकोर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: एंकोर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगररक
+Target: अंगारक
+Correct: No
+--------------------------------------------------

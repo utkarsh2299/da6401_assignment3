@@ -1,0 +1,165 @@
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+The model has 236,227 trainable parameters
+                                                                                                                                                                    
+Epoch: 01 | Time: 0.0m 9.02s
+	Train Loss: 2.802
+	Val. Loss: 2.351
+	Train Acc: 0.350 | Val. Acc: 0.348 (sample)
+	Best validation loss: 2.351
+Epoch: 02 | Time: 0.0m 9.63s
+	Train Loss: 1.994
+	Val. Loss: 1.937
+	Train Acc: 0.433 | Val. Acc: 0.439 (sample)
+	Best validation loss: 1.937
+Epoch: 03 | Time: 0.0m 9.23s
+	Train Loss: 1.680
+	Val. Loss: 1.707
+	Train Acc: 0.487 | Val. Acc: 0.490 (sample)
+	Best validation loss: 1.707
+Epoch: 04 | Time: 0.0m 9.59s
+	Train Loss: 1.505
+	Val. Loss: 1.604
+	Train Acc: 0.529 | Val. Acc: 0.506 (sample)
+	Best validation loss: 1.604
+Epoch: 05 | Time: 0.0m 9.34s
+	Train Loss: 1.369
+	Val. Loss: 1.501
+	Train Acc: 0.537 | Val. Acc: 0.530 (sample)
+	Best validation loss: 1.501
+Epoch: 06 | Time: 0.0m 9.85s
+	Train Loss: 1.280
+	Val. Loss: 1.431
+	Train Acc: 0.593 | Val. Acc: 0.564 (sample)
+	Best validation loss: 1.431
+Epoch: 07 | Time: 0.0m 9.00s
+	Train Loss: 1.201
+	Val. Loss: 1.434
+	Train Acc: 0.598 | Val. Acc: 0.565 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 08 | Time: 0.0m 9.33s
+	Train Loss: 1.155
+	Val. Loss: 1.352
+	Train Acc: 0.617 | Val. Acc: 0.575 (sample)
+	Best validation loss: 1.352
+Epoch: 09 | Time: 0.0m 9.72s
+	Train Loss: 1.096
+	Val. Loss: 1.328
+	Train Acc: 0.617 | Val. Acc: 0.582 (sample)
+	Best validation loss: 1.328
+Epoch: 10 | Time: 0.0m 9.85s
+	Train Loss: 1.066
+	Val. Loss: 1.274
+	Train Acc: 0.653 | Val. Acc: 0.579 (sample)
+	Best validation loss: 1.274
+Epoch: 11 | Time: 0.0m 8.95s
+	Train Loss: 1.033
+	Val. Loss: 1.257
+	Train Acc: 0.662 | Val. Acc: 0.604 (sample)
+	Best validation loss: 1.257
+Epoch: 12 | Time: 0.0m 9.75s
+	Train Loss: 0.996
+	Val. Loss: 1.266
+	Train Acc: 0.665 | Val. Acc: 0.614 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 13 | Time: 0.0m 9.69s
+	Train Loss: 0.985
+	Val. Loss: 1.235
+	Train Acc: 0.652 | Val. Acc: 0.610 (sample)
+	Best validation loss: 1.235
+Epoch: 14 | Time: 0.0m 10.03s
+	Train Loss: 0.958
+	Val. Loss: 1.235
+	Train Acc: 0.687 | Val. Acc: 0.618 (sample)
+	Best validation loss: 1.235
+Epoch: 15 | Time: 0.0m 9.81s
+	Train Loss: 0.938
+	Val. Loss: 1.178
+	Train Acc: 0.679 | Val. Acc: 0.645 (sample)
+	Best validation loss: 1.178
+Epoch: 16 | Time: 0.0m 9.91s
+	Train Loss: 0.910
+	Val. Loss: 1.196
+	Train Acc: 0.659 | Val. Acc: 0.642 (sample)
+	No improvement in validation loss for 1 epochs
+Epoch: 17 | Time: 0.0m 9.44s
+	Train Loss: 0.889
+	Val. Loss: 1.207
+	Train Acc: 0.684 | Val. Acc: 0.652 (sample)
+	No improvement in validation loss for 2 epochs
+Epoch: 18 | Time: 0.0m 9.26s
+	Train Loss: 0.891
+	Val. Loss: 1.180
+	Train Acc: 0.691 | Val. Acc: 0.661 (sample)
+	No improvement in validation loss for 3 epochs
+Epoch: 19 | Time: 0.0m 9.02s
+	Train Loss: 0.864
+	Val. Loss: 1.173
+	Train Acc: 0.687 | Val. Acc: 0.654 (sample)
+	Best validation loss: 1.173
+Epoch: 20 | Time: 0.0m 9.19s
+	Train Loss: 0.855
+	Val. Loss: 1.190
+	Train Acc: 0.692 | Val. Acc: 0.660 (sample)
+	No improvement in validation loss for 1 epochs
+Test Accuracy: 0.3008
+Sample 1:
+Source: ank
+Prediction: अंक
+Target: अंक
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: आनकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: अंगोकर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: अंकोर
+Target: अंकोर
+Correct: Yes
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगरक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगरक
+Target: अंगारक
+Correct: No
+--------------------------------------------------

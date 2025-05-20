@@ -1,0 +1,89 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+inside attention
+The model has 1,683,523 trainable parameters
+                                                                                                                                                                    
+Epoch: 01 | Time: 0.0m 21.63s
+	Train Loss: 1.202
+	Val. Loss: 1.111
+	Train Acc: 0.650 | Val. Acc: 0.766 (sample)
+	Best validation loss: 1.111
+Test Accuracy: 0.3045
+Sample 1:
+Source: ank
+Prediction: अंक
+Target: अंक
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: अंगकोर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: अंकोर
+Target: अंकोर
+Correct: Yes
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगरक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+inside attention
+inside attention
+
+[INFO] Generating character-level connectivity diagram...
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 246, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 146, in main
+    visualize_for_models(text=text,
+  File "/speech/utkarsh/da6401_assignment3/connectivity_visualizer.py", line 69, in visualize_for_models
+    text_encoded = tokenizer.encode_latin(text)
+AttributeError: 'TransliterationDataset' object has no attribute 'encode_latin'. Did you mean: 'decode_latin'?
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 246, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 146, in main
+    visualize_for_models(text=text,
+  File "/speech/utkarsh/da6401_assignment3/connectivity_visualizer.py", line 69, in visualize_for_models
+    text_encoded = tokenizer.encode_latin(text)
+AttributeError: 'TransliterationDataset' object has no attribute 'encode_latin'. Did you mean: 'decode_latin'?

@@ -1,0 +1,9 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+inside attention
+The model has 1,683,523 trainable parameters
+Testing:   4%|█████▎                                                                                                                        | 3/71 [00:09<03:37,  3.19s/it]
+Epoch: 01 | Time: 0.0m 24.91s
+	Train Loss: 1.202
+	Val. Loss: 1.111
+	Train Acc: 0.650 | Val. Acc: 0.766 (sample)
+	Best validation loss: 1.111

@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Attention Visualization</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+        }
+        .char {
+            display: inline-block;
+            margin: 4px;
+            padding: 5px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .row {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover over source characters to highlight attention to target</h2>
+    <div class="row" id="source">
+        <span class="char source" data-idx="0">a</span><span class="char source" data-idx="1">n</span><span class="char source" data-idx="2">d</span><span class="char source" data-idx="3">a</span><span class="char source" data-idx="4">n</span><span class="char source" data-idx="5">g</span><span class="char source" data-idx="6">e</span><span class="char source" data-idx="7">r</span><span class="char source" data-idx="8">o</span><span class="char source" data-idx="9">u</span><span class="char source" data-idx="10">s</span>
+    </div>
+    <div class="row" id="target">
+        <span class="char target" id="t0">अ</span><span class="char target" id="t1">ं</span><span class="char target" id="t2">ड</span><span class="char target" id="t3">ं</span><span class="char target" id="t4">ग</span><span class="char target" id="t5">र</span><span class="char target" id="t6">ू</span><span class="char target" id="t7">स</span>
+    </div>
+
+<script>
+const attn = [
+[1.0000, 0.4419, 0.0878, 0.0061, 0.0295, 0.0093, 0.0033, 0.0086, 0.0026, 0.0027, 0.0018],
+[0.2005, 1.0000, 0.1363, 0.0121, 0.0363, 0.0148, 0.0080, 0.0167, 0.0068, 0.0052, 0.0031],
+[0.0177, 0.1492, 1.0000, 0.2488, 0.2534, 0.1372, 0.0870, 0.1315, 0.0804, 0.0630, 0.0281],
+[0.0001, 0.0010, 0.0633, 1.0000, 1.0000, 0.4453, 0.1834, 0.1607, 0.0665, 0.0420, 0.0192],
+[0.0000, 0.0000, 0.0016, 0.1351, 0.9478, 1.0000, 0.5631, 0.4789, 0.1458, 0.0594, 0.0262],
+[0.0000, 0.0000, 0.0001, 0.0104, 0.1459, 0.5160, 1.0000, 0.9370, 0.4727, 0.2115, 0.0976],
+[0.0000, 0.0000, 0.0000, 0.0019, 0.0389, 0.2382, 0.2618, 1.0000, 1.0000, 0.7629, 0.4153],
+[0.0000, 0.0000, 0.0000, 0.0006, 0.0056, 0.0337, 0.0602, 0.2153, 0.7790, 1.0000, 1.0000]
+];
+
+document.querySelectorAll('.source').forEach(sourceChar => {
+    sourceChar.addEventListener('mouseover', () => {
+        const srcIdx = parseInt(sourceChar.dataset.idx);
+        const weights = attn.map(row => row[srcIdx]);
+
+        weights.forEach((weight, tgtIdx) => {
+            const tgtElem = document.getElementById("t" + tgtIdx);
+            let opacity = 0.8 * weight;
+            tgtElem.style.backgroundColor = `rgba(100, 200, 255, ${opacity.toFixed(2)})`;
+
+
+        });
+    });
+    sourceChar.addEventListener('mouseout', () => {
+        document.querySelectorAll('.target').forEach(el => {
+            el.style.backgroundColor = "";
+        });
+    });
+});
+</script>
+</body>
+</html>

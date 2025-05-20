@@ -1,0 +1,26 @@
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+[34m[1mwandb[0m: [33mWARNING[0m Ignoring project 'da6401_assignment3' when running a sweep.
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x7f5c89088820>
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 94, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 226, in teardown
+    self._router.join()
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt:
+Exception ignored in atexit callback: <bound method TemporaryDirectory.cleanup of <TemporaryDirectory '/tmp/tmp1uostbdxwandb-media'>>
+Traceback (most recent call last):
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/tempfile.py", line 882, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/tempfile.py", line 864, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/shutil.py", line 729, in rmtree
+    os.rmdir(path)
+KeyboardInterrupt:

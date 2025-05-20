@@ -1,0 +1,79 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+inside attention
+The model has 547,651 trainable parameters
+                                                                                                                                                                                           
+Epoch: 01 | Time: 0.0m 25.22s
+	Train Loss: 1.660
+	Val. Loss: 1.264
+	Train Acc: 0.580 | Val. Acc: 0.666 (sample)
+	Best validation loss: 1.264
+Test Accuracy: 0.2110
+Sample 1:
+Source: ank
+Prediction: अंक
+Target: अंक
+Correct: Yes
+--------------------------------------------------
+Sample 2:
+Source: anka
+Prediction: अंका
+Target: अंक
+Correct: No
+--------------------------------------------------
+Sample 3:
+Source: ankit
+Prediction: अंकित
+Target: अंकित
+Correct: Yes
+--------------------------------------------------
+Sample 4:
+Source: anakon
+Prediction: अनाकों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 5:
+Source: ankhon
+Prediction: अंखों
+Target: अंकों
+Correct: No
+--------------------------------------------------
+Sample 6:
+Source: ankon
+Prediction: अंकों
+Target: अंकों
+Correct: Yes
+--------------------------------------------------
+Sample 7:
+Source: angkor
+Prediction: अंगकर
+Target: अंकोर
+Correct: No
+--------------------------------------------------
+Sample 8:
+Source: ankor
+Prediction: अंकोर
+Target: अंकोर
+Correct: Yes
+--------------------------------------------------
+Sample 9:
+Source: angaarak
+Prediction: अंगाराक
+Target: अंगारक
+Correct: No
+--------------------------------------------------
+Sample 10:
+Source: angarak
+Prediction: अंगारक
+Target: अंगारक
+Correct: Yes
+--------------------------------------------------
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/connectivity_visualizer.py:133: UserWarning: Matplotlib currently does not support Devanagari natively.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/connectivity_visualizer.py:133: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all Axes decorations.
+  plt.tight_layout()
+/speech/utkarsh/da6401_assignment3/connectivity_visualizer.py:134: UserWarning: Glyph 2327 (\N{DEVANAGARI LETTER GA}) missing from font(s) DejaVu Sans.
+  plt.savefig(f"{model_name}_decoder.png", bbox_inches='tight', dpi=300)
+/speech/utkarsh/da6401_assignment3/connectivity_visualizer.py:134: UserWarning: Matplotlib currently does not support Devanagari natively.
+  plt.savefig(f"{model_name}_decoder.png", bbox_inches='tight', dpi=300)

@@ -9,9 +9,10 @@ import argparse
 from data import get_dataloaders
 from model import create_model
 from train import train_model, test
-from utils import set_seed, count_parameters, plot_loss_curves, display_sample_predictions, visualize_attention
+from utils import set_seed, count_parameters, plot_loss_curves, display_sample_predictions, visualize_attention, visualize_attention_connectivity
 from config import ModelConfig
-
+from connectivity_visualizer import visualize_for_models, visualize_decoder_attention  
+from interactive_attention import show_interactive_attention
 
 def main(config: ModelConfig):
     """
@@ -121,22 +122,119 @@ def main(config: ModelConfig):
     model.eval()
     device = "cuda" if torch.cuda.is_available() else 'cpu'
     
-    if config.use_attention:
-    # Generate and visualize attention heatmaps
-        examples = visualize_attention(
-            model=model,
-            test_dataset=test_dataset,
-            iterator=test_loader,
-            device=device,
-            n_examples=9,
-            n_rows=3,
-            n_cols=3,
-            save_path='attention_heatmaps.png'
-        )
+    
+    # if hasattr(config, 'visualize_connectivity') and config.visualize_connectivity:
+        
+        # text = "context the formal study of grammar advanced learning"
+        # selected_char = "a"  # character to visualize connectivity for
 
-        # Log attention heatmaps to wandb
-        if config.log_wandb:
-            wandb.log({"attention_heatmaps": wandb.Image('attention_heatmaps.png')})
+        # # Build all model variants (GRU, LSTM, etc.)
+        # models_dict = {
+        #     "GRU": create_model(
+        #         src_vocab_size, trg_vocab_size, config.embedding_size, config.hidden_size,
+        #         config.num_encoder_layers, config.num_decoder_layers, config.encoder_dropout,
+        #         config.decoder_dropout, 'gru', config.device, sos_idx, eos_idx, config.use_attention
+        #     ).to(config.device),
+
+        #     "LSTM": create_model(
+        #         src_vocab_size, trg_vocab_size, config.embedding_size, config.hidden_size,
+        #         config.num_encoder_layers, config.num_decoder_layers, config.encoder_dropout,
+        #         config.decoder_dropout, 'lstm', config.device, sos_idx, eos_idx, config.use_attention
+        #     ).to(config.device)
+        # }
+
+        # print(f"\n[INFO] Generating character-level connectivity diagram...")
+        # visualize_for_models(text=text,
+        #                      tokenizer=test_dataset,  # uses encode_latin
+        #                      models_dict=models_dict,
+        #                      selected_char=selected_char)
+
+    
+        # text = "ankit"
+        # input_tensor = torch.tensor([test_dataset.encode_latin(text)], dtype=torch.long).to(config.device)
+        # output_indices, attn_weights = model.greedy_decode(input_tensor, max_len=30)
+
+        # # Convert predictions to characters
+        # output_text = test_dataset.decode_devanagari(output_indices)
+
+        # # Convert stacked attention to numpy
+        # attention_matrix = torch.stack(attn_weights).cpu().numpy()  # shape: [output_len, input_len]
+
+        # # Choose an output character to visualize (e.g., index 2 = 'ग')
+        # selected_idx = 2
+        # visualize_decoder_attention(
+        #     text=text,
+        #     output_text=output_text,
+        #     attention_matrix=attention_matrix,
+        #     selected_output_idx=selected_idx,
+        #     model_name="LSTM + Attention"
+# )
+
+
+    # text = "angaarak"
+    # input_tensor = torch.tensor([test_dataset.encode_latin(text)], dtype=torch.long).to(config.device)
+    # output_indices, attn_weights = model.greedy_decode(input_tensor, max_len=30)
+
+    # output_text = test_dataset.decode_devanagari(output_indices)
+    # attention_matrix = torch.stack(attn_weights).cpu().numpy()
+
+    # show_interactive_attention(
+    #     input_text=text,
+    #     output_text=output_text,
+    #     attention_matrix=attention_matrix,
+    #     title="Hover to see how input influences output"
+    # )
+
+    from export_interactive_attention import export_interactive_html
+
+    # Step 1: Define the input
+    raw_input_text = "dangerous"
+    input_tensor = torch.tensor([test_dataset.encode_latin(raw_input_text)], dtype=torch.long).to(config.device)
+
+    # Step 2: Get prediction
+    pred_indices, attn_weights = model.greedy_decode(input_tensor, max_len=30)
+
+    # Step 3: Decode & clean output
+    target = test_dataset.decode_devanagari(pred_indices)  # may include EOS — strip it
+    target = target.replace("<EOS>", "").replace("<SOS>", "").strip()
+
+    # Step 4: Get actual number of chars in decoded output
+    target_len = len(target)
+    source_len = len(raw_input_text)
+
+    # Step 5: Slice attention weights
+    attn_matrix = torch.stack(attn_weights).cpu().numpy()[:target_len, :source_len]
+
+    export_interactive_html(raw_input_text, target, attn_matrix, output_path="interactive_attention.html")
+    wandb.log({"interactive_attention_inline": wandb.Html(open("interactive_attention.html", "r").read())})
+
+    
+    # if config.use_attention:
+    # # Generate and visualize attention heatmaps
+    #     examples = visualize_attention(
+    #         model=model,
+    #         test_dataset=test_dataset,
+    #         iterator=test_loader,
+    #         device=device,
+    #         n_examples=9,
+    #         n_rows=3,
+    #         n_cols=3,
+    #         save_path='attention_heatmaps.png'
+    #     )
+
+    #     exampless = visualize_attention_connectivity(
+    #         model=model,
+    #         test_dataset=test_dataset,
+    #         iterator=test_loader,
+    #         device=device,
+    #         n_examples=9,
+    #         save_path='attention_heatmaps_connectivity.png'
+    #     )
+        
+    #     # Log attention heatmaps to wandb
+    #     if config.log_wandb:
+    #         wandb.log({"attention_heatmaps": wandb.Image('attention_heatmaps.png')})
+    #         wandb.log({"attention_heatmaps_connectivity": wandb.Image('attention_heatmaps_connectivity.png')})
     
     # Close wandb run
     if config.log_wandb:
@@ -175,7 +273,9 @@ if __name__ == "__main__":
                         help='Whether to log metrics to wandb')
     parser.add_argument('--use_attention', action='store_true', default=False,
                         help='Whether to use attention or not')
-    
+    parser.add_argument('--visualize_connectivity', action='store_true', default=False,
+                    help='Whether to visualize character connectivity across models')
+
     args = parser.parse_args()
     
     # Create config
@@ -195,7 +295,8 @@ if __name__ == "__main__":
         beam_size=args.beam_size,
         seed=args.seed,
         log_wandb=args.log_wandb,
-        use_attention=args.use_attention
+        use_attention=args.use_attention,
+        visualize_connectivity=args.visualize_connectivity 
     )
     
     main(config)

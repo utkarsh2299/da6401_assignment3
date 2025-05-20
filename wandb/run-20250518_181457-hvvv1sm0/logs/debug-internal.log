@@ -5,3 +5,4 @@
 {"time":"2025-05-18T18:14:57.635484612+05:30","level":"INFO","msg":"sender: started","stream_id":"hvvv1sm0"}
 {"time":"2025-05-18T18:14:57.635564364+05:30","level":"INFO","msg":"handler: started","stream_id":"hvvv1sm0"}
 {"time":"2025-05-18T18:14:58.035380096+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T20:09:38.772649386+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24s011-indian-institute-of-technology-madras/da6401_assignment3/hvvv1sm0/file_stream\": EOF"}

@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 302, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 36, in main
+    dataloaders = get_dataloaders(config.data_path, config.batch_size)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 301, in get_dataloaders
+    dev_dataset = TransliterationDataset(data_path, 'dev')
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 45, in __init__
+    data_pairs = self._load_data_safely(file_path)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 129, in _load_data_safely
+    valid_pairs = self._extract_valid_pairs(df)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 196, in _extract_valid_pairs
+    for i, row in df.iterrows():
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 1554, in iterrows
+    s = klass(v, index=columns, name=k).__finalize__(self)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6264, in __finalize__
+    for name in set(self._metadata) & set(other._metadata):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 302, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 36, in main
+    dataloaders = get_dataloaders(config.data_path, config.batch_size)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 301, in get_dataloaders
+    dev_dataset = TransliterationDataset(data_path, 'dev')
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 45, in __init__
+    data_pairs = self._load_data_safely(file_path)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 129, in _load_data_safely
+    valid_pairs = self._extract_valid_pairs(df)
+  File "/speech/utkarsh/da6401_assignment3/data.py", line 196, in _extract_valid_pairs
+    for i, row in df.iterrows():
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 1554, in iterrows
+    s = klass(v, index=columns, name=k).__finalize__(self)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6264, in __finalize__
+    for name in set(self._metadata) & set(other._metadata):
+KeyboardInterrupt

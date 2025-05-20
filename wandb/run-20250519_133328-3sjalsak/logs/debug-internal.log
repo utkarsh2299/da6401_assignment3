@@ -1,0 +1,16 @@
+{"time":"2025-05-19T13:33:28.575586917+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_133328-3sjalsak/logs/debug-core.log"}
+{"time":"2025-05-19T13:33:28.973617352+05:30","level":"INFO","msg":"created new stream","id":"3sjalsak"}
+{"time":"2025-05-19T13:33:28.973702172+05:30","level":"INFO","msg":"stream: started","id":"3sjalsak"}
+{"time":"2025-05-19T13:33:28.973761383+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"3sjalsak"}
+{"time":"2025-05-19T13:33:28.973830634+05:30","level":"INFO","msg":"sender: started","stream_id":"3sjalsak"}
+{"time":"2025-05-19T13:33:28.973920985+05:30","level":"INFO","msg":"handler: started","stream_id":"3sjalsak"}
+{"time":"2025-05-19T13:33:29.308072157+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T13:50:14.91927473+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T13:50:14.919392942+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T13:50:15.922093153+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.412017798,"progress":"283B/283B"},{"desc":"uploading output.log","runtime_seconds":0.412002818,"progress":"4.6KB/4.6KB"},{"desc":"uploading config.yaml","runtime_seconds":0.108322746,"progress":"873B/873B"}],"total_operations":3}}
+{"time":"2025-05-19T13:50:16.225925767+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T13:50:16.536633844+05:30","level":"INFO","msg":"stream: closing","id":"3sjalsak"}
+{"time":"2025-05-19T13:50:16.536675955+05:30","level":"INFO","msg":"handler: closed","stream_id":"3sjalsak"}
+{"time":"2025-05-19T13:50:16.536694445+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"3sjalsak"}
+{"time":"2025-05-19T13:50:16.536754826+05:30","level":"INFO","msg":"sender: closed","stream_id":"3sjalsak"}
+{"time":"2025-05-19T13:50:16.536870418+05:30","level":"INFO","msg":"stream: closed","id":"3sjalsak"}

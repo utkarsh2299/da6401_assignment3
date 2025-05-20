@@ -1,0 +1,16 @@
+{"time":"2025-05-19T14:23:02.090392365+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_142302-1jogcd4u/logs/debug-core.log"}
+{"time":"2025-05-19T14:23:02.480802256+05:30","level":"INFO","msg":"created new stream","id":"1jogcd4u"}
+{"time":"2025-05-19T14:23:02.480878317+05:30","level":"INFO","msg":"stream: started","id":"1jogcd4u"}
+{"time":"2025-05-19T14:23:02.480930588+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"1jogcd4u"}
+{"time":"2025-05-19T14:23:02.481008209+05:30","level":"INFO","msg":"handler: started","stream_id":"1jogcd4u"}
+{"time":"2025-05-19T14:23:02.481099921+05:30","level":"INFO","msg":"sender: started","stream_id":"1jogcd4u"}
+{"time":"2025-05-19T14:23:02.810155204+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T14:37:25.154969146+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T14:37:25.155155559+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T14:37:26.120747657+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.342037629,"progress":"4.5KB/4.5KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.342010069,"progress":"280B/280B"},{"desc":"uploading config.yaml","runtime_seconds":0.045244544,"progress":"875B/875B"}],"total_operations":3}}
+{"time":"2025-05-19T14:37:26.615962665+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T14:37:26.972895032+05:30","level":"INFO","msg":"stream: closing","id":"1jogcd4u"}
+{"time":"2025-05-19T14:37:26.972932582+05:30","level":"INFO","msg":"handler: closed","stream_id":"1jogcd4u"}
+{"time":"2025-05-19T14:37:26.972954493+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"1jogcd4u"}
+{"time":"2025-05-19T14:37:26.973006763+05:30","level":"INFO","msg":"sender: closed","stream_id":"1jogcd4u"}
+{"time":"2025-05-19T14:37:26.973057614+05:30","level":"INFO","msg":"stream: closed","id":"1jogcd4u"}

@@ -1,0 +1,16 @@
+{"time":"2025-05-20T12:38:26.760022669+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250520_123826-wibrpynq/logs/debug-core.log"}
+{"time":"2025-05-20T12:38:27.137136932+05:30","level":"INFO","msg":"created new stream","id":"wibrpynq"}
+{"time":"2025-05-20T12:38:27.137227773+05:30","level":"INFO","msg":"stream: started","id":"wibrpynq"}
+{"time":"2025-05-20T12:38:27.137274773+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"wibrpynq"}
+{"time":"2025-05-20T12:38:27.137315424+05:30","level":"INFO","msg":"sender: started","stream_id":"wibrpynq"}
+{"time":"2025-05-20T12:38:27.137405915+05:30","level":"INFO","msg":"handler: started","stream_id":"wibrpynq"}
+{"time":"2025-05-20T12:38:27.485666593+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-20T12:42:56.970411175+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-20T12:42:56.970499456+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-20T12:42:57.974881428+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.094898202,"progress":"1.3KB/1.3KB"}],"total_operations":1}}
+{"time":"2025-05-20T12:42:58.211367194+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-20T12:42:58.84380245+05:30","level":"INFO","msg":"stream: closing","id":"wibrpynq"}
+{"time":"2025-05-20T12:42:58.843840481+05:30","level":"INFO","msg":"handler: closed","stream_id":"wibrpynq"}
+{"time":"2025-05-20T12:42:58.843858951+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"wibrpynq"}
+{"time":"2025-05-20T12:42:58.843923812+05:30","level":"INFO","msg":"sender: closed","stream_id":"wibrpynq"}
+{"time":"2025-05-20T12:42:58.844054773+05:30","level":"INFO","msg":"stream: closed","id":"wibrpynq"}

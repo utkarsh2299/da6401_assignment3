@@ -1,0 +1,41 @@
+Created dataloaders - Train: 44201 samples, Dev: 4358 samples, Test: 4502 samples
+inside attention
+The model has 547,651 trainable parameters
+Traceback (most recent call last):                                                                                                                                                         
+Epoch: 01 | Time: 8.0m 44.03s
+	Train Loss: 1.660
+	Val. Loss: 1.264
+	Train Acc: 0.580 | Val. Acc: 0.666 (sample)
+	Best validation loss: 1.264
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 302, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 104, in main
+    accuracy, samples = test(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 155, in test
+    output_indices, _ = model.greedy_decode(src_tensor, max_len=100)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 792, in greedy_decode
+    input = torch.tensor([[top1]]).to(self.device)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 302, in <module>
+    main(config)
+  File "/speech/utkarsh/da6401_assignment3/main.py", line 104, in main
+    accuracy, samples = test(
+  File "/speech/utkarsh/da6401_assignment3/train.py", line 155, in test
+    output_indices, _ = model.greedy_decode(src_tensor, max_len=100)
+  File "/speech/utkarsh/da6401_assignment3/model.py", line 792, in greedy_decode
+    input = torch.tensor([[top1]]).to(self.device)
+KeyboardInterrupt
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x7f20d8b7bbe0>
+Traceback (most recent call last):
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 94, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 226, in teardown
+    self._router.join()
+  File "/speech/utkarsh/.local/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/speech/utkarsh/miniconda3/envs/valle/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt:

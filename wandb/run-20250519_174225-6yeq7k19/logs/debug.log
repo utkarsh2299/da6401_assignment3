@@ -1,0 +1,15 @@
+2025-05-19 17:42:25,777 INFO    Thread-61 (_run_job):1156901 [wandb_init.py:setup_run_log_directory():662] Logging user logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250519_174225-6yeq7k19/logs/debug.log
+2025-05-19 17:42:25,777 INFO    Thread-61 (_run_job):1156901 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to /speech/utkarsh/da6401_assignment3/wandb/run-20250519_174225-6yeq7k19/logs/debug-internal.log
+2025-05-19 17:42:25,777 INFO    Thread-61 (_run_job):1156901 [wandb_init.py:init():781] calling init triggers
+2025-05-19 17:42:25,778 INFO    Thread-61 (_run_job):1156901 [wandb_init.py:init():786] wandb.init called with sweep_config: {'batch_size': 128, 'beam_size': 3, 'cell_type': 'lstm', 'decoder_dropout': 0.5, 'embedding_size': 128, 'encoder_dropout': 0.5, 'hidden_size': 256, 'learning_rate': 0.0005, 'num_layers': 3, 'use_attention': True}
+config: {'data_path': 'dakshina_dataset_v1.0/hi/lexicons/', 'embedding_size': 128, 'hidden_size': 256, 'num_encoder_layers': 3, 'num_decoder_layers': 3, 'encoder_dropout': 0.5, 'decoder_dropout': 0.5, 'cell_type': 'lstm', 'batch_size': 128, 'learning_rate': 0.0005, 'n_epochs': 20, 'clip': 1.0, 'teacher_forcing_ratio': 0.5, 'patience': 5, 'min_delta': 0.0, 'beam_size': 3, 'save_path': 'models_true/', 'model_name': 'best_model.pt', 'seed': 42, 'log_wandb': True, 'wandb_project': 'da6401_assignment3', 'wandb_name': 'lstm-ec_3-dc_3-hs_256-emb_128-bs_128-lr_0.0005', 'use_attention': False, '_wandb': {}}
+2025-05-19 17:42:25,778 INFO    Thread-61 (_run_job):1156901 [wandb_init.py:init():801] wandb.init() called while a run is active
+2025-05-19 17:56:43,618 INFO    Thread-61 (_run_job):1156901 [wandb_run.py:_finish():2189] finishing run da24s011-indian-institute-of-technology-madras/da6401_assignment3/6yeq7k19
+2025-05-19 17:56:43,618 INFO    Thread-61 (_run_job):1156901 [wandb_run.py:_atexit_cleanup():2419] got exitcode: 0
+2025-05-19 17:56:43,618 INFO    Thread-61 (_run_job):1156901 [wandb_run.py:_restore():2401] restore
+2025-05-19 17:56:43,619 INFO    Thread-61 (_run_job):1156901 [wandb_run.py:_restore():2407] restore done
+2025-05-19 17:56:45,390 INFO    Thread-61 (_run_job):1156901 [wandb_run.py:_footer_history_summary_info():4064] rendering history
+2025-05-19 17:56:45,391 INFO    Thread-61 (_run_job):1156901 [wandb_run.py:_footer_history_summary_info():4096] rendering summary
+2025-05-19 17:56:45,391 INFO    Thread-61 (_run_job):1156901 [wandb_run.py:_footer_sync_info():4025] logging synced files
+2025-05-19 17:56:45,400 INFO    Thread-61 (_run_job):1156901 [wandb_run.py:_finish():2189] finishing run da24s011-indian-institute-of-technology-madras/da6401_assignment3/6yeq7k19
+2025-05-19 17:56:46,391 INFO    MsgRouterThr:1156901 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

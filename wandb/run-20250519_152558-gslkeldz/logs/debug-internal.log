@@ -1,0 +1,16 @@
+{"time":"2025-05-19T15:25:58.177338307+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.9","symlink path":"/speech/utkarsh/da6401_assignment3/wandb/run-20250519_152558-gslkeldz/logs/debug-core.log"}
+{"time":"2025-05-19T15:25:58.665860169+05:30","level":"INFO","msg":"created new stream","id":"gslkeldz"}
+{"time":"2025-05-19T15:25:58.665943171+05:30","level":"INFO","msg":"stream: started","id":"gslkeldz"}
+{"time":"2025-05-19T15:25:58.665963131+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"gslkeldz"}
+{"time":"2025-05-19T15:25:58.666004242+05:30","level":"INFO","msg":"sender: started","stream_id":"gslkeldz"}
+{"time":"2025-05-19T15:25:58.666075414+05:30","level":"INFO","msg":"handler: started","stream_id":"gslkeldz"}
+{"time":"2025-05-19T15:25:58.982122412+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-19T15:44:52.483886619+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-19T15:44:52.484026562+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-19T15:44:53.448536639+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.390303803,"progress":"4.4KB/4.4KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.390283933,"progress":"281B/281B"},{"desc":"uploading config.yaml","runtime_seconds":0.111906148,"progress":"876B/876B"}],"total_operations":3}}
+{"time":"2025-05-19T15:44:53.882743918+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-19T15:44:54.200634584+05:30","level":"INFO","msg":"stream: closing","id":"gslkeldz"}
+{"time":"2025-05-19T15:44:54.200662275+05:30","level":"INFO","msg":"handler: closed","stream_id":"gslkeldz"}
+{"time":"2025-05-19T15:44:54.200677215+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"gslkeldz"}
+{"time":"2025-05-19T15:44:54.200739776+05:30","level":"INFO","msg":"sender: closed","stream_id":"gslkeldz"}
+{"time":"2025-05-19T15:44:54.200815268+05:30","level":"INFO","msg":"stream: closed","id":"gslkeldz"}
