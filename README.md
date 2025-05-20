@@ -77,7 +77,7 @@ Train with custom parameters:
 python main.py --embedding_size 128 --hidden_size 256 --cell_type lstm
 ```
 
-You can also use `--use_attention` parameter to use attention in your model.
+You can also use `--use_attention` parameter to use attention in the models.
 
 ### You can use the Run that gave bests score : gru-ec_3-dc_3-hs_256-emb_256-bs_128-lr_0.0005 :
 
