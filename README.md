@@ -84,44 +84,13 @@ Run a standard hyperparameter sweep:
 python sweep.py --count 10 
 ```
 
-Test the best model from a sweep:
-```bash
-python sweep.py --test_best --sweep_id <sweep_id>
-```
 
 ### Testing a Trained Model
 
 Test a trained model:
 ```bash
-python test_model.py --config best_config.pt
+python test_model.py 
 ```
-
-
-## Model Complexity
-
-### Computational Complexity
-
-The computational complexity depends on the RNN cell type:
-
-- **Basic RNN**: O(T × (2m + 2(m×k + k×k) + k×V))
-- **GRU**: O(T × (2m + 6(m×k + k×k) + k×V))
-- **LSTM**: O(T × (2m + 8(m×k + k×k) + k×V))
-
-Where:
-- T = sequence length
-- m = embedding size
-- k = hidden state size
-- V = vocabulary size
-
-### Parameter Count
-
-The total number of parameters also depends on the RNN cell type:
-
-- **Basic RNN**: 2Vm + 2(m+k+1)k + (k+1)V
-- **GRU**: 2Vm + 6(m+k+1)k + (k+1)V
-- **LSTM**: 2Vm + 8(m+k+1)k + (k+1)V
-
-
 
 ## Evaluation
 
